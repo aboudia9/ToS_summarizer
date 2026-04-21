@@ -1,9 +1,6 @@
-# ToS_summarizer
-Terms of Service (ToS) summarizer to provide the user with the important info from long ToS documents. It will flag unfair clauses and show the user any potentially concerning or compromising clauses within the document allowing the user to make more informed decisions while navigating the web.
+# ToS_summarizer  
 
-# ToS Summarizer
-
-A natural language processing pipeline for analyzing Terms of Service agreements. The system classifies individual clauses by fairness level and generates plain-English summaries, making dense legal language more accessible to everyday users.
+Terms of Service (ToS) summarizer to provide the user with the important info from long ToS documents. It will flag unfair clauses and show the user any potentially concerning or compromising clauses within the document making dense legal language more accessible to everyday users and allowing the user to make more informed decisions while navigating the web.  
 
 This project was built as a capstone for CS561. It consists of three main stages: preprocessing, BERT-based clause classification, and BART-based abstractive summarization.
 
