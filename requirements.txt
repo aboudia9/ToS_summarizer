@@ -1,0 +1,16 @@
+# Core ML/DL
+torch
+transformers
+datasets
+huggingface_hub
+
+# Data handling
+pandas
+numpy
+scikit-learn
+
+# NLP - sentence tokenization (added during clause-splitting fix)
+nltk
+
+# Note: google.colab imports in some notebooks are Colab-specific
+# and aren't needed for local execution — safe to ignore locally.
