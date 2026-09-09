@@ -1,3 +1,4 @@
+.env
 *.csv
 *.pyc
 __pycache__/
@@ -7,3 +8,5 @@ __pycache__/
 *.ipynb_checkpoints
 bert_model/
 bart_model/
+bart_batch_id.txt
+CS 561 Project Proposal .docx
