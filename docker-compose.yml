@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    image: tos-summarizer
+    ports:
+      - "${PORT:-8501}:8501"
+    # Mount the models instead of using the baked-in copy, so swapping in a
+    # retrained model is just re-running scripts/export_models.py + a restart
+    volumes:
+      - ./models:/app/models:ro
+    environment:
+      - UNFAIR_THRESHOLD=0.5

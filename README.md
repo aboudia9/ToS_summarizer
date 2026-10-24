@@ -9,6 +9,7 @@ This project was built as a capstone for CS561. It consists of three main stages
 ## Table of Contents
 
 - [Project Overview](#project-overview)
+- [Running the App](#running-the-app)
 - [Repository Structure](#repository-structure)
 - [Dataset](#dataset)
 - [Models](#models)
@@ -34,22 +35,78 @@ The pipeline works in three sequential stages:
 
 ---
 
+## Running the App
+
+The app takes a pasted ToS or an uploaded `.txt`, splits it into clauses, flags the risky
+ones with BERT, and rewrites those in plain English with BART. No training or downloads
+happen at runtime — the fine-tuned models are loaded once from `models/`.
+
+**Step 1 — Compress the trained models** (needs `bert_model/` and `bart_model_v2/` in the repo root):
+
+```bash
+python scripts/export_models.py     # → models/bert (~210MB) + models/bart (~780MB)
+```
+
+This stores the weights in fp16 (half the size) and the app loads them back as fp32, so the
+outputs are the same — BERT agreed on 100% of test-set predictions and BART
+produced identical summaries on a 24-clause validation sample.
+
+**Step 2 — Run it**, either locally (uses Apple MPS / CUDA if available):
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py                # http://localhost:8501
+python -m tos_summarizer fb_tos_testing.txt   # or the CLI
+```
+
+or in Docker (CPU only — Docker on macOS can't reach the Apple GPU):
+
+```bash
+docker compose up --build           # http://localhost:8501 (PORT=8600 docker compose up to change it)
+```
+
+The image (~4GB, mostly torch + the models) is fully self-contained, so `docker build -t tos-summarizer .`
+gives you something you can ship anywhere. `docker compose` additionally mounts `./models`
+over the baked-in copy so you can swap models without rebuilding.
+
+**Swapping in a retrained model:**
+
+```bash
+python -m training.train_bert --out bert_model_v2 --select-on f1
+python scripts/export_models.py --bert bert_model_v2
+docker compose restart              # or rerun streamlit
+```
+
+You can also point at any model folder directly with `BERT_MODEL_PATH=... BART_MODEL_PATH=...`.
+
+---
+
 ## Repository Structure
 
 ```
 ToS_summarizer/
-├── preprocessing/
-│   └── preprocessing.ipynb        # Data cleaning and split logic
-├── classification/
-│   └── bert_classification.ipynb  # BERT fine-tuning and inference
-├── summarization/
-│   └── bart_summarization.ipynb   # BART fine-tuning and summary generation
-├── data/
-│   └── (labeled CSVs saved here after BERT inference)
-└── README.md
+├── tos_summarizer/            # The inference package (used by the app + training scripts)
+│   ├── config.py              # Model paths, label maps, device, thresholds (env-var overridable)
+│   ├── preprocessing.py       # clean_df, load_tos_document, has_verb, sentence splitting
+│   ├── classifier.py          # Legal-BERT dataset/loading/batched inference
+│   ├── summarizer.py          # BART dataset/loading/batched generation
+│   ├── pipeline.py            # process_tos_document — classify → filter → summarize
+│   └── __main__.py            # CLI: python -m tos_summarizer file.txt
+├── training/                  # The notebooks as runnable scripts
+│   ├── preprocess.py          # Stage 1 → df_{train,val,test}.csv
+│   ├── train_bert.py          # Stage 2 → bert_model*/ (prints a test-set report)
+│   └── train_bart.py          # Stage 3 → bart_model*/
+├── scripts/
+│   ├── export_models.py       # Compress trained models to fp16 → models/ (what the app loads)
+│   └── tune_threshold.py      # Recall vs. false-flag table for the flagging threshold
+├── notebooks/                 # Original Colab notebooks (unchanged)
+├── app.py                     # Streamlit UI
+├── Dockerfile / docker-compose.yml
+├── requirements.txt           # Full training stack
+└── requirements-app.txt       # Inference-only deps (used by Docker)
 ```
 
-> **Note:** Model weights are not committed to the repository due to file size. See the [Output](#output) section for where models are saved locally and on Drive.
+> **Note:** Model weights and CSVs are not committed to the repository due to file size.
 
 ---
 
@@ -105,15 +162,15 @@ pip install jupyter notebook
 
 ### Running the Pipeline Locally
 
-Run the notebooks **in order**. Each notebook depends on the outputs of the one before it.
+Run the notebooks **in order** (or the equivalent `python -m training.preprocess`, `training.train_bert`, `training.train_bart` scripts). Each stage depends on the outputs of the one before it.
 
 ---
 
-#### Step 1 — Preprocessing (`preprocessing/preprocessing.ipynb`)
+#### Step 1 — Preprocessing (`notebooks/ToS_preprocessing.ipynb`)
 
 This notebook loads the raw dataset from HuggingFace and prepares it for classification.
 
-1. Open `preprocessing/preprocessing.ipynb` in PyCharm or Jupyter.
+1. Open `notebooks/ToS_preprocessing.ipynb` in PyCharm or Jupyter.
 2. Run all cells in order from top to bottom.
 3. The notebook will:
    - Load all three HuggingFace dataset splits (train, validation, test)
@@ -122,11 +179,11 @@ This notebook loads the raw dataset from HuggingFace and prepares it for classif
 
 ---
 
-#### Step 2 — BERT Classification (`classification/bert_classification.ipynb`)
+#### Step 2 — BERT Classification (`notebooks/ToS_bert_embeddings.ipynb`)
 
 This notebook fine-tunes Legal-BERT on the cleaned clause data and runs inference to produce labeled CSVs.
 
-1. Open `classification/bert_classification.ipynb`.
+1. Open `notebooks/ToS_bert_embeddings.ipynb`.
 2. Update the file paths at the top of the notebook to point to the CSVs saved in Step 1.
 3. Run all cells in order. Key things that happen:
    - Tokenizes clauses using the `nlpaueb/legal-bert-base-uncased` tokenizer
@@ -139,11 +196,11 @@ This notebook fine-tunes Legal-BERT on the cleaned clause data and runs inferenc
 
 ---
 
-#### Step 3 — BART Summarization (`summarization/bart_summarization.ipynb`)
+#### Step 3 — BART Summarization (`notebooks/ToS_bart_summarization.ipynb`)
 
 This notebook fine-tunes BART on the labeled clause data to generate plain-English summaries.
 
-1. Open `summarization/bart_summarization.ipynb`.
+1. Open `notebooks/ToS_bart_summarization.ipynb`.
 2. Update the file paths to point to the labeled CSVs from Step 2.
 3. Make sure a supplemental summarization dataset with plain-English summary targets is available and its path is configured at the top of the notebook.
 4. Run all cells in order.
@@ -218,7 +275,7 @@ If you want to pull the latest code from GitHub directly into Colab:
 
 #### Step 1 — Preprocessing
 
-1. Open `preprocessing/preprocessing.ipynb` in Colab (via File → Upload or from Drive).
+1. Open `notebooks/ToS_preprocessing.ipynb` in Colab (via File → Upload or from Drive).
 2. Make sure Drive is mounted (see Step 2 above).
 3. Set output paths to save to Drive:
 
@@ -235,7 +292,7 @@ TEST_OUTPUT  = "/content/drive/MyDrive/ToS_summarizer/data/df_test_cleaned.csv"
 
 #### Step 2 — BERT Classification
 
-1. Open `classification/bert_classification.ipynb` in Colab.
+1. Open `notebooks/ToS_bert_embeddings.ipynb` in Colab.
 2. Mount Drive and set input/output paths:
 
 ```python
@@ -261,7 +318,7 @@ MODEL_SAVE_PATH = "/content/drive/MyDrive/ToS_summarizer/bert_model"
 
 #### Step 3 — BART Summarization
 
-1. Open `summarization/bart_summarization.ipynb` in Colab.
+1. Open `notebooks/ToS_bart_summarization.ipynb` in Colab.
 2. Mount Drive and set paths:
 
 ```python

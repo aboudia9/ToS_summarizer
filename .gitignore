@@ -11,3 +11,7 @@ bart_model/
 bart_batch_id.txt
 CS 561 Project Proposal .docx
 bart_model_v2
+
+# Compressed fp16 models used by the app (made by scripts/export_models.py)
+models/
+bert_model_v2/

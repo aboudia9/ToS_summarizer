@@ -1,0 +1,9 @@
+# Inference-only dependencies for the app / Docker image.
+# (requirements.txt has the full training stack.)
+# In Docker, torch is installed separately from the CPU-only wheel index to keep the image small.
+torch==2.13.0
+transformers==5.15.1
+safetensors==0.8.0
+nltk==3.10.3
+pandas==3.0.5
+streamlit==1.66.1

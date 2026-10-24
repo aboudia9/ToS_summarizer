@@ -1,0 +1,18 @@
+# Only models/ (the compressed copies) goes into the image
+bert_model/
+bert_model_v2/
+bart_model/
+bart_model_v2/
+bart_model_v3/
+*.csv
+.venv/
+.git/
+.idea/
+.env
+notebooks/
+training/
+scripts/
+__pycache__/
+*.pyc
+.DS_Store
+*.docx

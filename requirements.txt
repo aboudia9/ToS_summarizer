@@ -15,3 +15,6 @@ anthropic # for summaries of the clause dataset
 
 # Note: google.colab imports in some notebooks are Colab-specific
 # and aren't needed for local execution — safe to ignore locally.
+
+# App / UI
+streamlit
