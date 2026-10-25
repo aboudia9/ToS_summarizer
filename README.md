@@ -10,6 +10,7 @@ This project was built as a capstone for CS561. It consists of three main stages
 
 - [Project Overview](#project-overview)
 - [Running the App](#running-the-app)
+- [Deploying (Raspberry Pi + Tailscale Funnel)](#deploying-self-hosted-raspberry-pi--tailscale-funnel)
 - [Deploying (Google Cloud Run)](#deploying-google-cloud-run)
 - [Repository Structure](#repository-structure)
 - [Dataset](#dataset)
@@ -82,9 +83,32 @@ You can also point at any model folder directly with `BERT_MODEL_PATH=... BART_M
 
 ---
 
+## Deploying (self-hosted Raspberry Pi + Tailscale Funnel)
+
+The live demo runs on a Raspberry Pi 5 at <https://clause-and-effect.tail3172b0.ts.net>, published
+with Tailscale Funnel (no router ports opened, home IP not exposed).
+
+```bash
+python scripts/deploy_pi.py     # copy app + deploy/pi/ to ~/clause-and-effect on the Pi, build, start
+```
+
+`deploy/pi/docker-compose.yml` runs two containers:
+
+- **app**: on a Docker *internal* network only (no route to the internet, LAN, or tailnet),
+  non-root, read-only filesystem, all capabilities dropped, 3 CPUs / 5GB / 256 PIDs.
+- **tailscale**: unprivileged userspace node `clause-and-effect` tagged `tag:clause-demo`,
+  which serves the app via Funnel. The tailnet policy only lets untagged (personal) devices
+  initiate connections, so the demo node can't reach anything. Its auth key lives in
+  `~/clause-and-effect/.env` on the Pi and is never committed.
+
+The Pi needs `cgroup_enable=memory` in `/boot/firmware/cmdline.txt` for the memory limit to apply.
+Cloud Run (below) stays deployed as a fallback.
+
+---
+
 ## Deploying (Google Cloud Run)
 
-The live demo runs on Cloud Run, scaled to zero when idle, with a hard **$1/month spending cap**.
+A fallback copy runs on Cloud Run, scaled to zero when idle, with a hard **$1/month spending cap**.
 Models are pulled at build time from <https://huggingface.co/bigboub/clause-and-effect-models>.
 
 ```bash
@@ -132,10 +156,12 @@ ToS_summarizer/
 │   ├── export_models.py       # Compress trained models to fp16 → models/ (what the app loads)
 │   ├── tune_threshold.py      # Recall vs. false-flag table for the flagging threshold
 │   ├── staging.py             # Copies just the app files for hosted builds
+│   ├── deploy_pi.py           # Raspberry Pi deploy (Tailscale Funnel)
 │   ├── deploy_cloudrun.py     # Cloud Run deploy + $1 billing kill switch
 │   └── deploy_hf.py           # Push models (and optionally a Space) to Hugging Face
 ├── deploy/
 │   ├── Dockerfile.hosted      # Image for hosted deploys (pulls models from HF)
+│   ├── pi/                    # Pi compose file + Funnel serve config
 │   ├── cloudrun/              # Billing kill-switch Cloud Function
 │   └── huggingface/           # Model card + Space README
 ├── static/, .streamlit/       # Idle "paused" page + Streamlit config

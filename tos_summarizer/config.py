@@ -41,6 +41,10 @@ DEFAULT_UNFAIR_THRESHOLD = float(os.environ.get("UNFAIR_THRESHOLD", 0.5))
 # to zero even if someone leaves the tab open. 0 disables it
 IDLE_TIMEOUT_MINUTES = float(os.environ.get("IDLE_TIMEOUT_MINUTES", 15))
 
+# App only: longest document accepted, so one request can't tie up the server for
+# ages. The Facebook ToS sample is ~32k characters
+MAX_INPUT_CHARS = int(os.environ.get("MAX_INPUT_CHARS", 100_000))
+
 
 def get_device():
     # Same GPU check as the notebooks — CUDA, then Apple Silicon, then CPU

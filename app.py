@@ -6,7 +6,8 @@ import pandas as pd
 import streamlit as st
 
 from tos_summarizer.config import (ROOT, BERT_MODEL_PATH, BART_MODEL_PATH,
-                                   DEFAULT_UNFAIR_THRESHOLD, IDLE_TIMEOUT_MINUTES, get_device)
+                                   DEFAULT_UNFAIR_THRESHOLD, IDLE_TIMEOUT_MINUTES, MAX_INPUT_CHARS,
+                                   get_device)
 from tos_summarizer.classifier import load_bert
 from tos_summarizer.summarizer import load_bart
 from tos_summarizer.preprocessing import clean_tos_text, ensure_nltk_data
@@ -102,11 +103,16 @@ with col_sample:
 text = st.text_area("...or paste it here", key="tos_text", height=250,
                     placeholder="Paste Terms of Service text...")
 
-analyze = st.button("Analyze", type="primary", disabled=not text.strip())
+too_long = len(text) > MAX_INPUT_CHARS
+if too_long:
+    st.warning(f"That document is {len(text):,} characters — the limit is {MAX_INPUT_CHARS:,}. "
+               "Try pasting just the sections you care about.")
+
+analyze = st.button("Analyze", type="primary", disabled=not text.strip() or too_long)
 
 
 # ---------------- Run pipeline ----------------
-if analyze:
+if analyze and not too_long:
     bert_model, bart_model, bert_tokenizer, bart_tokenizer, device = load_models()
     progress = st.progress(0.0, text="Classifying clauses...")
 

@@ -1,0 +1,63 @@
+# Self-hosted demo on the Raspberry Pi, published with Tailscale Funnel.
+#
+#   internet -> Tailscale Funnel -> [tailscale] --internal network--> [app]
+#
+# The app container is only on an *internal* network: no route to the internet, the
+# home network, or the tailnet. The tailscale container is the only one with egress.
+# Deployed by scripts/deploy_pi.py; TS_AUTHKEY comes from .env on the Pi (never committed).
+
+services:
+  app:
+    build: ./app
+    image: clause-and-effect:latest
+    restart: unless-stopped
+    networks: [internal]
+    environment:
+      # Always-on host, so no need to bounce idle tabs
+      - IDLE_TIMEOUT_MINUTES=0
+      # Match torch's thread count to the CPU limit below so it isn't throttled
+      - OMP_NUM_THREADS=3
+    # Leave a core and plenty of RAM for the Pi's own jobs
+    cpus: 3
+    mem_limit: 5g
+    memswap_limit: 5g
+    pids_limit: 256
+    read_only: true
+    # Writable scratch space on an otherwise read-only filesystem (owned by appuser, uid 1000)
+    tmpfs:
+      - /tmp:mode=1777
+      - /home/appuser:uid=1000,gid=1000,mode=0700
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+
+  tailscale:
+    image: tailscale/tailscale:stable
+    restart: unless-stopped
+    hostname: clause-and-effect
+    networks: [internal, egress]
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY}
+      - TS_HOSTNAME=clause-and-effect
+      - TS_EXTRA_ARGS=--advertise-tags=tag:clause-demo
+      - TS_STATE_DIR=/var/lib/tailscale
+      - TS_SERVE_CONFIG=/config/serve.json
+      # Userspace networking: no /dev/net/tun or NET_ADMIN needed
+      - TS_USERSPACE=true
+    volumes:
+      - ts-state:/var/lib/tailscale
+      - ./serve.json:/config/serve.json:ro
+    mem_limit: 256m
+    pids_limit: 128
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    depends_on: [app]
+
+networks:
+  internal:
+    internal: true
+  egress: {}
+
+volumes:
+  ts-state: {}
