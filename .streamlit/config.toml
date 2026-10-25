@@ -1,0 +1,6 @@
+[server]
+# Serves ./static at /app/static (used for the idle "paused" page)
+enableStaticServing = true
+
+[browser]
+gatherUsageStats = false

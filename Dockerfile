@@ -23,6 +23,8 @@ COPY --chmod=755 models/ ./models/
 
 COPY tos_summarizer/ ./tos_summarizer/
 COPY app.py fb_tos_testing.txt ./
+COPY .streamlit/ ./.streamlit/
+COPY static/ ./static/
 
 RUN useradd --create-home appuser
 USER appuser

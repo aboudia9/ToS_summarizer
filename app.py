@@ -6,7 +6,7 @@ import pandas as pd
 import streamlit as st
 
 from tos_summarizer.config import (ROOT, BERT_MODEL_PATH, BART_MODEL_PATH,
-                                   DEFAULT_UNFAIR_THRESHOLD, get_device)
+                                   DEFAULT_UNFAIR_THRESHOLD, IDLE_TIMEOUT_MINUTES, get_device)
 from tos_summarizer.classifier import load_bert
 from tos_summarizer.summarizer import load_bart
 from tos_summarizer.preprocessing import clean_tos_text, ensure_nltk_data
@@ -20,6 +20,26 @@ LABEL_DISPLAY = {
 }
 
 st.set_page_config(page_title="ToS Summarizer", page_icon="📜", layout="wide")
+
+if IDLE_TIMEOUT_MINUTES > 0:
+    # Leaving the page closes Streamlit's websocket, which is what lets the server
+    # scale to zero. Activity timestamps live on window so reruns don't reset them
+    st.html(f"""
+    <script>
+    if (!window.__tosIdleWatch) {{
+      window.__tosIdleWatch = true;
+      let last = Date.now();
+      const bump = () => {{ last = Date.now(); }};
+      ['mousemove', 'mousedown', 'keydown', 'scroll', 'touchstart', 'wheel']
+        .forEach(e => window.addEventListener(e, bump, {{ passive: true, capture: true }}));
+      setInterval(() => {{
+        if (Date.now() - last > {IDLE_TIMEOUT_MINUTES * 60_000:.0f}) {{
+          window.location.replace('app/static/idle.html');
+        }}
+      }}, 30000);
+    }}
+    </script>
+    """, unsafe_allow_javascript=True)
 
 
 @st.cache_resource(show_spinner="Loading models (first run only)...")

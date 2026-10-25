@@ -36,6 +36,12 @@ BART_MAX_TARGET_LENGTH = 128
 DEFAULT_UNFAIR_THRESHOLD = float(os.environ.get("UNFAIR_THRESHOLD", 0.5))
 
 
+# App only: minutes without user activity before the page navigates to a static
+# "paused" page, closing its websocket so a pay-per-use host (Cloud Run) can scale
+# to zero even if someone leaves the tab open. 0 disables it
+IDLE_TIMEOUT_MINUTES = float(os.environ.get("IDLE_TIMEOUT_MINUTES", 15))
+
+
 def get_device():
     # Same GPU check as the notebooks — CUDA, then Apple Silicon, then CPU
     return torch.device(

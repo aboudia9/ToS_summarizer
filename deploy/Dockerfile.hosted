@@ -1,0 +1,41 @@
+# Dockerfile for hosted deploys (Cloud Run / HF Spaces). Same as the root Dockerfile,
+# except the models are pulled from the HF model repo at build time instead of copied from disk.
+FROM python:3.12-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    PIP_NO_CACHE_DIR=1 \
+    NLTK_DATA=/usr/share/nltk_data
+
+WORKDIR /app
+
+COPY requirements-app.txt .
+RUN pip install torch==2.13.0 --index-url https://download.pytorch.org/whl/cpu \
+ && pip install -r requirements-app.txt
+
+RUN python -m nltk.downloader -d $NLTK_DATA punkt_tab averaged_perceptron_tagger_eng
+
+# uid 1000 (what HF Spaces expect; harmless elsewhere)
+RUN useradd --create-home --uid 1000 appuser && chown appuser /app
+USER appuser
+
+ARG MODEL_REPO=bigboub/clause-and-effect-models
+RUN python -c "from huggingface_hub import snapshot_download; \
+snapshot_download('${MODEL_REPO}', local_dir='models', allow_patterns=['bert/*', 'bart/*'])"
+
+# Everything after this point runs fully offline
+ENV HF_HUB_OFFLINE=1 \
+    TRANSFORMERS_OFFLINE=1
+
+COPY --chown=appuser tos_summarizer/ ./tos_summarizer/
+COPY --chown=appuser app.py fb_tos_testing.txt ./
+COPY --chown=appuser .streamlit/ ./.streamlit/
+COPY --chown=appuser static/ ./static/
+
+EXPOSE 8501
+
+# XSRF/CORS off: the app is embedded in an iframe on boudia.dev, where the XSRF cookie
+# counts as third-party and gets blocked — which breaks file uploads
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501", \
+     "--server.enableXsrfProtection=false", "--server.enableCORS=false", \
+     "--browser.gatherUsageStats=false"]

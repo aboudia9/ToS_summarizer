@@ -10,6 +10,7 @@ This project was built as a capstone for CS561. It consists of three main stages
 
 - [Project Overview](#project-overview)
 - [Running the App](#running-the-app)
+- [Deploying (Google Cloud Run)](#deploying-google-cloud-run)
 - [Repository Structure](#repository-structure)
 - [Dataset](#dataset)
 - [Models](#models)
@@ -81,6 +82,37 @@ You can also point at any model folder directly with `BERT_MODEL_PATH=... BART_M
 
 ---
 
+## Deploying (Google Cloud Run)
+
+The live demo runs on Cloud Run, scaled to zero when idle, with a hard **$1/month spending cap**.
+Models are pulled at build time from <https://huggingface.co/bigboub/clause-and-effect-models>.
+
+```bash
+gcloud auth login
+python scripts/deploy_hf.py --models-only                         # only if the models changed
+python scripts/deploy_cloudrun.py --project PROJECT_ID --setup    # first time
+python scripts/deploy_cloudrun.py --project PROJECT_ID            # redeploy after code changes
+```
+
+Cost guardrails:
+
+- **Scale to zero + max 1 instance** (2 vCPU / 6GiB): nothing is billed with no one on the page,
+  and traffic can't fan out into multiple instances.
+- **Idle timeout:** after 15 min with no activity the page moves to a static "paused" page,
+  closing Streamlit's websocket so a forgotten tab doesn't keep the instance alive
+  (`IDLE_TIMEOUT_MINUTES`, 0 disables it).
+- **Kill switch:** a $1 budget publishes to Pub/Sub, and the `billing-killswitch` Cloud Function
+  (`deploy/cloudrun/billing_killswitch/`) unlinks billing from the project once the month's cost
+  reaches it. The app goes offline until billing is re-linked in the console. Budget data lags by a
+  few hours, so the real ceiling is slightly above $1.
+- Old images are cleaned up automatically (only the latest two are kept).
+
+First visit after an idle period takes ~30–60s while the container starts and loads the models.
+
+> Hugging Face Docker Spaces would also work (`python scripts/deploy_hf.py`), but they now require a PRO subscription.
+
+---
+
 ## Repository Structure
 
 ```
@@ -98,7 +130,15 @@ ToS_summarizer/
 │   └── train_bart.py          # Stage 3 → bart_model*/
 ├── scripts/
 │   ├── export_models.py       # Compress trained models to fp16 → models/ (what the app loads)
-│   └── tune_threshold.py      # Recall vs. false-flag table for the flagging threshold
+│   ├── tune_threshold.py      # Recall vs. false-flag table for the flagging threshold
+│   ├── staging.py             # Copies just the app files for hosted builds
+│   ├── deploy_cloudrun.py     # Cloud Run deploy + $1 billing kill switch
+│   └── deploy_hf.py           # Push models (and optionally a Space) to Hugging Face
+├── deploy/
+│   ├── Dockerfile.hosted      # Image for hosted deploys (pulls models from HF)
+│   ├── cloudrun/              # Billing kill-switch Cloud Function
+│   └── huggingface/           # Model card + Space README
+├── static/, .streamlit/       # Idle "paused" page + Streamlit config
 ├── notebooks/                 # Original Colab notebooks (unchanged)
 ├── app.py                     # Streamlit UI
 ├── Dockerfile / docker-compose.yml
