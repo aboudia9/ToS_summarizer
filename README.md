@@ -43,6 +43,19 @@ The app takes a pasted ToS or an uploaded `.txt`, splits it into clauses, flags 
 ones with BERT, and rewrites those in plain English with BART. No training or downloads
 happen at runtime — the fine-tuned models are loaded once from `models/`.
 
+It's a FastAPI backend (`webapp/main.py`) with a plain HTML/JS front end (`webapp/static/`):
+
+- Each analysis runs as a **background job** on a single worker thread (`webapp/jobs.py`),
+  independent of the browser. Results stream to the page over **Server-Sent Events**; if the
+  connection drops (a phone locking its screen), the page reconnects and resumes from the last
+  event it saw, while the job keeps running.
+- Cards appear as soon as BERT has classified the document, summaries fill in as BART finishes
+  each batch (most severe clauses first), and the list re-sorts itself with animations.
+- The example buttons replay precomputed results, so they work instantly, even while the
+  models are still loading.
+- Only one document runs at a time, at most 3 can wait in the queue, and inputs are capped at
+  100k characters (`MAX_INPUT_CHARS`).
+
 **Step 1 — Compress the trained models** (needs `bert_model/` and `bart_model_v2/` in the repo root):
 
 ```bash
@@ -57,7 +70,7 @@ produced identical summaries on a 24-clause validation sample.
 
 ```bash
 pip install -r requirements.txt
-streamlit run app.py                # http://localhost:8501
+uvicorn webapp.main:app --port 8501  # http://localhost:8501
 python -m tos_summarizer fb_tos_testing.txt   # or the CLI
 ```
 
@@ -77,7 +90,7 @@ over the baked-in copy so you can swap models without rebuilding.
 python -m training.train_bert --out bert_model_v2 --select-on f1
 python scripts/export_models.py --bert bert_model_v2
 python scripts/precompute_examples.py   # refresh the cached example results
-docker compose restart              # or rerun streamlit
+docker compose restart              # or restart uvicorn
 ```
 
 **Example documents:** the app has one-click buttons for real ToS documents (Facebook,
@@ -130,9 +143,10 @@ Cost guardrails:
 
 - **Scale to zero + max 1 instance** (2 vCPU / 6GiB): nothing is billed with no one on the page,
   and traffic can't fan out into multiple instances.
-- **Idle timeout:** after 15 min with no activity the page moves to a static "paused" page,
-  closing Streamlit's websocket so a forgotten tab doesn't keep the instance alive
-  (`IDLE_TIMEOUT_MINUTES`, 0 disables it).
+- **No idle connections:** the page only holds a connection open while an analysis is
+  streaming, so a forgotten tab doesn't keep the instance alive. (Cloud Run only gives the
+  instance CPU while a request is open, so a job pauses if every browser disconnects and
+  resumes when one reconnects.)
 - **Kill switch:** a $1 budget publishes to Pub/Sub, and the `billing-killswitch` Cloud Function
   (`deploy/cloudrun/billing_killswitch/`) unlinks billing from the project once the month's cost
   reaches it. The app goes offline until billing is re-linked in the console. Budget data lags by a
@@ -175,9 +189,8 @@ ToS_summarizer/
 │   ├── cloudrun/              # Billing kill-switch Cloud Function
 │   └── huggingface/           # Model card + Space README
 ├── examples/                  # Example ToS texts, manifest (names/sources/tips), cached results
-├── static/, .streamlit/       # Idle "paused" page + Streamlit config
 ├── notebooks/                 # Original Colab notebooks (unchanged)
-├── app.py                     # Streamlit UI
+├── webapp/                    # FastAPI server (main.py), background jobs (jobs.py), static/ front end
 ├── Dockerfile / docker-compose.yml
 ├── requirements.txt           # Full training stack
 └── requirements-app.txt       # Inference-only deps (used by Docker)

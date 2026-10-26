@@ -13,8 +13,6 @@ services:
     restart: unless-stopped
     networks: [internal]
     environment:
-      # Always-on host, so no need to bounce idle tabs
-      - IDLE_TIMEOUT_MINUTES=0
       # Match torch's thread count to the CPU limit below so it isn't throttled
       - OMP_NUM_THREADS=3
     # Leave a core and plenty of RAM for the Pi's own jobs

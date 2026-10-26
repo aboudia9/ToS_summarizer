@@ -36,11 +36,6 @@ BART_MAX_TARGET_LENGTH = 128
 DEFAULT_UNFAIR_THRESHOLD = float(os.environ.get("UNFAIR_THRESHOLD", 0.5))
 
 
-# App only: minutes without user activity before the page navigates to a static
-# "paused" page, closing its websocket so a pay-per-use host (Cloud Run) can scale
-# to zero even if someone leaves the tab open. 0 disables it
-IDLE_TIMEOUT_MINUTES = float(os.environ.get("IDLE_TIMEOUT_MINUTES", 15))
-
 # App only: longest document accepted, so one request can't tie up the server for
 # ages. The Facebook ToS sample is ~32k characters
 MAX_INPUT_CHARS = int(os.environ.get("MAX_INPUT_CHARS", 100_000))

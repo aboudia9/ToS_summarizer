@@ -101,9 +101,8 @@ def deploy(project):
                "--memory=6Gi", "--cpu=2",
                # Scale to zero when idle, and never more than one instance (caps the worst case)
                "--min-instances=0", "--max-instances=1", "--concurrency=20",
-               # Streamlit is one long websocket per tab; session affinity keeps a tab on its instance
+               # Results stream over one long request per analysis (the page reconnects if it drops)
                "--timeout=3600", "--session-affinity", "--cpu-boost",
-               "--set-env-vars=IDLE_TIMEOUT_MINUTES=15",
                "--allow-unauthenticated", "--quiet")
     keep_only_recent_images(project)
     url = gcloud("run", "services", "describe", SERVICE, f"--region={REGION}", f"--project={project}",

@@ -17,4 +17,5 @@ anthropic # for summaries of the clause dataset
 # and aren't needed for local execution — safe to ignore locally.
 
 # App / UI
-streamlit
+fastapi
+uvicorn

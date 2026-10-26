@@ -54,11 +54,14 @@ def load_bart(model_path, device):
     return bart_model, bart_tokenizer
 
 
-def summarize_clauses(flagged_clauses, model, tokenizer, device, batch_size=8, progress_callback=None):
+def summarize_clauses(flagged_clauses, model, tokenizer, device, batch_size=8, progress_callback=None,
+                      batch_callback=None):
     # flagged_clauses is a list of (clause, label) tuples. Batched so BART generates
     # several summaries per forward pass instead of one at a time. Batches are built
     # from clauses of similar length so little time goes into padding (same output,
-    # ~30% faster); summaries are put back in the original order at the end
+    # ~30% faster); summaries are put back in the original order at the end.
+    # batch_callback(indices, summaries) gets each batch as it finishes (used to stream
+    # results to the web UI), with indices into flagged_clauses
     model.eval()
     order = sorted(range(len(flagged_clauses)), key=lambda i: len(flagged_clauses[i][0]))
     summaries = []
@@ -98,6 +101,8 @@ def summarize_clauses(flagged_clauses, model, tokenizer, device, batch_size=8, p
 
             summaries.append(summary.strip())
 
+        if batch_callback:
+            batch_callback(order[i:i + batch_size], summaries[i:i + batch_size])
         if progress_callback:
             progress_callback(len(summaries), len(flagged_clauses))
 

@@ -11,9 +11,9 @@ def stage_app(dest, model_repo=DEFAULT_MODEL_REPO):
     dest = Path(dest)
     shutil.copytree(ROOT / "tos_summarizer", dest / "tos_summarizer",
                     ignore=shutil.ignore_patterns("__pycache__"))
-    for d in [".streamlit", "static", "examples"]:
-        shutil.copytree(ROOT / d, dest / d)
-    for f in ["app.py", "fb_tos_testing.txt", "requirements-app.txt"]:
+    for d in ["webapp", "examples"]:
+        shutil.copytree(ROOT / d, dest / d, ignore=shutil.ignore_patterns("__pycache__"))
+    for f in ["fb_tos_testing.txt", "requirements-app.txt"]:
         shutil.copy(ROOT / f, dest / f)
     dockerfile = (ROOT / "deploy" / "Dockerfile.hosted").read_text()
     (dest / "Dockerfile").write_text(dockerfile.replace(DEFAULT_MODEL_REPO, model_repo))

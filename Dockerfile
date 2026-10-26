@@ -22,15 +22,15 @@ RUN python -m nltk.downloader -d $NLTK_DATA punkt_tab averaged_perceptron_tagger
 COPY --chmod=755 models/ ./models/
 
 COPY tos_summarizer/ ./tos_summarizer/
-COPY app.py fb_tos_testing.txt ./
+COPY webapp/ ./webapp/
+COPY fb_tos_testing.txt ./
 COPY examples/ ./examples/
-COPY .streamlit/ ./.streamlit/
-COPY static/ ./static/
 
 RUN useradd --create-home appuser
 USER appuser
 
 EXPOSE 8501
-HEALTHCHECK CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8501/_stcore/health')"
+HEALTHCHECK CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:8501/healthz')"
 
-CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501", "--browser.gatherUsageStats=false"]
+# One worker process: the models are loaded once and jobs are queued in-process
+CMD ["uvicorn", "webapp.main:app", "--host=0.0.0.0", "--port=8501", "--no-access-log"]

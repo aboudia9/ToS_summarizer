@@ -1,8 +1,0 @@
-[server]
-# Serves ./static at /app/static (used for the idle "paused" page)
-enableStaticServing = true
-# Upload cap in MB (default is 200). A ToS .txt is tens of KB; MAX_INPUT_CHARS limits pasted text
-maxUploadSize = 1
-
-[browser]
-gatherUsageStats = false

@@ -28,15 +28,11 @@ ENV HF_HUB_OFFLINE=1 \
     TRANSFORMERS_OFFLINE=1
 
 COPY --chown=appuser tos_summarizer/ ./tos_summarizer/
-COPY --chown=appuser app.py fb_tos_testing.txt ./
+COPY --chown=appuser webapp/ ./webapp/
+COPY --chown=appuser fb_tos_testing.txt ./
 COPY --chown=appuser examples/ ./examples/
-COPY --chown=appuser .streamlit/ ./.streamlit/
-COPY --chown=appuser static/ ./static/
 
 EXPOSE 8501
 
-# XSRF/CORS off: the app is embedded in an iframe on boudia.dev, where the XSRF cookie
-# counts as third-party and gets blocked — which breaks file uploads
-CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0", "--server.port=8501", \
-     "--server.enableXsrfProtection=false", "--server.enableCORS=false", \
-     "--browser.gatherUsageStats=false"]
+# One worker process: the models are loaded once and jobs are queued in-process
+CMD ["uvicorn", "webapp.main:app", "--host=0.0.0.0", "--port=8501", "--no-access-log"]

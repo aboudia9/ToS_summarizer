@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clause &amp; Effect: Terms of Service Summarizer</title>
+  <meta name="description" content="Paste a Terms of Service and see its risky clauses rewritten in plain English.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <header class="top">
+    <h1><span class="prompt">&gt;</span> Clause &amp; Effect</h1>
+    <p class="tagline">
+      Paste a Terms of Service. A fine-tuned Legal-BERT model flags the risky clauses, and a
+      fine-tuned BART model rewrites each one in plain English.
+    </p>
+  </header>
+
+  <main class="layout">
+    <div class="main-col">
+      <section class="panel" id="input-panel">
+        <p class="label">Don't have one handy? Try a real one <span class="dim">(instant results)</span></p>
+        <div id="example-buttons" class="chips"></div>
+
+        <div id="tip" class="tip" hidden>
+          <p><strong id="tip-title"></strong> <span id="tip-text"></span></p>
+          <p class="small"><a id="tip-source" target="_blank" rel="noopener noreferrer">Source</a><span id="tip-date" class="dim"></span></p>
+        </div>
+
+        <label for="tos-text" class="label">…or paste your own</label>
+        <textarea id="tos-text" placeholder="Paste Terms of Service text…" spellcheck="false"></textarea>
+        <div class="input-row">
+          <button type="button" id="upload-btn" class="btn ghost">Upload .txt</button>
+          <input type="file" id="file-input" accept=".txt,text/plain" hidden>
+          <span id="char-count" class="dim small"></span>
+        </div>
+
+        <div class="controls">
+          <label class="slider" for="threshold">
+            <span>Sensitivity <span class="info" title="A clause is flagged if BERT thinks it's unfair, or if its combined unfair probability is at least this. Lower = more clauses flagged, more false alarms.">?</span></span>
+            <input type="range" id="threshold" min="0.1" max="0.9" step="0.05">
+            <output id="threshold-val" for="threshold"></output>
+          </label>
+          <button type="button" id="analyze" class="btn primary">Analyze</button>
+        </div>
+        <p id="input-error" class="error" role="alert" hidden></p>
+      </section>
+
+      <section id="status" class="panel status" aria-live="polite" hidden>
+        <div class="status-line">
+          <span class="spinner" aria-hidden="true"></span>
+          <span id="status-text"></span>
+          <span id="elapsed" class="dim"></span>
+        </div>
+        <div class="bar"><div id="bar-fill"></div></div>
+        <p class="dim small">
+          You can switch tabs or lock your phone: the analysis keeps running on the server, and
+          this page catches up when you come back.
+          <button type="button" id="wait-link" class="link-btn" hidden>While you wait: how does it work?</button>
+        </p>
+      </section>
+
+      <section id="results-panel" hidden>
+        <div class="stats">
+          <div class="stat"><span id="stat-flagged">0</span><small>flagged</small></div>
+          <div class="stat clear"><span id="stat-clear">0</span><small>clearly unfair</small></div>
+          <div class="stat potential"><span id="stat-potential">0</span><small>potentially unfair</small></div>
+        </div>
+        <div class="results-bar">
+          <label class="check"><input type="checkbox" id="show-potential" checked> Show "potentially unfair"</label>
+          <button type="button" id="download" class="btn ghost small-btn" disabled>Download CSV</button>
+        </div>
+        <p class="dim small">
+          These are model predictions and can be wrong, summaries especially. Open
+          "Original clause" to check what the terms actually say.
+        </p>
+        <p id="threshold-note" class="note" hidden>
+          This analysis only flagged clauses at sensitivity <span id="job-threshold"></span> and up.
+          <button type="button" id="rerun" class="link-btn">Re-analyze at this setting</button>
+        </p>
+        <ol id="results" class="results"></ol>
+        <p id="empty" class="empty" hidden>No risky clauses found at this sensitivity 🎉</p>
+      </section>
+    </div>
+
+    <aside class="side">
+      <details id="how" class="panel how" open>
+        <summary>How it works</summary>
+        <ol class="steps">
+          <li>
+            <span class="step-name">1 · Split</span>
+            The text is cleaned and split into sentences with NLTK. Fragments without a verb
+            (headings, addresses) are dropped.
+          </li>
+          <li>
+            <span class="step-name">2 · Classify</span>
+            <b>Legal-BERT</b>, a BERT model pretrained on legal text and fine-tuned on 9,400
+            labeled ToS sentences, scores every sentence as fair, potentially unfair, or
+            clearly unfair.
+          </li>
+          <li>
+            <span class="step-name">3 · Rewrite</span>
+            Only the flagged clauses go to <b>BART</b>, fine-tuned on plain-English rewrites
+            written by Claude (knowledge distillation). The most severe clauses go first.
+          </li>
+        </ol>
+        <p class="small">
+          Everything runs on a Raspberry Pi 5 with no GPU. Sorting sentences is quick; rewriting
+          takes about 6 seconds per flagged clause, which is why the summaries trickle in.
+        </p>
+        <p class="small"><a id="github-link" target="_blank" rel="noopener noreferrer">Source code on GitHub ↗</a></p>
+      </details>
+    </aside>
+  </main>
+  <noscript><p class="panel">This app needs JavaScript to run.</p></noscript>
+</body>
+</html>
