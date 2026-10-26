@@ -1,0 +1,888 @@
+{
+ "text_sha256": "824b29c7aa850b36cf2dffdd2cf85d2b100fa172adfb55129be8c45a3c5c3a7a",
+ "min_threshold": 0.1,
+ "clauses": [
+  {
+   "clause": "Last Updated: September 4, 2026",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.24166810512542725,
+   "top_pick_unfair": false,
+   "summary": "There is a date of the last update of the agreements (September 4, 2026)."
+  },
+  {
+   "clause": "Please read these Terms of Use (\"Terms\") carefully as they govern your use of (which includes access to) Spotify's personalized services for streaming music and other content, including all of our websites and software applications that incorporate or link to these Terms (collectively, the \"Spotify Service\") and any music, videos, podcasts, audiobooks, or other material that is made available through the Spotify Service (\"Content\").",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1284390091896057,
+   "top_pick_unfair": false,
+   "summary": "Terms of Use apply to how you use Spotify's personalized services for streaming music and other content, including all of our websites and software applications that include or link to these Terms, and any music, videos, podcasts, audiobooks, or other material that is made available through the Spotify Service."
+  },
+  {
+   "clause": "Use of the Spotify Service is subject to additional terms and conditions presented by Spotify, all of which are made part of these Terms by this reference (collectively, the \"Agreements\").",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8040380775928497,
+   "top_pick_unfair": true,
+   "summary": "When you use Spotify's service, you agree to follow Spotify's additional terms and conditions, which are called \"Agreements\" and are part of these Terms."
+  },
+  {
+   "clause": "Please refer to Section 7 below for information about those additional terms and how we may change these Terms or the additional terms incorporated by reference.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8746901154518127,
+   "top_pick_unfair": true,
+   "summary": "Please read Section 7 below to find out about the additional terms and how we can change these Terms or the extra terms that are included."
+  },
+  {
+   "clause": "By signing up for, or otherwise using, the Spotify Service, you agree to these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9899029154330492,
+   "top_pick_unfair": true,
+   "summary": "By using the Spotify Service, you agree to follow these terms. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "These Terms are between you and Spotify USA Inc., 4 World Trade Center, 150 Greenwich Street, 62nd Floor, New York, NY, 10007.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8670665174722672,
+   "top_pick_unfair": true,
+   "summary": "These Terms are between you and Spotify USA Inc., which is located at 4 World Trade Center, 150 Greenwich Street, 62nd Floor, New York, NY, 10007."
+  },
+  {
+   "clause": "BY USING THE SPOTIFY SERVICE, YOU AFFIRM THAT YOU ARE 18 YEARS OR OLDER TO ENTER INTO THESE TERMS, OR, IF YOU ARE NOT, THAT YOU ARE 13 YEARS OR OLDER AND HAVE OBTAINED PARENTAL OR GUARDIAN CONSENT TO ENTER INTO THESE TERMS.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12068450450897217,
+   "top_pick_unfair": false,
+   "summary": "By using this service, you confirm that you are 18 years old or older, and that you have the legal right to use the service. If you are under 13 years old and have a parent or guardian's permission, you are not allowed to use this service."
+  },
+  {
+   "clause": "Additionally, in order to use the Spotify Service and access any Content, you represent that: you reside in the United States, and any registration and account information that you submit to Spotify is true, accurate, and complete, and you agree to keep it that way at all times.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10017794370651245,
+   "top_pick_unfair": false,
+   "summary": "You must provide your legal name, pseudonyms are not allowed. You must report to the service any unauthorized use of your account or any breach of security. You maintain ownership of your data. The service can delete your account without prior notice and without a reason."
+  },
+  {
+   "clause": "We provide numerous Spotify Service options.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.41286617517471313,
+   "top_pick_unfair": false,
+   "summary": "We offer many different ways to use Spotify, including a free trial version of the service."
+  },
+  {
+   "clause": "We are not responsible for the products and services provided by such third parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9622169435024261,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for the products and services that third parties provide to you."
+  },
+  {
+   "clause": "By using a Spotify Service via a Trial, you agree to the Spotify Paid Subscription Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6948412954807281,
+   "top_pick_unfair": true,
+   "summary": "By using Spotify through a trial, you agree to follow the Spotify Paid Subscription Terms."
+  },
+  {
+   "clause": "The Spotify Service may be integrated with, or may otherwise interact with, third-party applications, websites, and services (\"Third-Party Applications\") and third-party personal computers, mobile handsets, tablets, wearable devices, speakers, and other devices (\"Devices\").",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10114270448684692,
+   "top_pick_unfair": false,
+   "summary": "Spotify may be integrated with, or interact with, third-party applications, websites, and services, and with personal computers, mobile phones, tablets, wearable devices, speakers, and other devices."
+  },
+  {
+   "clause": "However, Spotify reserves the right to change our Spotify Service offerings and their availability from time to time, without notice or liability to you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9948529843240976,
+   "top_pick_unfair": true,
+   "summary": "Spotify can change its service offerings and prices whenever it wants without telling you first and without being responsible for any problems."
+  },
+  {
+   "clause": "- The Spotify Service may experience temporary interruptions due to technical difficulties, maintenance or testing, or updates, including those required to reflect changes in relevant laws and regulatory requirements.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6878707706928253,
+   "top_pick_unfair": true,
+   "summary": "Spotify may stop providing the service at any time because of technical problems, maintenance, testing, or updates, including updates that must follow the law and regulations that apply to you."
+  },
+  {
+   "clause": "- We aim to evolve and improve the Spotify Service constantly, and we may modify, suspend, or stop (permanently or temporarily) providing all or part of the Spotify Service (including particular functions, features, subscription plans, and promotional offerings).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9953812370076776,
+   "top_pick_unfair": true,
+   "summary": "We work to improve the Spotify Service constantly, and we can change, pause, or stop providing all or part of it (including certain functions, features, subscription plans, and promotional offerings) whenever we want."
+  },
+  {
+   "clause": "- Our dynamic content offering is constantly evolving and adapting to the needs of the Spotify community.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3031386137008667,
+   "top_pick_unfair": false,
+   "summary": "Spotify's content is constantly changing and changing to meet the needs of its users."
+  },
+  {
+   "clause": "Spotify has no obligation to provide any specific content through the Spotify Service, and Spotify or the applicable owners may remove access to particular songs, videos, podcasts, audiobooks and other Content without notice.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9928793124854565,
+   "top_pick_unfair": true,
+   "summary": "Spotify does not have to provide specific content through its service, and Spotify or the service's owners can delete it without notifying you."
+  },
+  {
+   "clause": "Your right to terminate these Terms if you no longer want to use the Spotify Service is set forth in Section 6 below.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6941448748111725,
+   "top_pick_unfair": true,
+   "summary": "If you decide you don't want to use Spotify anymore, you can end this agreement by following the instructions provided in Section 6 below."
+  },
+  {
+   "clause": "Spotify has no liability to you, nor any obligation to provide a refund to you, in connection with internet or other Spotify Service outages or failures that are caused by the actions of government authorities, other third parties, or events beyond our control.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9310768023133278,
+   "top_pick_unfair": true,
+   "summary": "Spotify is not responsible for any problems with the service or website, including outages or failures, that happen because of government, third-party, or other reasons that Spotify cannot control."
+  },
+  {
+   "clause": "Creating a Spotify account",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10826927423477173,
+   "top_pick_unfair": false,
+   "summary": "You need to create an account to create a Spotify account. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "You understand that you are responsible for all use (including any unauthorized use) of your username and password.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5863192081451416,
+   "top_pick_unfair": true,
+   "summary": "You agree that you are responsible for everything you do with your username and password, including any unauthorized use of them."
+  },
+  {
+   "clause": "Spotify may reclaim, or require you to change, your username for any reason.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9718403462320566,
+   "top_pick_unfair": true,
+   "summary": "Spotify can take back your username, change it, or ask you to change it for any reason."
+  },
+  {
+   "clause": "Subject to your compliance with these Terms (including any other applicable terms and conditions), we grant to you limited, non-exclusive, revocable permission to make personal, non-commercial use of the Spotify Service and the Content (collectively, \"Access\").",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.18572652339935303,
+   "top_pick_unfair": false,
+   "summary": "We give you limited, non-exclusive, no-exclusive permission to use the Spotify Service and the Content (collectively called \"Access\") in ways that are only for your personal use and can be taken away if you don't follow these terms and conditions."
+  },
+  {
+   "clause": "This Access shall remain in effect unless and until terminated by you or Spotify.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.11236536502838135,
+   "top_pick_unfair": false,
+   "summary": "This service will continue to work even after you or Spotify end your access to it, unless you ask us to stop."
+  },
+  {
+   "clause": "You agree to abide by the Spotify User Guidelines and the Platform Rules and not to use the Spotify Service, the Content, or any part thereof in any manner not expressly permitted by the Agreements.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7630031406879425,
+   "top_pick_unfair": true,
+   "summary": "You must follow the Spotify User Guidelines and Platform Rules, and you cannot use the Spotify Service, the Content, or any part of it in any way that is not allowed under these terms."
+  },
+  {
+   "clause": "Spotify may from time to time make changes to Paid Subscriptions, including recurring subscription fees, the Prepaid Period (for periods not yet paid), or Codes, and will communicate any price changes to you in advance.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.33022093772888184,
+   "top_pick_unfair": false,
+   "summary": "Spotify may change the price of your paid subscription at any time, including by changing the subscription fee, the Prepaid Period (for periods that haven't been paid yet), or the subscription code. Spotify will tell you about any price changes in advance."
+  },
+  {
+   "clause": "In addition to, and notwithstanding, any other rights we may have under these Terms, we reserve the right to terminate a Paid Subscription at any time, on no less than 14 days' notice to you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9877386065199971,
+   "top_pick_unfair": true,
+   "summary": "We can cancel your subscription whenever we want, and we can do this even if we don't have other rights under these Terms."
+  },
+  {
+   "clause": "We've established guidelines for using the Spotify Service, to make sure the Spotify Service stays enjoyable for everyone (\"Spotify User Guidelines\").",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.17419713735580444,
+   "top_pick_unfair": false,
+   "summary": "We've created guidelines for how you can use the Spotify Service to make sure it stays fun for everyone, called Spotify User Guidelines."
+  },
+  {
+   "clause": "In using the Spotify Service, you must comply with the Spotify User Guidelines and the Platform Rules, as well as all applicable laws, rules, and regulations, and respect the intellectual property, privacy, and other rights of third parties.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2655865550041199,
+   "top_pick_unfair": false,
+   "summary": "You must follow the Spotify User Guidelines and Platform Rules, as well as all laws, rules, and regulations that apply to you, and you must respect other people's rights."
+  },
+  {
+   "clause": "A Brand may follow users and create and share playlists, provided that the Brand does not take any action that implies an endorsement or commercial relationship between the Brand and the followed user, artist, songwriter, or any other person, unless the Brand has independently obtained the rights to imply such an endorsement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.15255987644195557,
+   "top_pick_unfair": false,
+   "summary": "A Brand can follow you and create playlists, but they can't do anything that suggests they endorse or make money from your use of the service. This service can license user content to third parties."
+  },
+  {
+   "clause": "In addition, Brands must be transparent to our users about disclosing any endorsements or consideration provided to artists, songwriters, users, or any other party and must comply with all applicable laws, regulations, and codes of practice when engaging in the foregoing practices.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.23971027135849,
+   "top_pick_unfair": false,
+   "summary": "Brands must be transparent about any endorsements or consideration they give to artists, songwriters, users, or any other party, and must follow all laws, regulations, and codes of practice that apply to them."
+  },
+  {
+   "clause": "Spotify's products may be subject to export control and economic sanctions laws of the European Union, the United Kingdom, the United States, including but not limited to Regulation 2021/821 as amended (EU Dual-Use Regulation), the UK Export Control Act 2002 and the UK Export Control Order 2008, the Export Administration Regulations maintained by the U.S. Department of Commerce, trade and economic sanctions maintained by the Treasury Department's Office of Foreign Assets Control and the International Traffic in Arms Regulations maintained by the Department of State, (collectively, \"Trade Control Laws\").",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18968307971954346,
+   "top_pick_unfair": false,
+   "summary": "Spotify's products may be subject to export control and economic sanctions laws of the European Union, the United Kingdom, and the United States, including but not limited to Regulation 2021/821 as amended (EU Dual-Use Regulation) and the UK Export Control Act 2002. The U.S. Department of Commerce's Export Administration Regulations, the Treasury Department's Office of Foreign Assets Control and the International Traffic in Arms Regulations also apply to Spotify's products."
+  },
+  {
+   "clause": "You agree to comply with all applicable Trade Control Laws in your use of Spotify's products or services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6486997604370117,
+   "top_pick_unfair": true,
+   "summary": "You must follow all trade laws that apply to you when you use Spotify's products or services."
+  },
+  {
+   "clause": "Spotify shall not be required to act in any way that is prohibited under applicable Trade Control Laws, and it shall be in the sole discretion of Spotify to refrain from being directly or indirectly involved in the provision of products or services that may be prohibited under applicable Trade Control Laws.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.732139378786087,
+   "top_pick_unfair": true,
+   "summary": "Spotify can decide on its own not to act in ways that would break trade laws, and Spotify cannot be involved in providing products or services that might break the law."
+  },
+  {
+   "clause": "The content you post on the Spotify Service",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10540109872817993,
+   "top_pick_unfair": false,
+   "summary": "Content you post on the Spotify Service is what counts as your content on the service."
+  },
+  {
+   "clause": "For the avoidance of doubt, User Content includes all information, materials, messages or other communications, and any other content that is added, created, uploaded, submitted, distributed, or posted to or through the Spotify Service by users.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9156255945563316,
+   "top_pick_unfair": true,
+   "summary": "User Content is any information, materials, messages, or other communications that users add, create, upload, submit, distribute, or post to or through the Spotify Service."
+  },
+  {
+   "clause": "For more information on User Content or other third-party content and its moderation, see our Platform Rules, information about Content Actions, our Safety & Privacy Center and our Intellectual Property Policy.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.41930538415908813,
+   "top_pick_unfair": false,
+   "summary": "For more information about how we handle your content and other third-party content, see our Platform Rules, information about Content Actions, our Safety & Privacy Center, and our Intellectual Property Policy."
+  },
+  {
+   "clause": "You are solely responsible for all User Content that you post.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.47072720527648926,
+   "top_pick_unfair": false,
+   "summary": "You are completely responsible for everything you post on this service and for any problems that result from it."
+  },
+  {
+   "clause": "Monitoring user content",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4174472689628601,
+   "top_pick_unfair": false,
+   "summary": "We can see what content you post on our website and monitor how it's being used."
+  },
+  {
+   "clause": "Spotify may, but has no obligation to, monitor or review User Content (whether publicly posted or privately shared).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9883460011333227,
+   "top_pick_unfair": true,
+   "summary": "Spotify can look at, but Spotify doesn't have to watch, monitor, or review your content, whether it's publicly posted or shared privately."
+  },
+  {
+   "clause": "Spotify reserves the right to remove or disable access to any User Content for any or no reason.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9977269019000232,
+   "top_pick_unfair": true,
+   "summary": "Spotify can remove or disable your access to any content whenever it wants, for any reason or no reason at all."
+  },
+  {
+   "clause": "Accordingly, you hereby grant to Spotify a non-exclusive, transferable, sublicensable, royalty-free, fully paid, irrevocable, worldwide license to reproduce, make available, perform and display, translate, modify, create derivative works from, distribute, and otherwise use any such User Content through any medium, whether alone or in combination with other Content or materials, in any manner and by any means, method or technology, whether now known or hereafter created, in connection with the Spotify Service.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.36862874031066895,
+   "top_pick_unfair": false,
+   "summary": "You give Spotify permission to use your content in any way they want, including through any medium, whether alone or combined with other content, and to share it with others. This permission is non-exclusive, transferable, sublicenseable, royalty-free, fully paid, and can be used anywhere in the world."
+  },
+  {
+   "clause": "Where applicable and to the extent permitted under applicable law, you also agree to waive, and not to enforce, any \"moral rights\" or equivalent rights, such as your right to be identified as the author of any User Content, including Feedback, and your right to object to derogatory treatment of such User Content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.762987419962883,
+   "top_pick_unfair": true,
+   "summary": "You waive your moral rights, including the right to claim ownership of your own content and to have your content treated fairly. This service can use your content for all their existing and future services. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "Feedback is considered a type of User Content under these Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2921181321144104,
+   "top_pick_unfair": false,
+   "summary": "Feedback is considered content that belongs to you under these Terms of Service, and you can share it with others."
+  },
+  {
+   "clause": "At Spotify, we aim to create great and unique experiences for each user.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.39053916931152344,
+   "top_pick_unfair": false,
+   "summary": "We want to create a unique experience for each of you, and we're committed to doing this."
+  },
+  {
+   "clause": "In Understanding recommendations on Spotify, you can learn more about how our recommendation systems work, including how and why certain content is displayed to you.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12960821390151978,
+   "top_pick_unfair": false,
+   "summary": "You can read more about how Spotify's recommendation system works, including how and why certain content is shown to you."
+  },
+  {
+   "clause": "In any part of the Spotify Service, the Content that you access, including its selection and placement, may be influenced by commercial considerations, including Spotify's agreements with third parties.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5500709414482117,
+   "top_pick_unfair": false,
+   "summary": "Spotify may use your content for advertising. This service uses third-party cookies, but with opt-out instructions. You can opt out of promotional communications."
+  },
+  {
+   "clause": "Spotify support community",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4885603189468384,
+   "top_pick_unfair": false,
+   "summary": "Spotify has a support community where you can find other people who agree to help you."
+  },
+  {
+   "clause": "Spotify Community is a place for discussions and exchange of information, tips, and other materials related to the Spotify Service.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.378223717212677,
+   "top_pick_unfair": false,
+   "summary": "Spotify Community is a place where people can discuss and share information, tips, and other materials about the Spotify Service."
+  },
+  {
+   "clause": "By using Spotify Community, you agree to the Community Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.988556694239378,
+   "top_pick_unfair": true,
+   "summary": "By using Spotify Community, you agree to follow the terms provided by the service."
+  },
+  {
+   "clause": "Suspending and terminating the Spotify Service",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.14613372087478638,
+   "top_pick_unfair": false,
+   "summary": "the service is suspended and can no longer be used by users. The service will not be used again."
+  },
+  {
+   "clause": "These Terms will continue to apply to you until terminated by either you or Spotify.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.22487056255340576,
+   "top_pick_unfair": false,
+   "summary": "These Terms will continue to apply to you until either you or Spotify ends them."
+  },
+  {
+   "clause": "Spotify may terminate these Terms (including any additional terms and conditions incorporated herein) or suspend your access to the Spotify Service at any time if we believe you have breached any of these Terms, if we stop providing the Spotify Service or any material component thereof, or as we believe necessary to comply with applicable law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.994705521967262,
+   "top_pick_unfair": true,
+   "summary": "Spotify can end this agreement, change its terms, or pause your access to the service whenever it wants, including if it thinks you've broken the rules, if we stop providing the service or any part of it, or if we think it's necessary to follow the law."
+  },
+  {
+   "clause": "If you or Spotify terminate these Terms, or if Spotify suspends your access to the Spotify Service, you agree that Spotify shall have no liability or responsibility to you, and (except as expressly provided in these Terms) Spotify will not refund any amounts that you have already paid.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.974230082705617,
+   "top_pick_unfair": true,
+   "summary": "If you or Spotify end this agreement, or if Spotify suspends your access to the service, you agree that Spotify is not responsible for any problems that happen to you, and Spotify will not give you back money you've already paid."
+  },
+  {
+   "clause": "You may terminate these Terms at any time, in which case you may not continue accessing or using the Spotify Service.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.41821610927581787,
+   "top_pick_unfair": false,
+   "summary": "You can end this agreement whenever you want, and Spotify can stop providing the service at any time."
+  },
+  {
+   "clause": "The following sections shall survive termination: Sections 2 (The Spotify Service), 3 (Your Use of the Spotify Service) (except as set forth therein), 4 (Content and Intellectual Property Rights), 6 (Problems and Disputes), 7 (About These Terms), as well as any other sections of these Terms that, either explicitly or by their nature, must remain in effect even after termination of these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6889933943748474,
+   "top_pick_unfair": true,
+   "summary": "Even after these terms end, certain sections of the service will continue to apply, including: (a) The Spotify Service, (b) Your use of the Spotify Service (except as described elsewhere in these Terms), (c) Content and Intellectual Property Rights, (d) Problems and disputes, (e) About These Terms, and (f) Any other sections of these Terms that are still relevant to you even after these Terms end."
+  },
+  {
+   "clause": "Some jurisdictions do not allow the exclusion of implied warranties or limitations on applicable statutory rights of a consumer, so the exclusion and limitations in this section may not apply to you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6596693396568298,
+   "top_pick_unfair": true,
+   "summary": "Some places have laws that prevent companies from making promises or limiting consumer rights, so this section might not apply to you."
+  },
+  {
+   "clause": "IN ADDITION, SPOTIFY MAKES NO REPRESENTATION REGARDING, NOR DOES IT WARRANT OR ASSUME ANY RESPONSIBILITY FOR, ANY THIRD-PARTY APPLICATIONS (OR THE CONTENT THEREOF), USER CONTENT, DEVICES OR ANY PRODUCT OR SERVICE ADVERTISED, PROMOTED OR OFFERED BY A THIRD PARTY ON OR THROUGH THE SPOTIFY SERVICE OR ANY HYPERLINKED WEBSITE, AND SPOTIFY IS NOT RESPONSIBLE FOR ANY TRANSACTIONS BETWEEN YOU AND ANY THIRD-PARTY PROVIDERS OF THE FOREGOING.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6002146601676941,
+   "top_pick_unfair": true,
+   "summary": "The service does not guarantee accuracy or reliability of the information provided. This service assumes no liability for any losses or damages resulting from any matter relating to the service. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. You authorise the service to charge a credit card supplied on re-occurring basis. The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection.. The service is not responsible for linked or (clearly) quoted content from third-party content providers. The"
+  },
+  {
+   "clause": "YOU AGREE THAT YOUR SOLE AND EXCLUSIVE REMEDY FOR ANY PROBLEMS OR DISSATISFACTION WITH THE SPOTIFY SERVICE IS TO UNINSTALL ANY SPOTIFY SOFTWARE AND TO STOP USING THE SPOTIFY SERVICE.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13156795501708984,
+   "top_pick_unfair": false,
+   "summary": "You agree that if you have any problems with the service, you must remove the Spotify software and stop using the service."
+  },
+  {
+   "clause": "YOU AGREE THAT SPOTIFY HAS NO OBLIGATION OR LIABILITY ARISING FROM OR RELATED TO THIRD-PARTY APPLICATIONS OR THE CONTENT THEREOF MADE AVAILABLE THROUGH OR IN CONNECTION WITH THE SPOTIFY SERVICE, AND WHILE YOUR RELATIONSHIP WITH SUCH THIRD-PARTY APPLICATIONS MAY BE GOVERNED BY SEPARATE AGREEMENTS WITH SUCH THIRD PARTIES, YOUR SOLE AND EXCLUSIVE REMEDY, AS WITH RESPECT TO SPOTIFY, FOR ANY PROBLEMS OR DISSATISFACTION WITH ANY THIRD-PARTY APPLICATIONS OR THE CONTENT THEREOF, IS TO UNINSTALL OR STOP USING SUCH THIRD-PARTY APPLICATIONS.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4128519892692566,
+   "top_pick_unfair": false,
+   "summary": "You agree not to use the service for illegal purposes. The service is not responsible for linked or (clearly) quoted content from third-party content providers. This service assumes no liability for any losses or damages resulting from any matter relating to the service. You maintain ownership of your data. You have the right to leave this service at any time. You authorise the service to charge a credit card supplied on re-occurring basis. You are responsible for maintaining the security of your account and for the activities on your account."
+  },
+  {
+   "clause": "For clarification, these Terms do not limit Spotify's liability for fraud, fraudulent misrepresentation, death or personal injury to the extent that applicable law would prohibit such a limitation.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9453207366168499,
+   "top_pick_unfair": true,
+   "summary": "Spotify is not responsible for fraud, fraudulent misrepresentation, death, or personal injury to the extent that the law allows."
+  },
+  {
+   "clause": "You acknowledge and agree that the owners of the Content and certain distributors (such as app store providers) are intended beneficiaries of these Terms and have the right to enforce these Terms directly against you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3413429260253906,
+   "top_pick_unfair": false,
+   "summary": "You agree that the owners of the content and certain distributors (like app store providers) have the right to enforce these Terms directly against you."
+  },
+  {
+   "clause": "Other than as set out in this section, (1) these Terms are not intended to grant rights to anyone except you and Spotify; and (2) in no event shall these Terms create any third-party beneficiary rights.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.609592080116272,
+   "top_pick_unfair": false,
+   "summary": "This service gives no rights to third parties except to you and Spotify, and these Terms do not give any rights to anyone else."
+  },
+  {
+   "clause": "If you have downloaded any of our mobile software applications (each, an \"App\") from the Apple Inc. (\"Apple\") App Store or if you are using the App on an iOS device, you acknowledge that you have read, understood, and agree to the following notice regarding Apple.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.31913578510284424,
+   "top_pick_unfair": false,
+   "summary": "If you've downloaded any of our mobile software applications from the Apple App Store, or if you're using the App on an iOS device, you agree to follow the terms."
+  },
+  {
+   "clause": "These Terms are between you and Spotify only, not with Apple, and Apple is not responsible for the Spotify Service and the content thereof.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3060474991798401,
+   "top_pick_unfair": false,
+   "summary": "This service is only available to users over a certain age. This service does not condone any ideas contained in its user-generated contents. The service is not responsible for linked or (clearly) quoted content from third-party content providers. You agree not to use the service for illegal purposes."
+  },
+  {
+   "clause": "Apple is not responsible for addressing any claims by you or any third party relating to the Spotify Service or your possession or use of the Spotify Service, including: (1) product liability claims; (2) any claim that the Spotify Service fails to conform to any applicable legal or regulatory requirement; (3) claims arising under consumer protection or similar legislation; and (4) claims with respect to intellectual property infringement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5009322166442871,
+   "top_pick_unfair": false,
+   "summary": "Apple is not responsible for any problems or claims that you or anyone else may have with the Spotify Service or your possession or use of it, including claims about product liability, whether the service meets legal or regulatory requirements, claims about consumer protection or similar laws, or claims about intellectual property infringement."
+  },
+  {
+   "clause": "Apple is not responsible for the investigation, defense, settlement, and discharge of any third-party claim that the Spotify Service or your possession and use of the App infringe that third party's intellectual property rights.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.14316439628601074,
+   "top_pick_unfair": false,
+   "summary": "Apple is not responsible for investigating, defending, settling, or resolving any claims that the Spotify Service or your use of the App violate someone else's intellectual property rights."
+  },
+  {
+   "clause": "You agree to comply with any applicable third-party terms, when using the Spotify Service.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8239376246929169,
+   "top_pick_unfair": true,
+   "summary": "You agree to follow all third-party terms that apply to you when using the Spotify Service."
+  },
+  {
+   "clause": "Apple, and Apple's subsidiaries, are third-party beneficiaries of these Terms, and upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary of these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.23605293035507202,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The service can delete specific content without reason and may do it without prior notice. This service assumes no liability for any losses or damages resulting from any matter relating to the service. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service."
+  },
+  {
+   "clause": "You agree to indemnify and hold Spotify harmless from and against all damages, losses, and expenses of any kind (including reasonable attorneys' fees and costs) arising out of or related to: (1) your breach of any of these Terms (including any additional Spotify terms and conditions incorporated herein); (2) any User Content you post or otherwise contribute; (3) any activity in which you engage on or through the Spotify Service; and (4) your violation of any law or the rights of a third party.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4924074411392212,
+   "top_pick_unfair": false,
+   "summary": "You agree to defend, indemnify, and hold Spotify harmless in case of a claim related to your use of the service. This service prohibits users sending chain letters, junk mail, spam or any unsolicited messages. Users agree not to submit libelous, harassing or threatening content. Prohibits the posting of content which promotes or glorifies violence or politically or religiously extremist values.. This service forces users into binding arbitration in the case of disputes. The service can delete your account without prior notice and without a reason. You maintain ownership of your data."
+  },
+  {
+   "clause": "To the fullest extent permitted by applicable law, these Terms and any dispute, claim, and/or controversy that in any way relates to or arises in connection with these Terms or your relationship with Spotify as a user of the Spotify Service (\"Dispute\") are governed by and shall be construed in accordance with the laws of the state of New York, except to the extent preempted by or inconsistent with federal law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9935180456377566,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The court of law governing the terms is in a jurisdiction that is less friendly to user privacy protection (New York, USA). The service is provided 'as is' and to be used at the users' sole risk. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service."
+  },
+  {
+   "clause": "Further, to the fullest extent permitted by applicable law, you and Spotify agree to the exclusive jurisdiction of the federal or state courts located in New York, New York, to resolve any Dispute that is not subject to mandatory arbitration under the Arbitration Agreement below (including, but not limited to, any Dispute involving the applicability and enforceability of the Arbitration Agreement), and waive any jurisdictional, venue, or inconvenient forum objections to such courts.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9873490184545517,
+   "top_pick_unfair": true,
+   "summary": "You and Spotify agree that only federal or state courts in New York, New York can handle disputes that are not covered by the mandatory arbitration clause in the Arbitration Agreement below, including disputes about whether the arbitration clause applies to you. You waive your right to a class action.."
+  },
+  {
+   "clause": "To the fullest extent permitted by applicable law, you and Spotify agree that each party may bring claims (whether in court or in arbitration) against the other only in an individual capacity.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9661089815199375,
+   "top_pick_unfair": true,
+   "summary": "You and Spotify agree that you can only take legal action against each other in court or through arbitration, to the fullest extent that the law allows."
+  },
+  {
+   "clause": "Neither party may participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding (whether in court or arbitration).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2733699083328247,
+   "top_pick_unfair": false,
+   "summary": "You cannot join together with other people in a lawsuit, class action, collective, consolidated, private attorney general, or representative proceeding (whether in court or arbitration), and you cannot be a plaintiff, claimant, or class member in any class action."
+  },
+  {
+   "clause": "To the fullest extent permitted by applicable law, the parties agree to waive any right to a jury trial.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9941910756751895,
+   "top_pick_unfair": true,
+   "summary": "To the fullest extent that the law allows, both parties agree that they will not have the right to a jury trial."
+  },
+  {
+   "clause": "This Arbitration Agreement section sets forth the terms and conditions pursuant to which Disputes between you and Spotify will be resolved through individual arbitration (\"Arbitration Agreement\").",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7634537070989609,
+   "top_pick_unfair": true,
+   "summary": "This arbitration section explains the terms and conditions about how disputes between you and Spotify will be resolved through individual arbitration."
+  },
+  {
+   "clause": "Subject to the exceptions set forth in the \"Exceptions to arbitration\" section below, you and Spotify agree that any Dispute between you and Spotify (whether based in contract, tort, statute, fraud, misrepresentation, or any other legal theory, whether the claims arose before the existence of this or any prior Arbitration Agreement, and whether the claims arise after the termination of these Terms) will be determined by binding individual (not class) arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9593948908150196,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. This service forces users into binding arbitration in the case of disputes. The service can delete your account without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you."
+  },
+  {
+   "clause": "The arbitrator has the authority to rule on all issues except that a court has exclusive authority to: (1) decide arbitrability, as well as scope, validity, and enforceability of this Arbitration Agreement, including, but not limited to, any Dispute over the applicable version of the Arbitration Agreement; (2) decide whether you and Spotify have complied with the pre-arbitration filing requirements (including the requirements described in the \"Pre-arbitration notice of dispute and informal resolution period\" section below); (3) enforce the prohibition on class or representative actions; (4) enforce the provisions regarding mass arbitrations; and (5) enjoin an arbitration from proceeding if it does not comply with this Arbitration Agreement.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7127493619918823,
+   "top_pick_unfair": true,
+   "summary": "The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection (California, USA). This service forces users into binding arbitration in the case of disputes. You must provide your legal name, pseudonyms are not allowed. The service can delete your account without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you. You waive your right to a class action.. This service can use your content for all their existing and future services. You agree to defend, indemnify, and hold the service harmless in case of a claim related to"
+  },
+  {
+   "clause": "THERE IS NO JUDGE OR JURY IN ARBITRATION, AND COURT REVIEW OF AN ARBITRATION AWARD IS LIMITED.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4110488295555115,
+   "top_pick_unfair": false,
+   "summary": "There is no court system for arbitration, and the court involved in the case is only allowed to review it."
+  },
+  {
+   "clause": "The arbitrator can award the same damages and relief as a court (including attorneys' fees and costs where allowable under applicable law), except that (as discussed below) the arbitrator may not award any relief, including declaratory or injunctive relief, benefiting anyone but the parties to the arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7480012774467468,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator can award the same damages and relief as a court, including attorneys' fees and costs where the law allows. However, the arbitrator cannot award any relief, including declaratory or injunctive relief, that would benefit anyone but the parties to the arbitration."
+  },
+  {
+   "clause": "This arbitration provision will survive termination of these Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.13404607772827148,
+   "top_pick_unfair": false,
+   "summary": "This arbitration provision will continue to apply even after these Terms are no longer in effect."
+  },
+  {
+   "clause": "You and Spotify both agree that any Dispute relating to any actual or alleged infringement of your or Spotify's intellectual property rights shall be brought in the federal courts of New York, New York, and that nothing in this Arbitration Agreement will be deemed to waive, preclude, or otherwise limit either of your or Spotify's rights, at any time, to elect to have an individual action heard in: (1) a U.S. small claims court (so long as the action is litigated exclusively in small claims court and is not removed or appealed to a court of general jurisdiction); or (2) a court of law, in accordance with the jurisdiction and venue described in the \"Governing law, jurisdiction, class action waiver, and jury trial waiver\" section above, seeking only temporary or preliminary individualized injunctive relief, pending a final ruling from the arbitrator.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8335029631853104,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection (New York, New York). You waive your right to a class action.. You can only ask for temporary or preliminary injunctive relief, pending a final decision from the arbitrator. The service can delete your account without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you."
+  },
+  {
+   "clause": "If a court decides that applicable law precludes enforcement of any of this paragraph's limitations as to a particular claim for relief or request for relief (such as a request for public injunctive relief) and all appeals have been exhausted or the decision is otherwise final, then the parties agree that such a claim or request for relief shall be decided by a court only after all other claims and requests for relief are arbitrated.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5166839361190796,
+   "top_pick_unfair": true,
+   "summary": "If a court decides that the law doesn't allow you to bring a specific claim or request for relief (like a request for public injunctive relief), and all appeals have been exhausted or the court's decision is otherwise final, then the court can only decide that claim after all other claims and requests for relief have been decided."
+  },
+  {
+   "clause": "All Notices must: (1) be personally signed by the party sending the Notice; (2) provide the relevant user's name, email address associated with the user's Spotify account, and Spotify username; (3) provide the claimant's address of residence (and if different, mailing address); (4) describe with specificity the nature and basis of the Dispute; and (5) set forth the alleged damage and harm suffered and the specific relief sought with a calculation for it.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.17168104648590088,
+   "top_pick_unfair": false,
+   "summary": "User-generated content is encrypted, and this service cannot decrypt it. You must provide your legal name, pseudonyms are not allowed. The service can delete specific content without reason and may do it without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of the service. You maintain ownership of your content. You are responsible for maintaining the security of your account and for the activities on your account."
+  },
+  {
+   "clause": "After a Notice containing all of the information required above is received, the parties agree to engage in good faith for a period of sixty (60) days in an effort to resolve the Dispute (this time period may be extended by agreement of the parties) (\"Informal Resolution Period\").",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4092189073562622,
+   "top_pick_unfair": false,
+   "summary": "After you send us a notice with all the information listed above, you and the company agree to work together in good faith for sixty days to try to resolve the dispute, and this time period can be extended if both parties agree to it."
+  },
+  {
+   "clause": "The party receiving the Notice may request a telephone or video settlement conference during the Informal Resolution Period in an effort to facilitate resolution of the Dispute (\"Informal Settlement Conference\").",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19895654916763306,
+   "top_pick_unfair": false,
+   "summary": "The party who receives the Notice can ask for a telephone or video settlement conference during the Informal Resolution Period to try to resolve the Dispute."
+  },
+  {
+   "clause": "The Informal Settlement Conference, if any, will take place at a mutually agreeable time, which can be after the sixty (60) day Informal Resolution Period if needed to accommodate the parties' schedules.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3789491653442383,
+   "top_pick_unfair": false,
+   "summary": "The parties will meet at a mutually agreed time, which can be after the sixty (60) day Informal Resolution Period if needed to accommodate the parties' schedules."
+  },
+  {
+   "clause": "The Notice, Informal Resolution Period, and Informal Settlement Conference are intended to give the parties a meaningful opportunity to resolve Disputes informally.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5991409718990326,
+   "top_pick_unfair": true,
+   "summary": "The notice, informal resolution period, and informal settlement conference are meant to give you and the company a chance to work through disagreements in a way that's meaningful."
+  },
+  {
+   "clause": "If any aspect of this \"Pre-arbitration notice of dispute and informal resolution period\" section has not been met, the parties agree that a court can enjoin the filing or prosecution of an arbitration and, unless prohibited by law, the arbitration administrator shall not accept or administer an arbitration nor demand fees in connection with such an arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1215774416923523,
+   "top_pick_unfair": false,
+   "summary": "If any part of the \"Pre-arbitration and informal resolution period\" is not met, a court can stop the company from filing an arbitration, and the arbitration administrator cannot ask you to use arbitration or charge you fees for it."
+  },
+  {
+   "clause": "Notwithstanding the foregoing, a party retains the right to raise non-compliance with the requirements of this section and seek appropriate relief in arbitration, if neither party wishes to bring the issue to a court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10915541648864746,
+   "top_pick_unfair": false,
+   "summary": "Even if you break the rules in this section, you can still ask for arbitration instead of going to court, unless both you and the company agree to do so."
+  },
+  {
+   "clause": "Any arbitration between you and Spotify will be administered by National Arbitration and Mediation (\"NAM\") in accordance with their rules applicable to the nature of the Dispute, including the Comprehensive Dispute Resolution Rules and Procedures and/or the Supplemental Rules for Mass Arbitration Filings (\"NAM Rules\"), as modified by this Arbitration Agreement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.635322779417038,
+   "top_pick_unfair": true,
+   "summary": "Any disagreements between you and Spotify will be handled by National Arbitration and Mediation (NAM) in accordance with their rules for resolving disputes, including the Comprehensive Dispute Resolution Rules and Procedures and/or the Supplemental Rules for Mass Arbitration Filings, as modified by this Arbitration Agreement."
+  },
+  {
+   "clause": "You and Spotify agree that the substantive and procedural provisions of the Federal Arbitration Act (and not state arbitration law) apply and govern the interpretation and enforcement of this Arbitration Agreement (despite the choice of law provision above).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8102778643369675,
+   "top_pick_unfair": true,
+   "summary": "You and Spotify both agree that the Federal Arbitration Act (not state arbitration law) will apply and control how this Arbitration Agreement is interpreted and enforced, even though the choice of law provision above said something different."
+  },
+  {
+   "clause": "Each party retains the right to request a hearing in arbitration from the arbitrator.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10765576362609863,
+   "top_pick_unfair": false,
+   "summary": "Each party can ask to have their case decided by an arbitrator instead of going to court."
+  },
+  {
+   "clause": "As in court, any counsel participating in an arbitration certifies that they are complying with the requirements of Federal Rule of Civil Procedure 11(b), including a certification that the claim or the relief sought is neither frivolous nor brought for an improper purpose.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.34382760524749756,
+   "top_pick_unfair": false,
+   "summary": "Any lawyer involved in arbitration must follow the rules of Federal Rule of Civil Procedure 11(b), including making sure the claim or relief being sought is not frivolous or brought for an improper purpose."
+  },
+  {
+   "clause": "The arbitrator is authorized to impose any sanctions available under the NAM Rules, Federal Rule of Civil Procedure 11, or applicable federal or state law against all appropriate represented parties and counsel.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.31075090169906616,
+   "top_pick_unfair": false,
+   "summary": "The arbitrator can use any sanctions available under the NAM Rules, Federal Rule of Civil Procedure 11, or applicable federal or state law against all the appropriate represented parties and counsel."
+  },
+  {
+   "clause": "You and Spotify agree that arbitration should be cost effective for all parties.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2634490132331848,
+   "top_pick_unfair": false,
+   "summary": "You and Spotify agree that arbitration will be cost effective for both of you and for the company."
+  },
+  {
+   "clause": "The arbitrator may consider rulings in other arbitrations involving different users, but an arbitrator's ruling will not be binding or have preclusive effect in any proceeding involving different users.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.26632797718048096,
+   "top_pick_unfair": false,
+   "summary": "The arbitrator can look at decisions from other cases involving different users, but their decisions won't be binding on you and won't apply to your case."
+  },
+  {
+   "clause": "An arbitration award that has been satisfied may not be filed or entered in court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.27791810035705566,
+   "top_pick_unfair": false,
+   "summary": "Once an arbitration decision is made, you cannot file a lawsuit or enter into a court case based on it."
+  },
+  {
+   "clause": "If you elect to have your claim addressed as part of a mass arbitration (defined below), you agree to the additional procedures set forth below.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3602139949798584,
+   "top_pick_unfair": false,
+   "summary": "If you choose to have your claim handled through mass arbitration (as defined below), you agree to follow the additional procedures described below."
+  },
+  {
+   "clause": "If twenty-five (25) or more claimants submit Notices or attempt to file Demands raising similar claims, are represented by the same or coordinated counsel (regardless of whether the Notices or Demands are submitted simultaneously), and the parties cannot resolve the cases during the Informal Resolution Period, all of the cases must be resolved in arbitration through staged sets of proceedings.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4847332239151001,
+   "top_pick_unfair": false,
+   "summary": "If 25 or more people submit similar claims or try to file similar ones at the same time, and the parties cannot resolve the cases during the Informal Resolution Period, all of the cases must be resolved through arbitration."
+  },
+  {
+   "clause": "You agree to this process even though it may delay the arbitration of your case.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.812940239906311,
+   "top_pick_unfair": true,
+   "summary": "You agree to follow this process even though it might take longer than necessary for your case to be decided."
+  },
+  {
+   "clause": "These mass filing procedures are intended to facilitate the efficient and orderly resolution and settlement of mass arbitrations.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3919275999069214,
+   "top_pick_unfair": false,
+   "summary": "These mass filing procedures are designed to make it easier and faster for mass arbitrations to be resolved."
+  },
+  {
+   "clause": "If any aspect of this \"Mass arbitration\" section has not been met, the parties agree that a court can enjoin the filing or prosecution of arbitrations inconsistent with this section and, unless prohibited by law, the arbitration administrator shall not accept or administer an arbitration, nor will the administrator demand fees in connection with such arbitrations, until such issues are finally resolved.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5753448605537415,
+   "top_pick_unfair": true,
+   "summary": "If any part of the \"Mass Arbitration\" section is not met, a court can stop the filing of arbitrations that break this section, and the arbitration administrator cannot accept or run an arbitration, unless the law allows it. The administrator will not charge you fees for arbitrations."
+  },
+  {
+   "clause": "Similarly, any claimants who dispute whether their claims are part of a mass arbitration or are otherwise subject to the requirements of this section may ask a court to resolve that Dispute.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11536312103271484,
+   "top_pick_unfair": false,
+   "summary": ". If you have a dispute about whether your claim is part of a mass arbitration or follows the requirements of this section, you can ask a court to resolve it."
+  },
+  {
+   "clause": "Second Stage: If the parties are unable to resolve the remaining cases after the mediation, the parties shall repeat the same process as in the first stage outlined above.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1296425461769104,
+   "top_pick_unfair": false,
+   "summary": "If you and the company cannot resolve your disagreements through mediation, you must go through the same process as described above."
+  },
+  {
+   "clause": "After the second stage is completed, the parties will again engage in a global, non-binding, and confidential mediation of all remaining cases with a retired federal or state court judge, with the mediator's fee paid for by Spotify.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.15944170951843262,
+   "top_pick_unfair": false,
+   "summary": "After the second stage ends, the parties will again work together with a retired federal or state court judge, and Spotify will pay for the mediator's fee."
+  },
+  {
+   "clause": "If the parties are unable to resolve any remaining cases after a second global mediation session:",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.418009877204895,
+   "top_pick_unfair": false,
+   "summary": "If the parties can't resolve any remaining cases after a second global mediation session, here's what happens:"
+  },
+  {
+   "clause": "Counsel for the parties may agree to adjust these deadlines.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9090461954474449,
+   "top_pick_unfair": true,
+   "summary": "The parties can agree to change these deadlines whenever they want, without having to go to court."
+  },
+  {
+   "clause": "The parties shall meet and confer regarding ways to increase the efficiency of the process, including whether to allow more than two hundred (200) cases to be brought at a time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.35332757234573364,
+   "top_pick_unfair": false,
+   "summary": "The parties will meet and discuss ways to make the process more efficient, including whether to let more than 200 cases be brought at a time."
+  },
+  {
+   "clause": "Throughout the staged process above, the arbitrators for the cases are encouraged to resolve the cases within one hundred twenty (120) days of appointment or as swiftly as possible thereafter, consistent with fairness to the parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12082242965698242,
+   "top_pick_unfair": false,
+   "summary": "The arbitrators must resolve the cases within one hundred twenty (120) days of their appointment, or as quickly as possible after that, to be fair to both sides."
+  },
+  {
+   "clause": "A court of competent jurisdiction will have the authority to enforce this \"Mass arbitration\" section and, if necessary, to enjoin the filing or prosecution of arbitrations or the assessment or collection of Arbitration Fees.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.24121683835983276,
+   "top_pick_unfair": false,
+   "summary": "A court with the proper authority can enforce this section and, if necessary, stop the filing of arbitrations or collection of Arbitration Fees."
+  },
+  {
+   "clause": "This \"Mass arbitration\" section and each of its requirements are intended to be severable from the rest of this Arbitration Agreement.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6649958193302155,
+   "top_pick_unfair": true,
+   "summary": "This section and its requirements can be removed from the rest of the Arbitration Agreement."
+  },
+  {
+   "clause": "But if a court of competent jurisdiction decides that the staging process set forth in this \"Mass arbitration\" section applies to your Dispute and is not enforceable (and after exhaustion of all appeals), then your Dispute will proceed in a court of competent jurisdiction, consistent with the remainder of the Terms, and will not proceed in arbitration.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12782269716262817,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that the staging process described in this section applies to your Dispute and cannot be enforced, then your case will be handled in court instead of arbitration, as described in the rest of the Terms."
+  },
+  {
+   "clause": "If in the process of arbitrating or litigating a Dispute this Arbitration Agreement is invalidated in whole, the parties agree that they may seek to resolve the Dispute in a U.S. small claims court or in the federal or state courts of New York, New York, consistent with the \"Governing law, jurisdiction, class action waiver, and jury trial waiver\" section above.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8778780251741409,
+   "top_pick_unfair": true,
+   "summary": "If you and the company have a dispute, you must resolve it through arbitration instead of court, and you waive your right to a jury trial. This service does not condone any ideas contained in its user-generated contents."
+  },
+  {
+   "clause": "To the fullest extent permitted by applicable law, each party may bring a Dispute against the other party only in an individual capacity and not participate as a plaintiff, claimant, or class member in any class, collective, consolidated, private attorney general, or representative proceeding.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8614584654569626,
+   "top_pick_unfair": true,
+   "summary": "Each party can only take legal action against the other party individually, and cannot join together with other people in a class action, collective action, consolidated action, private attorney general's office, or representative action."
+  },
+  {
+   "clause": "Notwithstanding the foregoing, either party may participate in a class-wide settlement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6885200440883636,
+   "top_pick_unfair": true,
+   "summary": "Either you or the company can join together with other people in a class action lawsuit against the company."
+  },
+  {
+   "clause": "Under applicable law, you may have certain rights that can't be limited by a contract.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7036718130111694,
+   "top_pick_unfair": true,
+   "summary": "If the law allows it, you may have certain rights that cannot be taken away by a contract."
+  },
+  {
+   "clause": "These Terms are in no way intended to restrict those rights.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8935039862990379,
+   "top_pick_unfair": true,
+   "summary": "These Terms don't take away your rights to use the service however you want."
+  },
+  {
+   "clause": "We may make changes to these Terms (including any additional Spotify terms and conditions incorporated by reference herein) from time to time by notifying you of such changes by any reasonable means, including by posting the revised Terms on the applicable Spotify Service (provided that, for material changes, we will seek to supplement such notice by email, an in-service pop-up message, or other prominent notice within the Spotify Service, or other means).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9732294343411922,
+   "top_pick_unfair": true,
+   "summary": "We can change these Terms and any other Spotify terms and conditions mentioned in them whenever we want, and we'll tell you about these changes by any reasonable means, including by posting the revised Terms on the applicable Spotify Service (except for important changes, we'll try to notify you by email, an in-service pop-up message, or other prominent notice in the Spotify Service, or any other way)."
+  },
+  {
+   "clause": "Your use of the Spotify Service following any changes to these Terms will constitute your acceptance of such changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9720032829791307,
+   "top_pick_unfair": true,
+   "summary": "If Spotify makes any changes to these Terms, you agree to those changes and continue using the service."
+  },
+  {
+   "clause": "Opting out of a material change to the Arbitration Agreement is not an opt-out of arbitration altogether.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11053097248077393,
+   "top_pick_unfair": false,
+   "summary": "If you don't want to use arbitration, that doesn't mean you're giving up your right to use it at all."
+  },
+  {
+   "clause": "Even if you opt out of a material change to the Arbitration Agreement, you and Spotify agree that any Dispute will be determined by binding individual (not class) arbitration in accordance with the Arbitration Agreement in effect immediately before any such opt-out.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6875279545783997,
+   "top_pick_unfair": true,
+   "summary": "Even if you choose not to use arbitration, you and Spotify agree that any disagreement will be decided by a single arbitrator following the same rules that apply to everyone else."
+  },
+  {
+   "clause": "Other than as stated in this section or as explicitly agreed upon in writing between you and Spotify, these Terms constitute all the terms and conditions agreed upon between you and Spotify and supersede any prior agreements in relation to the subject matter of these Terms, whether written or oral.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.26719599962234497,
+   "top_pick_unfair": false,
+   "summary": "These Terms are the complete and final version of all agreements you make with Spotify, and they replace any earlier agreements you may have made with them, whether they were written down or spoken."
+  },
+  {
+   "clause": "As noted above, other terms and conditions, guidelines and policies governing use of the Spotify Service are incorporated herein by reference.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8264611810445786,
+   "top_pick_unfair": true,
+   "summary": "Other terms, conditions, guidelines, and policies that apply to how you use Spotify are also included in this agreement."
+  },
+  {
+   "clause": "Unless as otherwise stated in these Terms, should any provision of these Terms be held invalid or unenforceable for any reason or to any extent, the remaining provisions of these Terms will not be affected, and the application of that provision shall be enforced to the extent permitted by law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.27324825525283813,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that any part of these Terms is invalid or unenforceable, the rest of the terms will still apply, and the court will enforce that invalid part only to the extent that the law allows."
+  },
+  {
+   "clause": "Spotify may assign any or all of these Terms, and may assign or delegate, in whole or in part, any of its rights or obligations under these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10001993179321289,
+   "top_pick_unfair": false,
+   "summary": "Spotify can give any part of these Terms to someone else, and Spotify can transfer or give up any rights or responsibilities that these Terms give to you."
+  }
+ ]
+}

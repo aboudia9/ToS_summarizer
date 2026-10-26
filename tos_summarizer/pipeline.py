@@ -14,6 +14,38 @@ class ClauseResult:
     summary: str
 
 
+@dataclass
+class ScoredClause:
+    clause: str
+    label: str             # BERT's pick, or the likelier unfair class if BERT picked fair
+    unfair_prob: float     # P(potentially_unfair) + P(clearly_unfair)
+    top_pick_unfair: bool  # BERT's top pick was one of the unfair classes
+
+    def is_flagged(self, unfair_threshold):
+        # A clause is flagged if BERT's top pick is unfair (same as before), OR if the
+        # combined unfair probability clears the threshold — this catches the borderline
+        # clauses BERT would otherwise quietly call fair
+        return self.top_pick_unfair or self.unfair_prob >= unfair_threshold
+
+
+def score_clauses(clauses, bert_model, bert_tokenizer, device):
+    # Run BERT classification on each clause. Nothing here depends on the threshold,
+    # so one scoring pass can be re-filtered at any threshold (used to cache examples)
+    probs = classify_clauses(clauses, bert_model, bert_tokenizer, device)
+    fair_id = label2id['clearly_fair']
+    unfair_ids = [i for i in id2label if i != fair_id]
+
+    scored = []
+    for clause, p in zip(clauses, probs):
+        pred = p.argmax().item()
+        top_pick_unfair = pred != fair_id
+        if not top_pick_unfair:
+            # Use whichever unfair class is more likely
+            pred = max(unfair_ids, key=lambda i: p[i].item())
+        scored.append(ScoredClause(clause, id2label[pred], 1.0 - p[fair_id].item(), top_pick_unfair))
+    return scored
+
+
 def process_tos_document(document, bert_model, bart_model, bert_tokenizer, bart_tokenizer, device,
                          unfair_threshold=DEFAULT_UNFAIR_THRESHOLD, progress_callback=None):
     # Step 1 — Split document into individual clauses by sentence
@@ -21,41 +53,21 @@ def process_tos_document(document, bert_model, bart_model, bert_tokenizer, bart_
 
     print(f"Found {len(clauses)} clauses in document")
 
-    # Step 2 — Run BERT classification on each clause
-    probs = classify_clauses(clauses, bert_model, bert_tokenizer, device)
-    fair_id = label2id['clearly_fair']
+    # Step 2 & 3 — Classify every clause, keep the ones that aren't clearly fair
+    flagged = [s for s in score_clauses(clauses, bert_model, bert_tokenizer, device)
+               if s.is_flagged(unfair_threshold)]
 
-    # Step 3 — Filter out clearly fair clauses, keep the rest.
-    # A clause is flagged if BERT's top pick is unfair (same as before), OR if the
-    # combined unfair probability clears the threshold — this catches the borderline
-    # clauses BERT would otherwise quietly call fair
-    flagged_clauses = []
-    flagged_probs = []
-
-    for clause, p in zip(clauses, probs):
-        unfair_prob = 1.0 - p[fair_id].item()
-        pred = p.argmax().item()
-
-        if pred == fair_id and unfair_prob < unfair_threshold:
-            continue
-
-        if pred == fair_id:
-            # Use whichever unfair class is more likely
-            pred = max((i for i in id2label if i != fair_id), key=lambda i: p[i].item())
-
-        flagged_clauses.append((clause, id2label[pred]))
-        flagged_probs.append(unfair_prob)
-
-    print(f"Flagged {len(flagged_clauses)} potentially risky clauses")
+    print(f"Flagged {len(flagged)} potentially risky clauses")
 
     # Step 4 — Run BART summarization on flagged clauses
     summaries = summarize_clauses(
-        flagged_clauses, bart_model, bart_tokenizer, device, progress_callback=progress_callback
+        [(s.clause, s.label) for s in flagged], bart_model, bart_tokenizer, device,
+        progress_callback=progress_callback
     )
 
     return [
-        ClauseResult(clause=clause, label=label, unfair_prob=prob, summary=summary)
-        for (clause, label), prob, summary in zip(flagged_clauses, flagged_probs, summaries)
+        ClauseResult(clause=s.clause, label=s.label, unfair_prob=s.unfair_prob, summary=summary)
+        for s, summary in zip(flagged, summaries)
     ]
 
 

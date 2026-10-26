@@ -61,13 +61,15 @@ def run_inference(df, model, tokenizer, device, batch_size=32):
 def classify_clauses(clauses, model, tokenizer, device, batch_size=32):
     # Batched version of the old one-clause-at-a-time loop. Padding to the longest
     # clause in each batch (instead of always 256) gives the same predictions,
-    # just a lot faster. Returns a (num_clauses, 3) tensor of class probabilities
+    # just a lot faster. Batches group clauses of similar length so there's even less
+    # padding. Returns a (num_clauses, 3) tensor of class probabilities, in input order
     model.eval()
+    order = sorted(range(len(clauses)), key=lambda i: len(clauses[i]))
     all_probs = []
 
-    for i in range(0, len(clauses), batch_size):
+    for i in range(0, len(order), batch_size):
         inputs = tokenizer(
-            clauses[i:i + batch_size],
+            [clauses[j] for j in order[i:i + batch_size]],
             max_length=BERT_MAX_LENGTH,
             padding=True,
             truncation=True,
@@ -80,4 +82,6 @@ def classify_clauses(clauses, model, tokenizer, device, batch_size=32):
 
     if not all_probs:
         return torch.empty((0, len(id2label)))
-    return torch.cat(all_probs)
+    probs = torch.empty((len(clauses), len(id2label)))
+    probs[order] = torch.cat(all_probs)
+    return probs

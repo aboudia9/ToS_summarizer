@@ -1,0 +1,741 @@
+{
+ "text_sha256": "de408281b69efa013bf10b600174cc685b487262fa9fa8781df3a17f5039b72e",
+ "min_threshold": 0.1,
+ "clauses": [
+  {
+   "clause": "These Terms of Service (“Terms”) are part of the User Agreement – a legally binding contract governing your relationship with X.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9708657525479794,
+   "top_pick_unfair": true,
+   "summary": "Terms of Service are part of the User Agreement, which is a legally binding contract that controls how you interact with X."
+  },
+  {
+   "clause": "You should read these Terms in full, but here are a few key things you should take away:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8807715997099876,
+   "top_pick_unfair": true,
+   "summary": "You should read these Terms in full, but here are a few things you can take away from them."
+  },
+  {
+   "clause": "- You will see advertising on the platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.26956790685653687,
+   "top_pick_unfair": false,
+   "summary": "You will see ads on the platform, and you can opt out of these ads."
+  },
+  {
+   "clause": "- When posting Content and otherwise using the Services, you must comply with this User Agreement and Applicable Law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5118691325187683,
+   "top_pick_unfair": false,
+   "summary": "When you post content on the service and use it, you must follow this Terms of Service and the laws that apply to you."
+  },
+  {
+   "clause": "You are responsible for your use of the Services and your Content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2233296036720276,
+   "top_pick_unfair": false,
+   "summary": "You are responsible for how you use the Services and for the content on them."
+  },
+  {
+   "clause": "You must comply with the User Agreement, including all applicable policies and rules, and all applicable laws.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7353775501251221,
+   "top_pick_unfair": true,
+   "summary": "You must follow all the terms in this agreement, including all policies and rules that apply to you, and follow all laws that apply where you are."
+  },
+  {
+   "clause": "- You must abide by the Services’ acceptable use terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7426516115665436,
+   "top_pick_unfair": true,
+   "summary": "You must follow the terms that are acceptable for use on this service. You are responsible for maintaining the security of your account and for the activities on your account."
+  },
+  {
+   "clause": "- Unless you are a recipient of the X Service in the European Union, EFTA States, or the United Kingdom, any disputes between you and us will be resolved by a court in Texas, based on Texas law except that if the forum selection clause in these Terms is unenforceable for any reason, then the dispute will be arbitrated.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9739189147949219,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. This service forces users into binding arbitration in the case of disputes. The service can delete your account without prior notice and without a reason. The court of law governing the terms is in Texas, USA."
+  },
+  {
+   "clause": "- To the extent permitted by applicable law, you agree to waive any right to bring a class action or other representative action.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9263140857219696,
+   "top_pick_unfair": true,
+   "summary": "You give up your right to join together with other people in a class action lawsuit or other representative action, to the extent the law allows."
+  },
+  {
+   "clause": "- We have broad enforcement rights.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.426852822303772,
+   "top_pick_unfair": false,
+   "summary": "We have broad legal rights to enforce the terms of this agreement and can take legal action against you if you violate them."
+  },
+  {
+   "clause": "X reserves the right to take enforcement actions against you if you do violate these terms, such as, for example, removing your Content, limiting visibility, discontinuing your access to X, or taking legal action.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9868873860687017,
+   "top_pick_unfair": true,
+   "summary": "If you break these terms, X can take legal action against you, including removing your content, limiting your access to X, or stopping you from using X."
+  },
+  {
+   "clause": "Certain jurisdictions, including the European Union and the United Kingdom, also impose obligations on X to enforce against not only illegal content but also categories of content deemed by law to be “harmful” or “unsafe.”",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8168073147535324,
+   "top_pick_unfair": true,
+   "summary": "Some countries, including the European Union and the United Kingdom, have laws that require you to enforce against illegal content and certain types of content that are considered harmful or unsafe."
+  },
+  {
+   "clause": "We may also suspend or terminate your account for other reasons, such as prolonged inactivity, risk of legal exposure, or commercial inviability.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9899875828996301,
+   "top_pick_unfair": true,
+   "summary": "We can suspend or close your account for many reasons, including if you don't use it enough, if you're in trouble with the law, or if you lose your ability to make money."
+  },
+  {
+   "clause": "- There are intellectual property licenses in these Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8553226292133331,
+   "top_pick_unfair": true,
+   "summary": "There are intellectual property rights that this service owns. This service can license user content to third parties."
+  },
+  {
+   "clause": "We provide the Services on an “AS IS” and “AS AVAILABLE” basis, and we disclaim all warranties, responsibility, and liability to you or others to the extent permitted by law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9221790581941605,
+   "top_pick_unfair": true,
+   "summary": "We provide the service 'as is' and to be used at the users' sole risk. We make no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no responsibility and liability for the contents of links to other websites."
+  },
+  {
+   "clause": "You may be exposed to offensive or harmful Content posted by other users.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.22732913494110107,
+   "top_pick_unfair": false,
+   "summary": "You may see or read content that other users have posted that is offensive or harmful."
+  },
+  {
+   "clause": "The Services may change from time to time, and we may limit or terminate availability of the Services or particular features to you or other users at any time.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.996120658935979,
+   "top_pick_unfair": true,
+   "summary": "The service may change its terms at any time, and we may stop providing the service or certain features to you or other users whenever we want."
+  },
+  {
+   "clause": "- You have remedies and redress mechanisms, but our liability is limited.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8483394533395767,
+   "top_pick_unfair": true,
+   "summary": "You can take legal action against us, but we won't be responsible for any problems you experience."
+  },
+  {
+   "clause": "You have a right to terminate this agreement at any time by deactivating your account and discontinuing use of the Services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5501556694507599,
+   "top_pick_unfair": false,
+   "summary": "You can end this agreement whenever you want by deactivating your account and stopping using the Services."
+  },
+  {
+   "clause": "Depending on your country of residence, we may not be liable for certain types of damages as described in the agreement, and in any event, our aggregate liability shall not exceed the greater of $100 USD or the amount you paid us, if any, in the past six months for the Services giving rise to the claim.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9853546880185604,
+   "top_pick_unfair": true,
+   "summary": "Depending on your country of residence, we may not be responsible for certain types of damages described in this agreement, and our total responsibility for those damages is limited to $100 USD or the amount you paid us in the past six months for the Services that caused the problem."
+  },
+  {
+   "clause": "- If you are a recipient of the X Service in the United Kingdom, you may challenge enforcement actions (such as Content removal or account suspension) that breach these Terms by filing a complaint through our internal complaints process or by bringing a claim in a competent court, as provided under the Online Safety Act 2023.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.34683752059936523,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . You can take legal action against the service if you are the target of a copyright holder's take down notice. The service can delete your account without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you. You waive your right to a class action.."
+  },
+  {
+   "clause": "Finally, these Terms may vary depending on where you live, but in any case, you must be at least 13 years old to use X.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7603460848331451,
+   "top_pick_unfair": true,
+   "summary": "You must be at least 13 years old to use this service. This service is only available to users over 13 years of age."
+  },
+  {
+   "clause": "If you live outside the European Union, EFTA States, or the United Kingdom, including if you live in the United States, the X User Agreement comprises these Terms of Service, our Privacy Policy, our Rules and Policies, and all incorporated policies.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9136542603373528,
+   "top_pick_unfair": true,
+   "summary": "User-generated content is encrypted, and this service cannot decrypt it. The service provides a complete list of all cookies set by its website. This service employs a broad copyright license over user content including the right to distribute through any media. You maintain ownership of your data. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of the service."
+  },
+  {
+   "clause": "If you live in the European Union, EFTA States, or the United Kingdom, the X User Agreement comprises these Terms of Service, our Privacy Policy, our Rules and Policies, and all incorporated policies.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9371007233858109,
+   "top_pick_unfair": true,
+   "summary": "If you live in the European Union, EFTA States, or the United Kingdom, you agree to follow these Terms of Service, our Privacy Policy, our Rules and Policies, and all incorporated policies."
+  },
+  {
+   "clause": "If you live outside the European Union, EFTA States, or the United Kingdom, including if you live in the United States",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5023173689842224,
+   "top_pick_unfair": false,
+   "summary": "If you live outside the European Union, EFTA States, or the United Kingdom, including if you live in the United States."
+  },
+  {
+   "clause": "These Terms of Service (“Terms”) govern your relationship with us and your and other users’ access to and use of, and anything otherwise relating to, our or our corporate affiliates’ services, including our various websites, SMS, APIs, email notifications, applications, buttons, widgets, ads, commerce services, and our other services (collectively, the “Services”), and any information, text, links, graphics, photos, audio, videos, or other materials or arrangements of materials uploaded, downloaded or appearing on the Services (collectively referred to as “Content”).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7099120020866394,
+   "top_pick_unfair": true,
+   "summary": "These Terms of Service control how you and other users can access and use our services, including our websites, SMS, APIs, emails, notifications, applications, buttons, widgets, ads, commerce services, and our other services (collectively called \"Services\") and any information, text, links, graphics, photos, audio, videos, or other materials or arrangements of materials that are uploaded, downloaded, or appear on the Services."
+  },
+  {
+   "clause": "By using the Services you agree to be bound by these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9948303136043251,
+   "top_pick_unfair": true,
+   "summary": "When you use the Services, you agree to follow these Terms of Service. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "These Terms are an agreement between you and X Corp., which provides X and the Services, with its principal place of business at 800 W Cesar Chavez St., Austin, TX 78701, USA.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.876153863966465,
+   "top_pick_unfair": true,
+   "summary": "This service is a subsidiary of X Corp., which provides X and the Services, and is located at 800 W Cesar Chavez St., Austin, Texas, 78701, USA."
+  },
+  {
+   "clause": "The words “we,” “us,” and “our” mean X Corp.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12492126226425171,
+   "top_pick_unfair": false,
+   "summary": "The words \"we,\" \"us,\" and \"our\" in this agreement mean X Corp."
+  },
+  {
+   "clause": "If you are (i) accepting these Terms and/or using the Services, which constitutes acceptance of these Terms, or (ii) accepting these Terms in order to authorize the use of the Services on behalf of a minor (being any person under the age of majority in any given country), company, organization, government, or other legal entity, you represent and warrant that you are authorized to do so or, as the case may be, have the authority to bind such minor and/or entity to these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4444604516029358,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . This service is only available to users over a certain age. The service has non-exclusive use of your content. This service keeps a license on user-generated content even after users close their accounts.. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of the service."
+  },
+  {
+   "clause": "The words “you” and “your” as used in these Terms shall refer either to the person accepting these Terms or such minor (as defined in (i)) and/or the entity referenced in (ii), as applicable.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1291412115097046,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. This service assumes no liability for any losses or damages resulting from any matter relating to the service."
+  },
+  {
+   "clause": "You understand that through your use of the Services you consent to the collection and use (as set forth in the Privacy Policy) of this information, including the transfer of this information to the United States, Ireland, and/or other countries for storage, processing and use by us and our affiliates.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8293810337781906,
+   "top_pick_unfair": true,
+   "summary": "When you use the service, you agree that we can collect, use, and share your personal data anywhere in the world, including the United States, Ireland, and/or other countries, and we can share this information with our affiliates."
+  },
+  {
+   "clause": "Any use or reliance on any Content or materials posted via the Services or obtained by you through the Services is at your own risk.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10413962602615356,
+   "top_pick_unfair": false,
+   "summary": "You use the services at your own risk. The service is provided 'as is' and to be used at the users' sole risk."
+  },
+  {
+   "clause": "We do not endorse, support, represent or guarantee the completeness, truthfulness, accuracy, or reliability of any Content or communications posted or otherwise obtained via the Services or endorse any alleged facts or opinions expressed via the Services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11429142951965332,
+   "top_pick_unfair": false,
+   "summary": "We don't guarantee that the content on our services is complete, accurate, or reliable. This service does not condone any ideas contained in its user-generated contents. The service is not responsible for linked or (clearly) quoted content from third parties."
+  },
+  {
+   "clause": "You understand that by using the Services, you may be exposed to Content that might be offensive, harmful, inaccurate or otherwise inappropriate, or in some cases, postings that have been mislabeled or are otherwise deceptive.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8501542508602142,
+   "top_pick_unfair": true,
+   "summary": "You understand that by using the Services, you might see content that is offensive, harmful, inaccurate, or otherwise inappropriate, or in some cases, postings that have been mislabeled or are otherwise deceptive."
+  },
+  {
+   "clause": "All Content, including anything referenced therein, is the sole responsibility of the person who posted, generated, inputted, or created such Content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8210283368825912,
+   "top_pick_unfair": true,
+   "summary": "You are completely responsible for everything you post on this service, including anything you reference in it."
+  },
+  {
+   "clause": "We may not monitor or control the Content posted, generated, inputted, or created via the Services, and we cannot take responsibility for such Content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5902457237243652,
+   "top_pick_unfair": true,
+   "summary": "We cannot control what content is posted, generated, inputted, or created through the Services, and we are not responsible for it."
+  },
+  {
+   "clause": "We reserve the right to remove Content that violates the User Agreement, including for example, copyright or trademark violations or other intellectual property misappropriation, impersonation, unlawful conduct, or harassment.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9977216185070574,
+   "top_pick_unfair": true,
+   "summary": "We can delete content that breaks our terms, including content that violates copyright, trademark, or other intellectual property rights, as well as content that is harassing or threatening."
+  },
+  {
+   "clause": "Certain jurisdictions, including the European Union and the United Kingdom, impose obligations on us to enforce against categories of content deemed by law to be harmful or unsafe, such as bullying and humiliating content, content that promotes or encourages feeding or eating disorders, as well as content that encourages or makes available knowledge of methods of self-harm and suicide.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8230806887149811,
+   "top_pick_unfair": true,
+   "summary": "Some countries, including the European Union and the United Kingdom, have laws that require us to enforce against certain types of content that are harmful or unsafe, including bullying and humiliating content, content that promotes or encourages feeding or eating disorders, and content that encourages or makes available knowledge of methods of self-harm and suicide."
+  },
+  {
+   "clause": "In choosing to submit, input, create, generate, post, or display Content on or through the Services, you grant us a worldwide, non-exclusive, royalty-free license (with the right to sublicense) to use, copy, reproduce, process, adapt, modify, publish, transmit, display, upload, download, and distribute such Content, including anything referenced therein, in any and all media or distribution methods now known or later developed, for any purpose.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2484062910079956,
+   "top_pick_unfair": false,
+   "summary": "When you use the service, you give us permission to use your content in any way we want, and we can share that permission with others. This service can license user content to third parties. The service can distribute your content through any media known now or in the future ."
+  },
+  {
+   "clause": "For clarity, these rights include, for example, curating, transforming, and translating.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.801293283700943,
+   "top_pick_unfair": true,
+   "summary": "To be clear, these rights include the right to curate, transform, and translate."
+  },
+  {
+   "clause": "We have an evolving set of rules for how ecosystem partners can interact with your Content on the Services.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10276758670806885,
+   "top_pick_unfair": false,
+   "summary": "We have an evolving set of rules about how our ecosystem partners can work with your content on the Services."
+  },
+  {
+   "clause": "These rules exist to enable an open ecosystem with your rights in mind.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7768933475017548,
+   "top_pick_unfair": true,
+   "summary": "These rules are designed to create an open ecosystem with your rights in mind, and you have the right to use the service."
+  },
+  {
+   "clause": "You understand that we may modify or adapt your Content as it is distributed, syndicated, published, or broadcast by us and our partners and/or make changes to your Content in order to adapt the Content to different media.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.26307564973831177,
+   "top_pick_unfair": false,
+   "summary": "We may change or adapt your Content as it's distributed, syndicated, published, or broadcast by us and our partners, and we may also make changes to your Content to make it work with different media."
+  },
+  {
+   "clause": "Please review our Rules and Policies, which are part of the User Agreement and outline conduct that is prohibited on the Services, as well as categories of content deemed by law to be harmful or unsafe in certain jurisdictions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1370808482170105,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . This service prohibits users sending chain letters, junk mail, spam or any unsolicited messages. Users agree not to submit libelous, harassing or threatening content. Prohibits the posting of pornographic content. The posting of content which promotes or glorifies violence or politically or religiously extremist values is prohibited. The publishing of personally identifiable information without the owner’s consent is not allowed. The service can suspend your account for several reasons."
+  },
+  {
+   "clause": "You may use the Services only in compliance with these Terms and all applicable laws, rules and regulations.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5339739620685577,
+   "top_pick_unfair": true,
+   "summary": "You must follow these Terms and all laws, rules, and regulations that apply to you, and you cannot use the service for illegal purposes."
+  },
+  {
+   "clause": "X takes enforcement actions when Content or user behavior is in violation of our Rules and Policies or in relation to sensitive media.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6136127710342407,
+   "top_pick_unfair": true,
+   "summary": "We will take action if your content or behavior breaks our rules and policies, or if it involves sensitive media."
+  },
+  {
+   "clause": "As such, the Services may change from time to time, at our discretion.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9882622007280588,
+   "top_pick_unfair": true,
+   "summary": "We may change the service at any time, and we don't promise to keep it to the users' satisfaction."
+  },
+  {
+   "clause": "We may stop (permanently or temporarily) providing the Services or any features within the Services to you or to users generally.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.981714028865099,
+   "top_pick_unfair": true,
+   "summary": "We can stop providing the Services or any features within the Services to you or to users generally, and we can do this permanently or temporarily."
+  },
+  {
+   "clause": "We also retain the right to create limits on use and storage at our sole discretion at any time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.995751965790987,
+   "top_pick_unfair": true,
+   "summary": "We can decide on our own to put limits on how much you can use and store whenever we want."
+  },
+  {
+   "clause": "We may also remove or refuse to distribute any Content on the Services, limit distribution or visibility of any Content on the service, suspend or terminate users, and reclaim usernames without liability to you.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9976868536323309,
+   "top_pick_unfair": true,
+   "summary": "We can delete your account without prior notice and without a reason, and we can charge you a fee for any unauthorized access to your account. The service can stop providing the service at any time."
+  },
+  {
+   "clause": "We also reserve the right to access, read, preserve, and disclose any information as we reasonably believe is necessary to (i) satisfy any applicable law, regulation, legal process or governmental request; (ii) enforce the Terms, including investigation of potential violations hereof; (iii) detect, prevent, or otherwise address fraud, security or technical issues; (iv) respond to user support requests; or (v) protect the rights, property or safety of X, its users and the public.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8901888579130173,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The service can sell or otherwise transfer your personal data as part of a bankruptcy proceeding or other type of financial transaction.. The service is provided 'as is' and to be used at the users' sole risk. This service does not guarantee that it or the products obtained through it meet your expectations or requirements. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service."
+  },
+  {
+   "clause": "By using or paying for any of these additional services, you agree to any additional terms applicable to those services, and those additional terms become part of our agreement with you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9401400573551655,
+   "top_pick_unfair": true,
+   "summary": "By using or paying for any of these additional services, you agree to follow any extra rules that come with them, and these extra rules become part of your agreement with us."
+  },
+  {
+   "clause": "If any of the applicable additional terms conflict with these Terms, the additional terms will prevail while you are using those services to which they apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.17251241207122803,
+   "top_pick_unfair": false,
+   "summary": "If any of the additional terms conflict with these Terms, the extra terms will apply to you only when you're using the services they apply to."
+  },
+  {
+   "clause": "Otherwise, all such actions are strictly prohibited.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6853687465190887,
+   "top_pick_unfair": true,
+   "summary": "You are not allowed to use this service for illegal purposes. You are prohibited from sending chain letters, junk mail, spam, or any unsolicited messages."
+  },
+  {
+   "clause": "If you use advertising features, products, or services of the Services in any way, including but not limited to self-service and managed service offerings, you agree that your use of the advertising features, products, and services as well as your advertisements are subject to the terms of our Master Services Agreement (https://ads.x.com/terms).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19259124994277954,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . This service forces users into binding arbitration in the case of disputes. The service can sell or otherwise transfer your content to third parties as part of a bankruptcy proceeding or other type of financial transaction.. The service is not responsible for linked or (clearly) quoted content from third-party content providers."
+  },
+  {
+   "clause": "We cannot and will not be liable for any loss or damage arising from your failure to comply with the above.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9734965786337852,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for any loss or damage that happens because you didn't follow the rules described above."
+  },
+  {
+   "clause": "Your License to Use the Services",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7556897103786469,
+   "top_pick_unfair": true,
+   "summary": "You have the right to use the services as described below and can share content with us."
+  },
+  {
+   "clause": "This license cannot be assigned, gifted, sold, shared or transferred in any other manner to any other individual or entity without X’s express written consent.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.16499865055084229,
+   "top_pick_unfair": false,
+   "summary": "You cannot give this license to someone else, give it to another person or organization, or transfer it to them in any other way unless X gives you written permission first."
+  },
+  {
+   "clause": "The Services are protected by copyright, trademark, and other laws of both the United States and other countries.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.22530227899551392,
+   "top_pick_unfair": false,
+   "summary": "The service is protected by copyright, trademark, and other laws in the United States and other countries."
+  },
+  {
+   "clause": "All right, title, and interest in and to the Services (excluding Content provided by users) are and will remain our and our licensors' exclusive property.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11466503143310547,
+   "top_pick_unfair": false,
+   "summary": "We own all the rights to the Services and the content on them, and we and our licensors own the license to use that content."
+  },
+  {
+   "clause": "Any feedback, comments, or suggestions you may provide regarding X, or the Services is entirely voluntary and we will be free to use such feedback, comments or suggestions as we see fit and without any obligation to you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19591307640075684,
+   "top_pick_unfair": false,
+   "summary": "Any feedback, comments, or suggestions you give us about X or the Services are completely voluntary, and we can use them however we want."
+  },
+  {
+   "clause": "You also agree not to misuse the Services, for example, by interfering with them or accessing them using a method other than the interface and the instructions that we provide.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2786293625831604,
+   "top_pick_unfair": false,
+   "summary": "You agree not to use the Services in ways that harm them, such as by interfering with them or accessing them in any way that goes beyond the interface and instructions we give you."
+  },
+  {
+   "clause": "You may not do any of the following while accessing or using the Services: (i) access, tamper with, or use non-public areas of the Services, our computer systems, or the technical delivery systems of our providers; (ii) probe, scan, or test the vulnerability of any system or network or breach or circumvent any security or authentication measures; (iii) access or search or attempt to access or search the Services by any means (automated or otherwise) other than through our currently available, published interfaces that are provided by us (and only pursuant to the applicable terms and conditions), unless you have been specifically allowed to do so in a separate agreement with us (NOTE: crawling or scraping the Services in any form, for any purpose without our prior written consent is expressly prohibited); (iv) attempt to circumvent, manipulate, or disable systems and Services, including through \"jailbreaking\", “prompt engineering or injection\", or other methods intended to override or manipulate safety, security or other platform controls; (v) forge any TCP/IP packet header or any part of the header information in any email or posting; (vi) in any way use the Services to send altered, deceptive or false source-identifying information; (vii) engage in any conduct that violates our Authenticity Policy, including the misuse of X reporting features or forms, or any other conduct that violates our Rules and Policies; or (viii) interfere with, or disrupt, (or attempt to do so), the access of any user, host or network, including, without limitation, sending a virus, overloading, flooding, spamming, mail-bombing the Services, or by scripting the creation of Content in such a manner as to interfere with or create an undue burden on the Services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.15345525741577148,
+   "top_pick_unfair": false,
+   "summary": "You agree not to use the service for illegal purposes. You cannot: (a) access, tamper with, or use non-public areas of the Services, our computer systems, or the technical delivery systems of our providers; (b) probe, scan, or test the vulnerability of any system or network, or breach or circumvent security or authentication measures; (c) access or search the Services by any automated means (automated or otherwise) other than through the currently available, published interfaces that we provide, unless you have a separate agreement with us saying you can do so; (d) crawl or"
+  },
+  {
+   "clause": "It is also a violation of these Terms to facilitate or assist others in violating these Terms, including by distributing products or services that enable or encourage violation of these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8569483906030655,
+   "top_pick_unfair": true,
+   "summary": "You cannot use this service to help people break these terms, and you cannot distribute products or services that help with breaking them."
+  },
+  {
+   "clause": "You may end your legal agreement with us at any time by deactivating your accounts and discontinuing your use of the Services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2066226601600647,
+   "top_pick_unfair": false,
+   "summary": "You can end your legal agreement with us whenever you want by deactivating your accounts and stopping using the Services."
+  },
+  {
+   "clause": "We may suspend or terminate your account or cease providing you with all or part of the Services at any time if we reasonably believe: (i) you have violated these Terms or our Rules and Policies; (ii) you create risk or possible legal exposure for us; (iii) your account should be removed due to unlawful conduct; (iv) your account should be removed due to prolonged inactivity; or (v) our provision of the Services to you is no longer commercially viable.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9916300075128675,
+   "top_pick_unfair": true,
+   "summary": "We can suspend your account or stop providing you with the service whenever we want, and we can do this even if we reasonably believe you've broken the rules or policies listed below, if you create risk or legal problems for us, if your account is used for unlawful purposes, or if you've been inactive for too long; or if we can no longer make money from the service."
+  },
+  {
+   "clause": "To the extent permitted by law, we may also terminate your account or cease providing you with all or part of the Services for any other reason or no reason at our convenience.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9920594524592161,
+   "top_pick_unfair": true,
+   "summary": "We can close your account or stop providing you with the services whenever we want, for any reason or for no reason at all."
+  },
+  {
+   "clause": "In all such cases, the Terms shall terminate, including, without limitation, your license to use the Services, except that the following sections shall continue to apply: 2, 3, 5, 6, and the misuse provisions of Section 4 (“Misuse of the Services”).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9075969383120537,
+   "top_pick_unfair": true,
+   "summary": "We can end your agreement to use our services, but the following sections will continue to apply: 2, 3, 4, 5, 6, and the misuse provisions in Section 4 (“Misuse of the Services’)."
+  },
+  {
+   "clause": "For the avoidance of doubt, these Terms survive the deactivation or termination of your account.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7666855156421661,
+   "top_pick_unfair": true,
+   "summary": "These terms will continue to apply even if your account is deactivated or terminated."
+  },
+  {
+   "clause": "The Services are Available \"AS-IS\"",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5196146368980408,
+   "top_pick_unfair": true,
+   "summary": "The Services are available \"as-is,\" and you can use them however you want."
+  },
+  {
+   "clause": "Without limiting the foregoing, to the maximum extent permitted under applicable law, THE X ENTITIES DISCLAIM ALL WARRANTIES AND CONDITIONS, WHETHER EXPRESS OR IMPLIED, OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR NON-INFRINGEMENT.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9756131079047918,
+   "top_pick_unfair": true,
+   "summary": "The service is provided 'as is' and to be used at the users' sole risk. The service does not guarantee that it or the products obtained through it meet your expectations or requirements. This service is only available for use individually and non-commercially.."
+  },
+  {
+   "clause": "The X Entities make no warranty or representation and disclaim all responsibility and liability for: (i) the completeness, accuracy, availability, timeliness, security or reliability of the Services or any Content; (ii) any harm to your computer system, loss of data, or other harm that results from your access to or use of the Services or any Content; (iii) the deletion of, or the failure to store or to transmit, any Content and other communications maintained by the Services; and (iv) whether the Services will meet your requirements or be available on an uninterrupted, secure, or error-free basis.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9869411755353212,
+   "top_pick_unfair": true,
+   "summary": "The service does not guarantee accuracy or reliability of the information provided. This service assumes no responsibility and liability for the contents of links to other websites. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. Users agree not to submit libelous, harassing or threatening content. The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection.. The service is provided 'as is' and to be used at the users' sole risk"
+  },
+  {
+   "clause": "No advice or information, whether oral or written, obtained from the X Entities or through the Services, will create any warranty or representation not expressly made herein.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.14805924892425537,
+   "top_pick_unfair": false,
+   "summary": "We make no promises or guarantees about the service, whether stated directly or suggested indirectly, whether in writing or spoken."
+  },
+  {
+   "clause": "Protecting our users’ data and our system resources is important to us.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5335200428962708,
+   "top_pick_unfair": true,
+   "summary": "We want to keep your data and our system resources safe and secure. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "You further agree that, to the extent permitted by applicable law, if you violate the Terms, or you induce or knowingly facilitate others to do so, in addition to all other legal remedies available to us, you will be jointly and severally liable to us for liquidated damages as follows for requesting, viewing, or accessing more than 1,000,000 posts (including reply posts, video posts, image posts, and any other posts) in any 24-hour period - $15,000 USD per 1,000,000 posts.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7401975095272064,
+   "top_pick_unfair": true,
+   "summary": "You are responsible for paying $15,000 USD for every 1,000,000 posts within a 24-hour period. This service forces users into binding arbitration in the case of disputes. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of the service. Users agree not to submit libelous, harassing or threatening content. Users who have been permanently banned from this service are not allowed to re-register under a new account."
+  },
+  {
+   "clause": "You agree that these amounts are (i) a reasonable estimate of our damages; (ii) not a penalty; and (iii) not otherwise limiting of our ability to recover from you or others under any legal or equitable theory or claim, including but not limited to statutory damages and/or equitable relief.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.958464328199625,
+   "top_pick_unfair": true,
+   "summary": "You agree that these amounts are a reasonable estimate of our damages, not a penalty, and won't prevent us from recovering money from you or others under any legal or equitable theory or claim, including statutory damages and/or equitable relief."
+  },
+  {
+   "clause": "You further agree that repeated violations of these Terms will irreparably harm and entitle us to injunctive and/or other equitable relief, in addition to monetary damages.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9574060216546059,
+   "top_pick_unfair": true,
+   "summary": "If you break these terms repeatedly, you agree that we can take legal action against you, and you can also receive money damages."
+  },
+  {
+   "clause": "We may revise these Terms from time to time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9964550461154431,
+   "top_pick_unfair": true,
+   "summary": "We may change these Terms at any time, but you will receive notification of the changes."
+  },
+  {
+   "clause": "The most current version of the Terms, which will always be at https://x.com/tos, will govern our relationship with you.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9557033739984035,
+   "top_pick_unfair": true,
+   "summary": "Terms will always be available at https://x.x.com/tos, and these terms are the only ones that apply to you."
+  },
+  {
+   "clause": "By continuing to access or use the Services after those revisions become effective, you agree to be bound by the revised Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9965132239740342,
+   "top_pick_unfair": true,
+   "summary": "If you keep using the Services after we make changes to these terms, you agree to follow the new terms."
+  },
+  {
+   "clause": "Governing Law; Jurisdiction and Venue; Arbitration.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2901450991630554,
+   "top_pick_unfair": false,
+   "summary": ". The court of law governing the terms is in a jurisdiction that is less friendly to user privacy protection."
+  },
+  {
+   "clause": "The laws of the State of Texas, excluding its choice of law provisions, will govern these Terms and any dispute that arises between you and us, notwithstanding any other agreement between you and us to the contrary.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9378515370190144,
+   "top_pick_unfair": true,
+   "summary": "The laws of the state of Texas will apply to these Terms and any disagreements between you and us, no matter what any other agreement you have with us says."
+  },
+  {
+   "clause": "Notwithstanding any other agreement to the contrary, all disputes related to these Terms, the Services, or any patents — including without limitation disputes related to or arising from any Content (whether your or others’ Content), or your or others’ use of the Services or the complete or partial termination thereof — shall be brought and must proceed exclusively in the federal or state courts located in Wichita County or Tarrant County, Texas, United States, and you and we consent to personal jurisdiction in those forums and waive any objection as to inconvenient forum.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9876259919255972,
+   "top_pick_unfair": true,
+   "summary": "Any disagreements about these Terms, the Services, or any patents must be handled in federal or state courts in Wichita County or Tarrant County, Texas, United States, and both you and we agree to let those courts handle disputes."
+  },
+  {
+   "clause": "If, for any reason, the forum selection clause in the above paragraph is deemed unenforceable as to your dispute, then you and we agree to binding arbitration of the dispute administered by the American Arbitration Association before an arbitrator who shall be a retired federal district or appellate court judge.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8220108151435852,
+   "top_pick_unfair": true,
+   "summary": "If a court decides that the forum selection clause in the above paragraph cannot be enforced, you and we both agree to resolve your dispute through binding arbitration with the American Arbitration Association, and the arbitrator will be a retired federal district or appellate court judge."
+  },
+  {
+   "clause": "The arbitration shall be conducted in the English language in Tarrant County, Texas, except as required by law.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9153230264782906,
+   "top_pick_unfair": true,
+   "summary": "The arbitration will be held in English in Tarrant County, Texas, except where the law requires it to be in Spanish."
+  },
+  {
+   "clause": "The arbitrator shall have the authority to grant any provisional or permanent remedy or relief that would be available from a court of competent jurisdiction, except that the arbitrator shall be prohibited from granting injunctive relief.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7197034358978271,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator can give you any type of temporary or permanent relief that a court of competent jurisdiction can provide, except for injunctive relief."
+  },
+  {
+   "clause": "The arbitrator’s award shall be final and binding, and the parties waive any right to appeal the award to the maximum extent permitted by law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9534003548324108,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator's decision is final and cannot be changed, and both parties agree not to appeal it to the maximum extent allowed by law."
+  },
+  {
+   "clause": "Except as required by law, the arbitration shall be confidential and neither a party nor the arbitrator may disclose the existence, content, or results of any arbitration hereunder without the prior written consent of all parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.39338254928588867,
+   "top_pick_unfair": false,
+   "summary": "Except as required by law, the arbitration will be kept secret, and neither you nor the arbitrator can share the details of the arbitration with anyone except for the parties involved unless they give you written permission first."
+  },
+  {
+   "clause": "Each party shall bear its own costs of the arbitration, including attorneys’ fees, unless the arbitrator determines that a party’s claims or defenses were frivolous or brought in bad faith, in which case the arbitrator may award costs and reasonable attorneys’ fees to the prevailing party.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7782016694545746,
+   "top_pick_unfair": true,
+   "summary": "Each party must pay for their own legal fees and costs, unless the arbitrator decides that a party's claims or defenses were frivolous or brought in bad faith, in which case the court can award the costs and reasonable attorneys' fees to the winning party."
+  },
+  {
+   "clause": "The parties agree that any arbitration shall be conducted on an individual basis only, and not as a class, collective, or representative action.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9734886679798365,
+   "top_pick_unfair": true,
+   "summary": "Any arbitration will be decided on an individual basis and not as part of a group or collective action."
+  },
+  {
+   "clause": "The arbitrator shall have no authority to consolidate claims or to preside over any form of class, collective, or representative proceeding.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3542880415916443,
+   "top_pick_unfair": false,
+   "summary": "The arbitrator cannot combine or manage any type of class action, collective action, or representative proceeding."
+  },
+  {
+   "clause": "For the avoidance of doubt, the choice of law, forum selection, and arbitration provisions of this section shall apply regardless of whether a dispute or any claims contained therein are based in contract, tort, statute, common law, or otherwise, and the choice of law, forum selection, and arbitration provisions of this section shall apply to pending and future disputes and shall apply to your dispute regardless of when the conduct relating to the dispute arose or occurred.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.642384946346283,
+   "top_pick_unfair": true,
+   "summary": "The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection (California, USA). Instead of asking directly, this Service will assume your consent merely from your usage.. This service assumes no liability for any losses or damages resulting from any matter relating to the service."
+  },
+  {
+   "clause": "The choice of law, forum selection, and arbitration provisions of this section shall also extend to disputes involving our U.S. corporate affiliates, including but not limited to any U.S. SpaceXAI, Cursor, or SpaceX entities, who are intended third-party beneficiaries of this paragraph and who also consent to jurisdiction and venue in the courts specified in this section and to the arbitration provision in this section.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6281680166721344,
+   "top_pick_unfair": true,
+   "summary": "disputes involving our U.S. corporate affiliates, including SpaceX, SpaceXAI, Cursor, or SpaceX entities, can be handled through arbitration instead of court, and they agree to follow the arbitration rules in this section."
+  },
+  {
+   "clause": "For such U.S. federal government entities, these Terms and any action related thereto will be governed by the laws of the United States of America (without reference to conflict of laws) and, in the absence of federal law and to the extent permitted under federal law, the laws of the State of Texas (excluding choice of law).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9770782589912415,
+   "top_pick_unfair": true,
+   "summary": "The court of law governing the terms is in a jurisdiction that is less friendly to user privacy protection (Texas, USA). This service is only available for use individually and non-commercially.. This service does not condone any ideas contained in its user-generated contents."
+  },
+  {
+   "clause": "TO THE EXTENT PERMITTED BY LAW, YOU ALSO WAIVE THE RIGHT TO PARTICIPATE AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS ACTION, COLLECTIVE ACTION, OR REPRESENTATIVE ACTION PROCEEDING AGAINST OUR CORPORATE AFFILIATES, INCLUDING BUT NOT LIMITED TO ANY SPACEXAI, CURSOR, OR SPACEX ENTITY.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1632920503616333,
+   "top_pick_unfair": false,
+   "summary": "expert.com. To the extent the law allows, you waive your right to join together with other members of the public in a class action lawsuit against our company, its affiliates, or any of these companies."
+  },
+  {
+   "clause": "You and X agree that you must initiate any proceeding or action asserting a federal claim within one (1) year of the date of the occurrence of the event or facts giving rise to a dispute that is arising out of or related to these Terms or the Services.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.894426740705967,
+   "top_pick_unfair": true,
+   "summary": "You must file a federal lawsuit within one year of the date of the event or facts that caused the dispute, and you must start the lawsuit within that year."
+  },
+  {
+   "clause": "You and X agree that you must initiate any proceeding or action asserting a state law claim within two (2) years and one day of the date of the occurrence of the event or facts giving rise to a dispute that is arising out of or related to these Terms or the Services.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.898628480732441,
+   "top_pick_unfair": true,
+   "summary": "You must file a state law claim within two (2) years and one day of the date of the event or facts that caused the dispute, and you must start any legal action within that time period."
+  },
+  {
+   "clause": "Otherwise, to the extent permitted by applicable law, you forever waive the right to pursue any claim or cause of action, of any kind or character, based on such events or facts, and such claims or causes of action are permanently barred.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9737986642867327,
+   "top_pick_unfair": true,
+   "summary": "You give up the right to bring any claim or lawsuit based on these terms or any of these terms, to the extent that the law allows."
+  },
+  {
+   "clause": "In the event that any provision of these Terms is held to be invalid or unenforceable, then that provision will be limited or eliminated to the minimum extent necessary, and the remaining provisions of these Terms will remain in full force and effect.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.36526167392730713,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that any part of these Terms is invalid or unenforceable, that part will be removed, but the rest of the terms will still apply."
+  },
+  {
+   "clause": "The X User Agreement is written in English but is made available in multiple languages through translations.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9716834705322981,
+   "top_pick_unfair": true,
+   "summary": "The X User Agreement is written in English, but it is translated into different languages."
+  },
+  {
+   "clause": "X strives to make the translations as accurate as possible to the original English version.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6549652814865112,
+   "top_pick_unfair": true,
+   "summary": "We try to make sure that our translations are as accurate as possible to the original English version."
+  },
+  {
+   "clause": "However, in case of any discrepancies or inconsistencies, the English language version of the X User Agreement shall take precedence.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5202426612377167,
+   "top_pick_unfair": true,
+   "summary": "If there are any problems or inconsistencies, the English version of the X User Agreement will be used instead of the Spanish version."
+  },
+  {
+   "clause": "You acknowledge that English shall be the language of reference for interpreting and constructing the terms of the X User Agreement.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9660159572958946,
+   "top_pick_unfair": true,
+   "summary": "You agree that English is the only language we use to explain and explain the terms of this agreement."
+  },
+  {
+   "clause": "If you have any questions about these Terms, please contact us.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6040273606777191,
+   "top_pick_unfair": true,
+   "summary": "If you have questions about these Terms, please contact us at [the number provided]."
+  }
+ ]
+}

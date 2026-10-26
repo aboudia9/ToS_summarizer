@@ -29,6 +29,7 @@ ENV HF_HUB_OFFLINE=1 \
 
 COPY --chown=appuser tos_summarizer/ ./tos_summarizer/
 COPY --chown=appuser app.py fb_tos_testing.txt ./
+COPY --chown=appuser examples/ ./examples/
 COPY --chown=appuser .streamlit/ ./.streamlit/
 COPY --chown=appuser static/ ./static/
 

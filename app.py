@@ -5,15 +5,14 @@
 import pandas as pd
 import streamlit as st
 
-from tos_summarizer.config import (ROOT, BERT_MODEL_PATH, BART_MODEL_PATH,
+from tos_summarizer.config import (BERT_MODEL_PATH, BART_MODEL_PATH,
                                    DEFAULT_UNFAIR_THRESHOLD, IDLE_TIMEOUT_MINUTES, MAX_INPUT_CHARS,
                                    get_device)
 from tos_summarizer.classifier import load_bert
 from tos_summarizer.summarizer import load_bart
 from tos_summarizer.preprocessing import clean_tos_text, ensure_nltk_data
 from tos_summarizer.pipeline import process_tos_document
-
-SAMPLE_PATH = ROOT / "fb_tos_testing.txt"
+from tos_summarizer.examples import load_examples, load_cache_index, text_key, cached_results
 
 LABEL_DISPLAY = {
     'clearly_unfair': ("🚨", "Clearly unfair"),
@@ -53,6 +52,15 @@ def load_models():
     return bert_model, bart_model, bert_tokenizer, bart_tokenizer, device
 
 
+@st.cache_resource
+def load_example_data():
+    # Example docs + their precomputed results (scripts/precompute_examples.py)
+    examples = load_examples()
+    cache = load_cache_index()
+    by_key = {text_key(ex.read_text()): ex for ex in examples}
+    return examples, cache, by_key
+
+
 def results_to_df(results):
     return pd.DataFrame([{
         'label': r.label,
@@ -88,20 +96,33 @@ st.write(
 if "tos_text" not in st.session_state:
     st.session_state.tos_text = ""
 
-col_upload, col_sample = st.columns([3, 1])
-with col_upload:
-    uploaded = st.file_uploader("Upload a .txt file", type=["txt"])
-    if uploaded is not None and st.session_state.get("uploaded_name") != uploaded.name:
-        st.session_state.tos_text = uploaded.read().decode("utf-8", errors="replace")
-        st.session_state.uploaded_name = uploaded.name
-with col_sample:
-    st.write("")
-    st.write("")
-    if SAMPLE_PATH.exists() and st.button("Try the Facebook ToS", use_container_width=True):
-        st.session_state.tos_text = SAMPLE_PATH.read_text(encoding="utf-8")
+examples, example_cache, example_by_key = load_example_data()
+
+def use_example(ex):
+    # One click straight to results: the results section swaps in the cached analysis
+    st.session_state.tos_text = ex.read_text()
+    st.session_state.results = None
+    st.session_state.results_key = text_key(st.session_state.tos_text)
+
+if examples:
+    st.markdown("**Don't have one handy? Try a real one** (results are instant):")
+    for col, ex in zip(st.columns(len(examples)), examples):
+        col.button(ex.name, on_click=use_example, args=(ex,), use_container_width=True)
+
+uploaded = st.file_uploader("Upload a .txt file", type=["txt"])
+if uploaded is not None and st.session_state.get("uploaded_name") != uploaded.name:
+    st.session_state.tos_text = uploaded.read().decode("utf-8", errors="replace")
+    st.session_state.uploaded_name = uploaded.name
 
 text = st.text_area("...or paste it here", key="tos_text", height=250,
                     placeholder="Paste Terms of Service text...")
+
+# Text matching a bundled example (button or pasted by hand) is served from its cache
+key = text_key(text) if text.strip() else None
+current_example = example_by_key.get(key)
+if current_example and current_example.tip:
+    st.info(f"**What to look for in {current_example.name}'s terms:** {current_example.tip}  \n"
+            f"[Source]({current_example.source}), retrieved {current_example.retrieved}.", icon="🔎")
 
 too_long = len(text) > MAX_INPUT_CHARS
 if too_long:
@@ -112,7 +133,11 @@ analyze = st.button("Analyze", type="primary", disabled=not text.strip() or too_
 
 
 # ---------------- Run pipeline ----------------
-if analyze and not too_long:
+cached = cached_results(example_cache[key], threshold) if key in example_cache else None
+if analyze and not too_long and cached is not None:
+    st.session_state.results = None
+    st.session_state.results_key = key
+elif analyze and not too_long:
     bert_model, bart_model, bert_tokenizer, bart_tokenizer, device = load_models()
     progress = st.progress(0.0, text="Classifying clauses...")
 
@@ -125,10 +150,17 @@ if analyze and not too_long:
     )
     progress.empty()
     st.session_state.results = results
+    st.session_state.results_key = None
 
 
 # ---------------- Results ----------------
-results = st.session_state.get("results")
+# results_key is set when the results come from an example's cache; those follow the
+# sensitivity slider without rerunning, and go away once the text is changed
+results_key = st.session_state.get("results_key")
+if results_key is None:
+    results = st.session_state.get("results")
+else:
+    results = cached if results_key == key else None
 if results is not None:
     st.divider()
     n_clear = sum(r.label == 'clearly_unfair' for r in results)
@@ -141,6 +173,9 @@ if results is not None:
 
     if not results:
         st.success("No risky clauses found 🎉")
+    else:
+        st.caption("These are model predictions and can be wrong (summaries especially). "
+                   "Open **Original clause** to check what the terms actually say.")
 
     # Most worrying first: clearly unfair, then by confidence
     ordered = sorted(results, key=lambda r: (r.label != 'clearly_unfair', -r.unfair_prob))

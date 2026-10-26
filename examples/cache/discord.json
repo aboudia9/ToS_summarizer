@@ -1,0 +1,1385 @@
+{
+ "text_sha256": "7898ff50092e1221eb75805f3eea0b22c6fb854a39d044056769e910c2521c65",
+ "min_threshold": 0.1,
+ "clauses": [
+  {
+   "clause": "Last Updated: August 29, 2025",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3376232385635376,
+   "top_pick_unfair": false,
+   "summary": "There is a date of the last update of the agreements. There is no guarantee that the terms will continue after August 29, 2025."
+  },
+  {
+   "clause": "Discord enables you to build meaningful connections around the joy of playing games through voice, video and text features.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5041770040988922,
+   "top_pick_unfair": false,
+   "summary": "Discord lets you create meaningful connections with other people by using voice, video, and text features."
+  },
+  {
+   "clause": "We’re happy you’re here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.34727340936660767,
+   "top_pick_unfair": false,
+   "summary": "We're happy you're here, and we're happy to have you as a customer."
+  },
+  {
+   "clause": "These terms set forth our legal obligations to each other.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.852743998169899,
+   "top_pick_unfair": true,
+   "summary": "These terms explain what we both agree to do and what we're legally responsible for."
+  },
+  {
+   "clause": "IMPORTANT NOTE: The section titled “Settling Disputes Between You and Discord” contains an arbitration clause and class-action waiver that applies to all U.S. or Canada-based Discord users.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9325512871146202,
+   "top_pick_unfair": true,
+   "summary": "This service forces users into binding arbitration in the case of disputes. This service is only available to users in the United States and Canada. You waive your right to a class action.."
+  },
+  {
+   "clause": "Please read this section carefully as it may significantly affect your legal rights, including your right to file a lawsuit in court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1310502290725708,
+   "top_pick_unfair": false,
+   "summary": "Read this section carefully because it could affect your legal rights, including your right to sue in court."
+  },
+  {
+   "clause": "When we say “Discord,” “we,” “us,” and “our” in these terms, we mean Discord Inc., its subsidiaries, and its related companies.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.616685301065445,
+   "top_pick_unfair": true,
+   "summary": "When we say \"Discord,\" \"we,\" \"us,\" and \"our,\" we mean Discord Inc., its subsidiaries, and its related companies."
+  },
+  {
+   "clause": "When we say “services” in these terms, we mean Discord’s services, apps, websites, and other products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3743783235549927,
+   "top_pick_unfair": false,
+   "summary": "When we say \"services,\" we mean Discord's services, apps, websites, and other products."
+  },
+  {
+   "clause": "When we say “you” or “your,” we mean you.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5208103954792023,
+   "top_pick_unfair": false,
+   "summary": "When we say \"you,\" \"your,\" or \"your\" in this agreement, we mean you."
+  },
+  {
+   "clause": "If you’re accessing our services on behalf of a legal entity (like your employer), you agree that you have the authority to bind that entity to these terms, and “you” and “your” will refer to that entity.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5808189213275909,
+   "top_pick_unfair": true,
+   "summary": "If you're using our services for a legal entity (like your employer), you agree that you have the right to make that entity follow these terms, and \"you\" and \"your\" will be used to refer to that entity."
+  },
+  {
+   "clause": "We also have a Privacy Policy, Community Guidelines, and other policies (as listed here or as otherwise made available to you) that apply to your use of our services and are incorporated into these terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.22169452905654907,
+   "top_pick_unfair": false,
+   "summary": "We also have a Privacy Policy, Community Guidelines, and other policies that apply to your use of our services and are part of these terms."
+  },
+  {
+   "clause": "You should read these policies—we’ve worked hard to make them simple and clear, and they contain important information about your use of our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.17048871517181396,
+   "top_pick_unfair": false,
+   "summary": "You should read these policies because we've tried to make them easy to read and clear, and they contain important information about how you can use our services."
+  },
+  {
+   "clause": "Discord’s Paid Services Terms apply to any purchase you make through Discord, and Discord’s Monetization Terms apply to any sales you make through Discord.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10047340393066406,
+   "top_pick_unfair": false,
+   "summary": "Discord's paid services terms apply to any purchases you make through the service, and the service's monetization terms also apply to all sales made through it."
+  },
+  {
+   "clause": "By using Discord’s services, you agree to these terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9930537519976497,
+   "top_pick_unfair": true,
+   "summary": "When you use Discord's services, you agree to follow these terms. You are not allowed to use pseudonyms."
+  },
+  {
+   "clause": "Together, these rules make Discord possible, and they matter to us.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8134952187538147,
+   "top_pick_unfair": true,
+   "summary": "These rules make Discord work, and they're important to us and to you."
+  },
+  {
+   "clause": "Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA 94107, USA.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.27896183729171753,
+   "top_pick_unfair": false,
+   "summary": "Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA 94107, USA."
+  },
+  {
+   "clause": "Discord Netherlands B.V. is located at Schiphol Boulevard 195, 1118 BG Schiphol, Netherlands",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2367720603942871,
+   "top_pick_unfair": false,
+   "summary": "Discrepancy Netherlands B.V. is located at Schiphol Boulevard 195, 1118 BG SchIPhol, Netherlands."
+  },
+  {
+   "clause": "Our services are not designed for nor directed towards users under the age of 13.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18039846420288086,
+   "top_pick_unfair": false,
+   "summary": "We are not designed for or aimed at users under the age of 13, and we do not condone any ideas contained in our services."
+  },
+  {
+   "clause": "By creating a Discord account or using our services, you accept and agree to be bound by these terms and represent that you have either reached the age of \"majority\" where you live or your parent or legal guardian agrees to be bound by these terms on your behalf.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9548677653074265,
+   "top_pick_unfair": true,
+   "summary": "When you create an account or use our services, you agree to follow these terms, and you confirm that you have reached the age of majority where you live, or your parent or legal guardian agrees to enforce these terms for you."
+  },
+  {
+   "clause": "We maintain a list of minimum ages around the world as a resource for you, but we aren’t able to guarantee that it is always accurate.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.29278457164764404,
+   "top_pick_unfair": false,
+   "summary": "We keep a list of minimum ages around the world as a resource for you, but we can't promise that it will always be accurate."
+  },
+  {
+   "clause": "If you’re a parent or legal guardian, and you allow your child (who must meet the minimum age for your country) to use the services, then you and the minor child accept and agree to be bound by these terms and are responsible for all use of the Discord account or services, including your child’s activity on the services and purchases made by them, whether the minor’s account is now open or created later.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5313603579998016,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . This service is only available to users over a certain age. You are responsible for maintaining the security of your account and for the activities on your account, including any unauthorized access to your account. The service can delete your account without prior notice and without a reason. This service keeps a license on user-generated content even after users close their accounts.. The service has non-exclusive use of your content."
+  },
+  {
+   "clause": "What you can expect from us",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.18988335132598877,
+   "top_pick_unfair": false,
+   "summary": "We explain what kind of things you can expect from us and how we work with you."
+  },
+  {
+   "clause": "Discord provides services that help you connect with other Discord users and communities.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4444116950035095,
+   "top_pick_unfair": false,
+   "summary": "Discord provides services that help you connect with other people and communities on the service."
+  },
+  {
+   "clause": "Discord users communicate primarily via “servers,” which are digital spaces made up of different types of channels.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7352268993854523,
+   "top_pick_unfair": true,
+   "summary": "Discord users use the service's servers, which are digital spaces made up of different types of channels."
+  },
+  {
+   "clause": "Text channels allow users to interact via text-based messages, as well as images, GIFs, emoji, and other uploadable media.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8633915334939957,
+   "top_pick_unfair": true,
+   "summary": "You can communicate with each other through text messages, images, GIFs, emoji, and other uploadable media."
+  },
+  {
+   "clause": "Voice channels allow users to communicate by voice and/or streaming video.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7653046995401382,
+   "top_pick_unfair": true,
+   "summary": "Voice channels let you communicate with each other by voice and/or by using streaming video."
+  },
+  {
+   "clause": "Users can also communicate one-to-one using direct messages, or communicate with a limited number of users via group direct messages.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9412271119654179,
+   "top_pick_unfair": true,
+   "summary": "You can communicate with other users one-to-one using direct messages or with a limited number of users through group direct messages."
+  },
+  {
+   "clause": "We’re always evolving our services, and we may create other types of spaces in the future!",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6169947683811188,
+   "top_pick_unfair": true,
+   "summary": "We're always changing our services, and we might create other types of spaces in the future."
+  },
+  {
+   "clause": "Users create servers, and users choose which servers to join and who their “friends” are.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1412774920463562,
+   "top_pick_unfair": false,
+   "summary": "You create your own servers, and you can choose which servers to join and who your \"friends\" are."
+  },
+  {
+   "clause": "All users must follow our Community Guidelines and other policies, but in servers, the server owners and admins control the server permissions and additional rules, including establishing membership requirements and creating custom roles and what those roles can do within the server.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19489622116088867,
+   "top_pick_unfair": false,
+   "summary": "You must follow our Community Guidelines and other policies, but in servers, the server owners and admins control the server permissions and additional rules, including membership requirements and creating custom roles and what those roles can do."
+  },
+  {
+   "clause": "These permissions, like the size of a server, may change over time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3660847544670105,
+   "top_pick_unfair": false,
+   "summary": "We may change these terms at any time, but the user will still have access to the information provided."
+  },
+  {
+   "clause": "Discord is designed to make communicating with the people you want to speak to as easy as possible.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.31525516510009766,
+   "top_pick_unfair": false,
+   "summary": "Discord is designed to make it easy for you to communicate with people you want to talk to."
+  },
+  {
+   "clause": "Posts appear in text channels in the order in which they’re made.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.21346771717071533,
+   "top_pick_unfair": false,
+   "summary": "Posts appear in text channels in the order they're made, starting with the first one."
+  },
+  {
+   "clause": "Voice and video communication happens in real time.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5645405352115631,
+   "top_pick_unfair": true,
+   "summary": "We use voice and video communication in real time, and this service provides a way for you to communicate with us."
+  },
+  {
+   "clause": "This may include the ability for you, or other users, to connect a Discord account and communicate on and off Discord through third-party services (like in-game features).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.24385082721710205,
+   "top_pick_unfair": false,
+   "summary": "We may let you or other users connect to a Discord account and communicate on and off Discord through third-party services like in-game features."
+  },
+  {
+   "clause": "Learn more below about the content and software that may be in our services.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2778027653694153,
+   "top_pick_unfair": false,
+   "summary": "We provide information about what kind of content and software you can access through our services."
+  },
+  {
+   "clause": "Discord is designed to integrate with your device to make it easy to share what you’re up to.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12777650356292725,
+   "top_pick_unfair": false,
+   "summary": "Discord is designed to work with your device to make it easy for you to share what you're doing."
+  },
+  {
+   "clause": "Sharing gameplay and other activity status is fundamental to the Discord experience.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.32486408948898315,
+   "top_pick_unfair": false,
+   "summary": "You can share your gameplay and other activity status with other people on the service, and this service requires this."
+  },
+  {
+   "clause": "Discord also takes user safety seriously.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8227911293506622,
+   "top_pick_unfair": true,
+   "summary": "Discord is very careful about user safety and keeping users happy and contented on the service."
+  },
+  {
+   "clause": "We provide features and services that are designed to help keep users safe.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2250092625617981,
+   "top_pick_unfair": false,
+   "summary": "We provide features and services that are designed to keep you safe and provide you with information about how to report problems."
+  },
+  {
+   "clause": "Certain features and settings may have different defaults depending on your age or where you live, and some may not be optional at all.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.32880985736846924,
+   "top_pick_unfair": false,
+   "summary": "Depending on your age and location, some features and settings might not be turned on or turned on at all, and some settings may not be available."
+  },
+  {
+   "clause": "We also provide features to help make Discord more accessible as described here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2096683382987976,
+   "top_pick_unfair": false,
+   "summary": "We provide features to make it easier for people to use the service, as described here."
+  },
+  {
+   "clause": "We’re actively developing new features and products to improve Discord.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3679143786430359,
+   "top_pick_unfair": false,
+   "summary": "We're working on new features and products to make Discord better for you and our users."
+  },
+  {
+   "clause": "As part of these efforts, we may add or remove features, start offering new services, or stop offering some services entirely (or just in some places or for some users) if they no longer make sense from a business perspective or create risk for Discord, our users, or other third parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9845898728817701,
+   "top_pick_unfair": true,
+   "summary": "We may add or remove features, start offering new services, or stop offering some services entirely (or just in some places or for some users) if they don't make sense from a business perspective or create risk for us, our users, or other third parties."
+  },
+  {
+   "clause": "While we try to avoid disruptions, we cannot guarantee that there will not be an outage or change to the services, and your content may not be retrievable due to such outages or changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13587719202041626,
+   "top_pick_unfair": false,
+   "summary": "We try to avoid problems, but we can't guarantee that the services will work normally or that your content will be available when they do."
+  },
+  {
+   "clause": "We are not liable for any such outages or service changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9838355667889118,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for any problems or changes to the service that happen during the outage or service changes."
+  },
+  {
+   "clause": "In some cases, you may be required to verify your account or provide additional information.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.35005682706832886,
+   "top_pick_unfair": false,
+   "summary": "Some times, you might need to check your account or provide additional information to the service."
+  },
+  {
+   "clause": "You are responsible for the security of your account, and you agree to notify us immediately if you believe your account has been compromised.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.44508087635040283,
+   "top_pick_unfair": false,
+   "summary": "You must keep your account secure, and you must tell us right away if you think your account has been affected."
+  },
+  {
+   "clause": "We may assume that any communications we’ve received from your account or the associated contact information have been made by you, and that any purchases made using your account were made by you.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10322731733322144,
+   "top_pick_unfair": false,
+   "summary": "We may believe that any messages we receive from your account or contact information belong to you, and that any purchases made on your account were made by you."
+  },
+  {
+   "clause": "We also reserve the right to delete, change, or reclaim your username, URL, or other identifier.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9795918799936771,
+   "top_pick_unfair": true,
+   "summary": "We can delete, change, or reclaim your username, URL, or other identifier."
+  },
+  {
+   "clause": "When we say “your content” in these terms, we mean all the things you add (upload, post, share, stream, etc.)",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.19739770889282227,
+   "top_pick_unfair": false,
+   "summary": "When we say \"your content,\" we mean anything you upload, post, share, stream, and/or share on this service."
+  },
+  {
+   "clause": "This includes text, links, GIFs, emoji, photos, videos, documents, or other media.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6589740216732025,
+   "top_pick_unfair": true,
+   "summary": "This service can use your content for all their existing and future services. This service can share your content with third parties. You can request access and deletion of personal data."
+  },
+  {
+   "clause": "If we come up with another way for you to add content to the services, it includes that too.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6624785363674164,
+   "top_pick_unfair": true,
+   "summary": "If we create a new way for you to add content to the services, that new way will also include this clause."
+  },
+  {
+   "clause": "We take no responsibility for any of your content, and we are not responsible for others’ use of your content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8442594707012177,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for what happens to your content and for how other people use it."
+  },
+  {
+   "clause": "Our services allow users to add content in a number of different ways, including via direct messages, group direct messages, and in small and large servers.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4399275779724121,
+   "top_pick_unfair": false,
+   "summary": "You can add content to this service by sending it through direct messages, group messages, and in small and large servers."
+  },
+  {
+   "clause": "Some of these servers may be larger spaces, and if you share content within them, that content may be more likely to be accessed by a lot of people.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2645680904388428,
+   "top_pick_unfair": false,
+   "summary": "Some of these servers may be larger than others, and if you share content within them, a lot of people might be able to see it."
+  },
+  {
+   "clause": "For example, some servers are available in the Server Discovery section of the app and do not require an invite link to join.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.24826502799987793,
+   "top_pick_unfair": false,
+   "summary": "Some servers are available in the Server Discovery section of the app and don't need an invite to join."
+  },
+  {
+   "clause": "You should be aware that these permissions are set by server owners or admins, and they may change over time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.570149838924408,
+   "top_pick_unfair": true,
+   "summary": "You should know that the server owners or admins set these permissions, and they may change over time."
+  },
+  {
+   "clause": "Your content is yours, but you give us a license (which is a form of permission) to it when you use Discord.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.11377209424972534,
+   "top_pick_unfair": false,
+   "summary": "When you use Discord, you give us permission to use your content, which is a form of ownership."
+  },
+  {
+   "clause": "This license is worldwide, non-exclusive (which means you can still license your content to others), royalty-free (which means there are no fees for this license), sublicensable, and transferable.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6903768479824066,
+   "top_pick_unfair": true,
+   "summary": "This service is free to use worldwide, non-exclusive of your content, and you can share it with others. There are no fees for this service. The service can license your content to third parties."
+  },
+  {
+   "clause": "Learn more about how we use your content in our Privacy Policy.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.19681167602539062,
+   "top_pick_unfair": false,
+   "summary": "Details are provided about how we use your personal data. Information is provided about what kind of information you give us."
+  },
+  {
+   "clause": "We reserve the right to block, remove, and/or permanently delete your content if we determine it is in breach of these terms, our Community Guidelines, our other policies, or any applicable law or regulation, or if it creates risk for Discord or negatively impacts the experience or interests of other Discord users to continue to make it available.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9957533972337842,
+   "top_pick_unfair": true,
+   "summary": "We can block, remove, and/or permanently delete your content if we decide it breaks these terms, our Community Guidelines, our other policies, or any applicable law or regulation, or if it creates risk for Discord or negatively impacts the experience or interests of other Discord users."
+  },
+  {
+   "clause": "Other people’s content.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5252917408943176,
+   "top_pick_unfair": true,
+   "summary": "Content from other people's websites is not allowed. This service is only available for use individually and non-commercially.."
+  },
+  {
+   "clause": "Other people’s content is theirs and doesn’t necessarily reflect Discord’s own views.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3772531747817993,
+   "top_pick_unfair": false,
+   "summary": "The content on other people's websites is their own, and doesn't necessarily reflect what Discord thinks."
+  },
+  {
+   "clause": "Discord doesn’t endorse or verify the accuracy or reliability of content shared by Discord users.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2125542163848877,
+   "top_pick_unfair": false,
+   "summary": "Discord does not approve of or check whether the content shared by its users is accurate or reliable."
+  },
+  {
+   "clause": "We work hard to try to make Discord a safe, positive, and inclusive place, but cannot always prevent you from encountering content that you may find objectionable or offensive.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5272583365440369,
+   "top_pick_unfair": false,
+   "summary": "We try to keep Discord a safe, positive, and inclusive place, but we can't prevent you from seeing content that you might find objectionable or offensive."
+  },
+  {
+   "clause": "You agree we will not be liable for any harm caused by that content.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9848324283957481,
+   "top_pick_unfair": true,
+   "summary": "You agree that we are not responsible for any harm that happens because of the content."
+  },
+  {
+   "clause": "You may report content that you think violates any of our policies.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.28567367792129517,
+   "top_pick_unfair": false,
+   "summary": "You can report content that you think breaks our rules or practices. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "We have the right, but not the obligation, to review such reports and block or remove content at our discretion.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9871038943529129,
+   "top_pick_unfair": true,
+   "summary": "We can review reports and decide whether to block or remove content whenever we want, but we don't have to."
+  },
+  {
+   "clause": "This may include sponsored content (like Quests or other sponsored formats).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5792595148086548,
+   "top_pick_unfair": true,
+   "summary": ". This may include sponsored content (like Quests) or other sponsored formats."
+  },
+  {
+   "clause": "We are not responsible for the content or services available from these third parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9370566830039024,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for the content or services that third parties provide to you."
+  },
+  {
+   "clause": "Although we are granting you this license, we retain any intellectual property rights we have in our software and services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.14087766408920288,
+   "top_pick_unfair": false,
+   "summary": "We keep any intellectual property rights we own in our software and services, even after you use them."
+  },
+  {
+   "clause": "We encourage you to review them, as some licenses may explicitly override these terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3592785596847534,
+   "top_pick_unfair": false,
+   "summary": "We suggest you read these terms carefully, because some licenses might override these terms."
+  },
+  {
+   "clause": "For example, third parties can build apps for content moderation or interactive games that server administrators can add to their servers on Discord, or that incorporate certain Discord-powered features or functions (such as messaging capabilities) into their services (such as games played off Discord).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13827276229858398,
+   "top_pick_unfair": false,
+   "summary": "Third parties can build apps for content moderation or interactive games that server administrators can add to their servers on Discord, or that use Discord-powered features or functions (like messaging capabilities) in their services (like games played off Discord)"
+  },
+  {
+   "clause": "You should review any terms and policies provided by the third parties before doing so as they govern your use of their services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.16792815923690796,
+   "top_pick_unfair": false,
+   "summary": "You should read any terms and policies that third parties give you before you use their services, because they control how you can use them."
+  },
+  {
+   "clause": "While these third parties do need to follow all policies that apply to them (which may include these Terms, our Community Guidelines, Developer Terms of Service, and Developer Policy), Discord is not responsible for any third-party services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9126159846782684,
+   "top_pick_unfair": true,
+   "summary": "Third parties are bound by these terms, but Discord is not responsible for problems caused by third-party services."
+  },
+  {
+   "clause": "Discord does not warrant or endorse, and will not have any liability for, any third-party services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9507664330303669,
+   "top_pick_unfair": true,
+   "summary": "Discord does not condone or endorse any third-party services, and is not responsible for any problems caused by them."
+  },
+  {
+   "clause": "We have the right, but not the obligation, to review such reports and take enforcement actions at our discretion.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3508562445640564,
+   "top_pick_unfair": false,
+   "summary": "We can look at reports and decide whether to act on them, but we don't have to."
+  },
+  {
+   "clause": "We respect the intellectual property of others and expect our users to do the same.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9174217656254768,
+   "top_pick_unfair": true,
+   "summary": "We respect other people's intellectual property and ask you to respect them too, and we expect you to do the same."
+  },
+  {
+   "clause": "Discord’s paid services",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12982970476150513,
+   "top_pick_unfair": false,
+   "summary": "I can see this appears to be a section heading rather than a complete clause with substantive content. There is no substantive content here to rewrite into plain English."
+  },
+  {
+   "clause": "When using our services, you must comply with these terms and all applicable laws, rules, and regulations, and you must only use the services for authorized and acceptable purposes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2388315200805664,
+   "top_pick_unfair": false,
+   "summary": "When you use our services, you must follow these terms and all laws, rules, and regulations that apply to you, and you can only use the services in ways that are authorized and acceptable."
+  },
+  {
+   "clause": "You must also adhere to our Community Guidelines and other policies, which contain more detailed rules about your content and behavior when using Discord and how we enforce them on Discord.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11732792854309082,
+   "top_pick_unfair": false,
+   "summary": "You must follow our Community Guidelines and other policies, which have more detailed rules about how you can behave when using Discord and how we enforce them."
+  },
+  {
+   "clause": "Among other things, this includes trying to gain access to another user’s account or any non-public portions of the services; infringing anyone else’s intellectual property rights or any other proprietary rights; exploiting, harassing, bullying, spamming, auto-messaging, or auto-dialing people through our services; and using our services to plan or cause real-world harm to someone else.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9045948907732964,
+   "top_pick_unfair": true,
+   "summary": "This service prohibits users from attempting to gain unauthorized access to other people's personal information. Users agree not to use the service for illegal purposes. Prohibits the posting of content which promotes or glorifies violence or politically or religiously extremist values.. This service forbids users sending chain letters, junk mail, spam or any unsolicited messages. You cannot use this service to plan or carry out any type of harm to another person. This service can license user content to third parties."
+  },
+  {
+   "clause": "Among other things, this includes trying to gain access to, intentionally overburdening, or attacking our systems; scraping our services without our written consent, including by using any robot, spider, crawler, scraper, or other automatic device, process, or software; selling, licensing, or otherwise commercializing content or data obtained from our services; transmitting viruses or other malicious code to our services; using any unauthorized software designed to modify the services; abusing or defrauding us or our payment systems; copying, dismantling, or reverse engineering any of our services or using our intellectual property without permission; and misusing our reporting or customer service mechanisms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8505736589431763,
+   "top_pick_unfair": true,
+   "summary": "This service prohibits users from attempting to gain unauthorized access to other computer systems. Users agree not to use the service for illegal purposes. This service can license user content to third parties. Spidering, crawling, or accessing the site through any automated means is not allowed. Users are not allowed to distribute or disclose personal information through any media. The service can sell or otherwise transfer your content or data as part of a bankruptcy proceeding or other type of financial transaction.. This service does not condone any ideas contained in its user-generated contents. Users should revisit the terms periodically, although in case of material changes, the service"
+  },
+  {
+   "clause": "- Don’t use the services to do anything else that’s illegal.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12466073036193848,
+   "top_pick_unfair": false,
+   "summary": "Don't use the services for anything else that is illegal, and don't use them for illegal purposes."
+  },
+  {
+   "clause": "This includes using the services to plan or commit any crime or do anything else that is illegal.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9910813495516777,
+   "top_pick_unfair": true,
+   "summary": "You cannot use the services to plan or commit any crime or do anything else that is illegal."
+  },
+  {
+   "clause": "We encourage you to report content or conduct that you believe violates these restrictions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.765942856669426,
+   "top_pick_unfair": true,
+   "summary": "We would like you to report any content or behavior that you think breaks these restrictions."
+  },
+  {
+   "clause": "You can learn more about our approach to safety and content moderation in our Safety Center.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.11149120330810547,
+   "top_pick_unfair": false,
+   "summary": "You can learn more about how we handle safety and content moderation in our Safety Center."
+  },
+  {
+   "clause": "You’re free to stop using Discord’s services at any time and for any reason.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.991307738237083,
+   "top_pick_unfair": true,
+   "summary": "You can stop using Discord's services whenever you want, for any reason or for no reason at all."
+  },
+  {
+   "clause": "To terminate this agreement, you may delete your Discord account through the Settings page in the Discord app (the gear icon next to your username) and discontinue use of the services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13681048154830933,
+   "top_pick_unfair": false,
+   "summary": "You can delete your account by going to the settings page in the Discord app (the gear icon next to your username) and turning off your account."
+  },
+  {
+   "clause": "Certain provisions of these terms will survive termination as outlined below in the “Survival” section.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3092508316040039,
+   "top_pick_unfair": false,
+   "summary": "Some parts of these terms will continue to apply even after you stop using them, as explained in the \"Survival\" section."
+  },
+  {
+   "clause": "Disabling your account limits the processing of your personal information as described in our Privacy Policy.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.30864936113357544,
+   "top_pick_unfair": false,
+   "summary": "If you turn off your account, we won't be able to use your personal information as described in our Privacy Policy."
+  },
+  {
+   "clause": "Disabling your account does not terminate this agreement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12428689002990723,
+   "top_pick_unfair": false,
+   "summary": "Turning off your account does not end your agreement with us, and you still have the right to use the service."
+  },
+  {
+   "clause": "Subject to applicable law, we reserve the right to suspend or terminate your account and/or your access to some or all of our services with or without notice, at our discretion for any reason, or for the following reasons:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9960171598941088,
+   "top_pick_unfair": true,
+   "summary": "We can suspend or end your account and/or your access to some or all of our services whenever we want, with or without telling you first, for any reason, or for any of the following reasons:"
+  },
+  {
+   "clause": "- You breach, or you encourage or help others to breach, these terms (including, our Community Guidelines, our other policies, or additional terms that apply to specific services).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.23202723264694214,
+   "top_pick_unfair": false,
+   "summary": "You break these terms, or you encourage or help other people break them, and you also break our Community Guidelines, our other policies, or any additional terms that apply to specific services."
+  },
+  {
+   "clause": "- We reasonably believe termination is necessary to prevent harm to you, us, other users, or third parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9703215733170509,
+   "top_pick_unfair": true,
+   "summary": "We reasonably believe that ending this agreement will protect you, us, other users, or third parties from harm."
+  },
+  {
+   "clause": "- Continuing to allow your account to be active, giving you access to some or all services, or hosting your content creates risk for Discord, other users, or third parties.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.30329257249832153,
+   "top_pick_unfair": false,
+   "summary": "If you keep your account active, you can access some or all services, and hosting your content could put you at risk to yourself, other users, or third parties."
+  },
+  {
+   "clause": "We value transparency and work hard to give you context for the decisions we make.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3164493441581726,
+   "top_pick_unfair": false,
+   "summary": "We try to be transparent about what we do and why we make decisions, and we give you context for those decisions."
+  },
+  {
+   "clause": "You will indemnify and hold Discord and its officers, directors, employees and agents harmless from and against any claims, liabilities, damages, and costs (including reasonable legal and accounting fees) related to (a) your access to or use of our services or third-party services, (b) your content, (c) your violation of these terms, or (d) your negligence or willful misconduct.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6391826272010803,
+   "top_pick_unfair": true,
+   "summary": "You agree to protect Discord and its officers, directors, employees, and agents from any claims, liabilities, damages, and costs (including reasonable legal and accounting fees) that result from your use of our services or third-party services, your content, your violation of these terms, or your negligence or willful misconduct."
+  },
+  {
+   "clause": "We work hard to offer great services, but we can’t guarantee any minimum levels of quality of services (which may also depend on factors beyond our control, such as the quality of your internet access and equipment).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2737833261489868,
+   "top_pick_unfair": false,
+   "summary": "We work hard to give you great services, but we can't promise you will get the best quality. This may depend on many things beyond our control, including the quality of your internet access and equipment."
+  },
+  {
+   "clause": "TO THE EXTENT SUCH WARRANTIES CANNOT BE DISCLAIMED UNDER THE LAWS OF YOUR JURISDICTION, WE LIMIT THE DURATION AND REMEDIES OF SUCH WARRANTIES TO THE FULL EXTENT PERMISSIBLE UNDER THOSE LAWS.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9116155952215195,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for any losses or damages resulting from any matter relating to the service. This service does not guarantee that it or the products obtained through it meet your expectations or requirements."
+  },
+  {
+   "clause": "You are responsible for any mobile charges that you may incur for using our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7263132631778717,
+   "top_pick_unfair": true,
+   "summary": "You are responsible for paying any mobile charges that come up when you use our services."
+  },
+  {
+   "clause": "This includes data charges and charges for messaging, such as SMS, MMS, or other messaging protocols or technologies.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.11991173028945923,
+   "top_pick_unfair": false,
+   "summary": "This service charges you money for data and messaging services like SMS, MMS, or other messaging protocols or technologies."
+  },
+  {
+   "clause": "IN JURISDICTIONS WHERE THE BELOW TYPES OF EXCLUSIONS AREN’T ALLOWED, WE’RE RESPONSIBLE TO YOU ONLY FOR LOSSES AND DAMAGES THAT ARE A REASONABLY FORESEEABLE RESULT OF OUR FAILURE TO USE REASONABLE CARE AND SKILL OR OUR MATERIAL BREACH OF OUR CONTRACT WITH YOU.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.970253111794591,
+   "top_pick_unfair": true,
+   "summary": ". If you offer suggestions to the service, they become the owner of the ideas that you give them. You are responsible for any losses or damages that result from your use of the service."
+  },
+  {
+   "clause": "WE DO NOT CONFIRM THE ACCURACY, COMPLETENESS, OR USEFULNESS OF THE INFORMATION.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.37976986169815063,
+   "top_pick_unfair": false,
+   "summary": "We do not guarantee that the information provided is accurate, complete, or that it will help you."
+  },
+  {
+   "clause": "IN JURISDICTIONS WHERE EXCLUSIONS OR LIMITATIONS OF LIABILITY ARE ALLOWED, NEITHER DISCORD, ITS AFFILIATES, NOR OUR SUPPLIERS INVOLVED IN CREATING, PRODUCING, OR DELIVERING THE SERVICES WILL BE LIABLE, TO THE MAXIMUM EXTENT PERMITTED UNDER APPLICABLE LAW, FOR ANY INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOST PROFITS, LOST REVENUES, LOST SAVINGS, LOST BUSINESS OPPORTUNITY, LOSS OF DATA OR GOODWILL, SERVICE INTERRUPTION, COMPUTER DAMAGE OR SYSTEM FAILURE, OR THE COST OF SUBSTITUTE SERVICES OF ANY KIND ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR FROM THE USE OF OR INABILITY TO USE THE SERVICES, WHETHER BASED ON WARRANTY, CONTRACT, STATUTE, TORT (INCLUDING NEGLIGENCE), PRODUCT LIABILITY, OR ANY OTHER LEGAL THEORY, AND WHETHER OR NOT DISCORD OR ITS SUPPLIERS HAVE BEEN INFORMED OF THE POSSIBILITY OF SUCH DAMAGE, EVEN IF A LIMITED REMEDY PROVIDED IN THESE TERMS IS FOUND TO HAVE FAILED OF ITS ESSENTIAL PURPOSE.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.982596468180418,
+   "top_pick_unfair": true,
+   "summary": "The service is not responsible for any losses or damages resulting from any matter relating to the service. This service is only responsible for claims related to your use of the service in the specific circumstances that apply to you. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. The court of law governing the terms is in a jurisdiction that is less friendly to user privacy protection (California, USA). The service has non-exclusive use of your content. You waive your right to a class action.. Users agree not to use the service for illegal purposes. You maintain ownership of your data. The"
+  },
+  {
+   "clause": "Settling disputes between you and Discord",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2918891906738281,
+   "top_pick_unfair": false,
+   "summary": "You and Discord need to work out any disagreements between you and each other to resolve them."
+  },
+  {
+   "clause": "This section applies to any and all disputes between you and Discord.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6776359379291534,
+   "top_pick_unfair": true,
+   "summary": "This section applies to any disagreements you have with other people or companies on or through Discord."
+  },
+  {
+   "clause": "“Disputes” means all disagreements between us including but not limited to claims arising out of or relating to any aspect of the relationship between us, these terms, or your use of the services, whether based in contract, tort, statute, fraud, misrepresentation or any other legal theory (each a “Dispute” and collectively “Disputes”).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9921552259474993,
+   "top_pick_unfair": true,
+   "summary": "\"Disputes\" means any disagreements between us, including claims about our relationship, these terms, or your use of the services, whether based on contract, tort, statute, fraud, misrepresentation, or any other legal theory."
+  },
+  {
+   "clause": "Most Disputes can be resolved informally.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9548426307737827,
+   "top_pick_unfair": true,
+   "summary": "Most disagreements can be handled informally by working through legal channels instead of going to court."
+  },
+  {
+   "clause": "If you have an issue with the services or Discord, you agree that you will reach out to us and use good faith efforts to settle the Dispute informally through negotiation before initiating a lawsuit or arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11233419179916382,
+   "top_pick_unfair": false,
+   "summary": "If you have a problem with the services or Discord, you agree to reach out to us in good faith and try to work things out informally before suing or going to court."
+  },
+  {
+   "clause": "If the Dispute is not resolved within 60 days after receipt of the Written Notice, you and Discord agree to resolve any remaining Dispute through further informal discussions or one of the formal dispute resolution provisions below.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7803006172180176,
+   "top_pick_unfair": true,
+   "summary": "If you and Discord cannot resolve your disagreement within 60 days of receiving the written notice, you both agree to resolve it through informal discussions or one of the formal dispute resolution options listed below."
+  },
+  {
+   "clause": "This Informal Dispute Resolution process, including your personal participation in the meet and confer is a prerequisite and condition precedent to commencing any formal dispute resolution proceeding.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.19772416353225708,
+   "top_pick_unfair": false,
+   "summary": "Your participation in the informal dispute resolution process is required before you can start any formal dispute resolution."
+  },
+  {
+   "clause": "You and Discord (the “Parties”) agree that any applicable statute of limitations period and filing fees or other deadlines will be tolled while the Parties engage in this Informal Dispute Resolution process.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.90413598716259,
+   "top_pick_unfair": true,
+   "summary": "a.com/terms. You and Discord agree that any legal deadlines, filing fees, or other requirements that apply to you during this informal dispute resolution process will be waived."
+  },
+  {
+   "clause": "The Parties further agree that whether a complaining Party has satisfied the requirements of this Informal Dispute Resolution process, including whether a Written Notice was properly submitted or contained all required information, is an issue that can be decided by a court as a prerequisite to arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3331606984138489,
+   "top_pick_unfair": false,
+   "summary": "The parties agree that a court can decide whether a complaint was properly submitted or if all the information required by the complaint was provided."
+  },
+  {
+   "clause": "Note that a submission via the OCDS mechanism alone, without submitting a Written Notice to disputes@discordapp.com, will not toll the applicable statutes of limitations or other deadlines.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.13497471809387207,
+   "top_pick_unfair": false,
+   "summary": "If you submit a complaint through the OCDS system alone, you won't be able to use the statute of limitations or other deadlines that apply to you."
+  },
+  {
+   "clause": "These terms and all Disputes between you and Discord, whether in arbitration or court (if a Dispute is non-arbitrable under these terms for any other reason), shall be governed by the law of the United States and the laws of California, without regard to conflicts of law provisions—in other words, any federal law or California law, including any conflict of law principle, that would provide for the application of the laws of another jurisdiction other than the United States or California shall not apply.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9772180244326591,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection (California, USA). This service does not condone any ideas contained in its user-generated contents. The service is not responsible for linked or (clearly) quoted content from third-party content providers. This service assumes no liability for any losses or damages resulting from any matter relating to the service."
+  },
+  {
+   "clause": "By agreeing to these terms, you and Discord agree that to the extent any Dispute is not arbitrable—including any arbitration-related litigation, such as a motion to compel arbitration, to stay proceedings pending arbitration, or to confirm, modify, vacate, or enter judgment on an arbitration award—the Dispute must be resolved exclusively by a court of competent jurisdiction, federal or state (including small claims court), located in the County of New Castle, Delaware, and no other court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9882342917844653,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . This service forces users into binding arbitration in the case of disputes. This service reserves the right to disclose your personal information without notifying you. The service can sell or otherwise transfer your account as part of a bankruptcy proceeding or other type"
+  },
+  {
+   "clause": "If you are a consumer residing in the European Union, this clause and these terms in general do not affect any mandatory consumer rights you may have under your local law, and all Disputes arising in connection with the services and/or these terms shall be submitted to the exclusive jurisdiction of the court of Amsterdam, the Netherlands or, if you are a consumer, to a court in your domicile if in an EU Member State.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.577520340681076,
+   "top_pick_unfair": false,
+   "summary": "If you live in the European Union, this clause does not affect any consumer rights that apply to you under your local law. Dispute resolution must be handled in the Amsterdam, Netherlands court or in the court in your home country if you're a consumer."
+  },
+  {
+   "clause": "You agree that any Dispute between you and Discord that for any reason is not subject to the “Agreement to Arbitrate” section below may only be pursued by you on an individual basis, and you may not bring a claim as a plaintiff or a class member in a class, collective, or representative action.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7505669742822647,
+   "top_pick_unfair": true,
+   "summary": "You agree that any disagreement between you and Discord can only be resolved through arbitration, and you can only bring individual claims against the service on your own, not as part of a group or class action lawsuit."
+  },
+  {
+   "clause": "To the extent a Dispute between you and Discord is subject to arbitration, the provisions set forth in the “Agreement to Arbitrate” apply, including those regarding class arbitration, private attorney general arbitration, arbitration involving joint or consolidated claims, and batching.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7480041682720184,
+   "top_pick_unfair": true,
+   "summary": "If you have a dispute with Discord, the arbitration rules described in the \"Agreement to Arbitrate\" apply to that dispute, including class arbitration, private attorney general arbitration, arbitration involving joint or consolidated claims, and batching."
+  },
+  {
+   "clause": "No action, regardless of form, arising out of or relating to a Dispute may be brought by either Party more than one (1) year after the cause of action has accrued.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9375378787517548,
+   "top_pick_unfair": true,
+   "summary": "You cannot take legal action against us for more than one year after the problem was first brought to your attention."
+  },
+  {
+   "clause": "IF YOU’RE A U.S. OR CANADIAN RESIDENT YOU ALSO AGREE TO THE FOLLOWING “AGREEMENT TO ARBITRATE” WHICH CONTAINS MANDATORY ARBITRATION PROVISIONS.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3635430932044983,
+   "top_pick_unfair": false,
+   "summary": "If you are a U.S. or Canadian resident, you agree to follow the arbitration process described below, and you have the right to leave."
+  },
+  {
+   "clause": "PLEASE READ THIS SECTION CAREFULLY – IT MAY SIGNIFICANTLY AFFECT YOUR LEGAL RIGHTS, INCLUDING YOUR RIGHT TO FILE A LAWSUIT IN COURT:",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19199925661087036,
+   "top_pick_unfair": false,
+   "summary": ". Please read this section carefully because it could affect your legal rights, including your right to file a lawsuit in court."
+  },
+  {
+   "clause": "The “Agreement to Arbitrate” includes all provisions following this heading, through and including the paragraph titled “Changes to this Agreement to Arbitrate.”",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8690255135297775,
+   "top_pick_unfair": true,
+   "summary": "The terms for this service are easy to read. The service provides a complete list of all legal terms and conditions that apply to you. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "Only after engaging in the Informal Dispute Resolution process set forth in these Terms, and only after those efforts fail to resolve the Dispute, then either Party may initiate binding arbitration as the sole means to resolve Disputes, subject to the terms of this Agreement to Arbitrate and the applicable arbitration rules.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8947763442993164,
+   "top_pick_unfair": true,
+   "summary": "After you and the service try to resolve your disagreement through informal methods described in these Terms, and if that fails, either you or the service can choose to use binding arbitration instead, but only under the terms of this Agreement to Arbitrate and the applicable arbitration rules."
+  },
+  {
+   "clause": "You and Discord (collectively the “Parties”) agree that this Agreement to Arbitrate is made pursuant to a transaction involving interstate commerce, and shall be governed by the Federal Arbitration Act (“FAA”), 9 U.S.C.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9406723380088806,
+   "top_pick_unfair": true,
+   "summary": "You and Discord agree that this Agreement to Arbitrate applies to interstate commerce, and the Federal Arbitration Act (FAA) will govern the terms."
+  },
+  {
+   "clause": "This Agreement to Arbitrate is intended to be interpreted broadly, and it applies to all Disputes between the Parties, including: (1) claims that arose, were asserted, or involve facts occurring before the existence of this Agreement to Arbitrate or any prior agreement; (2) claims that may arise after the termination of this Agreement to Arbitrate.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9293171092867851,
+   "top_pick_unfair": true,
+   "summary": "This agreement applies to all disputes between you and us, including claims that started before this Agreement to Arbitrate or any previous agreements. The service can delete specific content without reason and may do it without prior notice and without a reason. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of arbitration."
+  },
+  {
+   "clause": "Except as set forth in the paragraph below titled “Exceptions,” the arbitrator, and not any federal, state, or local court or agency, shall have exclusive authority to resolve: (1) all Disputes; (2) whether a claim is subject to arbitration; and (3) any dispute regarding the payment of administrative or arbitrator fees (including the timing of such payments and remedies for nonpayment).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7814647257328033,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator, not any federal, state, or local court or agency, is the only one who can decide all disputes, including whether a claim should be handled through arbitration, and any disagreement about how to pay the arbitrator's fees (including when to pay them and what to do if you don't pay them) except as described in the paragraph below."
+  },
+  {
+   "clause": "The arbitrator shall be empowered to grant whatever relief would be available in a court under law or in equity.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.49168258905410767,
+   "top_pick_unfair": false,
+   "summary": "The arbitrator is allowed to give you whatever relief you ask for in court under the law or in equity."
+  },
+  {
+   "clause": "The arbitrator has the right to impose sanctions in accordance with the arbitration provider rules and procedures for any frivolous claims or submissions the arbitrator determines have not been filed in good faith, as well as for a Party's failure to comply with this Agreement to Arbitrate or the Informal Dispute Resolution process.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9349828809499741,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator can decide to punish you for frivolous claims or submissions that the arbitrator decides were not filed in good faith, as well as for not following the terms of this Agreement to Arbitrate or the Informal Dispute Resolution process."
+  },
+  {
+   "clause": "ARBITRATION MEANS THAT YOU WAIVE YOUR RIGHT TO A JURY TRIAL.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7777669131755829,
+   "top_pick_unfair": true,
+   "summary": "You give up your right to a jury trial by agreeing to an arbitration instead of going to court."
+  },
+  {
+   "clause": "In some instances, the costs of arbitration could exceed the costs of litigation and the right to discovery may be more limited in arbitration than in court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7776480168104172,
+   "top_pick_unfair": true,
+   "summary": "The cost of arbitration may be higher than going to court, and you might not have as much access to information as you would in court."
+  },
+  {
+   "clause": "For residents of the state of California, or Mass Arbitrations involving any residents of the state of California, the arbitration will be administered by ADR Services, Inc. (“ADR Services”) (https://www.adrservices.com/).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8693341910839081,
+   "top_pick_unfair": true,
+   "summary": "If you live in California, the arbitration will be handled by ADR Services, Inc. (https://www.adrservices.com/)."
+  },
+  {
+   "clause": "For residents of all states other than California, and Mass Arbitrations involving no residents of California, the arbitration will be administered by National Arbitration and Mediation (\"NAM\") and resolved before a single arbitrator.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8656486421823502,
+   "top_pick_unfair": true,
+   "summary": "If you live in any state other than California and there are no California residents involved in arbitration, the arbitration will be handled by National Arbitration and Mediation and will be decided by one arbitrator instead of going to court."
+  },
+  {
+   "clause": "For residents of all states other than California if, and only if, NAM is not available to arbitrate, the alternative arbitrator shall be ADR Services, Inc. (“ADR Services”) (https://www.adrservices.com/).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2637671232223511,
+   "top_pick_unfair": false,
+   "summary": "If NAM cannot be found to arbitrate, the alternative arbitrator will be ADR Services, Inc. (https://www.adrservices.com/)."
+  },
+  {
+   "clause": "Except as modified by this Agreement to Arbitrate, NAM will administer any arbitration in accordance with the NAM “Comprehensive Dispute Resolution Rules and Procedures,” “Fees For Disputes When One of the Parties is a Consumer,” and the “Mass Filing Supplemental Dispute Resolution Rules and Procedures” in effect at the time any demand for arbitration is filed with NAM, excluding any rules or procedures permitting class or representative actions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18761032819747925,
+   "top_pick_unfair": false,
+   "summary": "Arbitration will follow the NAM's \"Comprehensive Dispute Resolution Rules and Procedures,\" \"Fees For Disputes When One of the Parties is a Consumer,\" and the \"Mass Filing Supplemental Dispute resolution Rules and procedures\" in effect at the time you file a claim, except as this Agreement to Arbitrate says. This service does not allow for class action lawsuits or class action waivers."
+  },
+  {
+   "clause": "Except as modified by this Agreement to Arbitrate, ADR Services will administer any arbitration in accordance with the ADR Services Arbitration Rules and General Fee Schedule in effect at the time any demand for arbitration is filed with ADR Services, including its rules regarding “Mass Arbitrations,” and excluding any rules permitting class or representative actions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.20251595973968506,
+   "top_pick_unfair": false,
+   "summary": "Except as this Agreement to Arbitrate changes, ADR Services will handle any disputes through arbitration according to the arbitration rules and fees that are in effect when you file a claim, including rules for mass arbitration, but not for class or representative actions."
+  },
+  {
+   "clause": "The applicable ADR Services rules and procedures are available at www.adrservices.com.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2565687298774719,
+   "top_pick_unfair": false,
+   "summary": "You can find the ADR Services rules and procedures at www.adrservices.com."
+  },
+  {
+   "clause": "If the amount in controversy does not exceed $10,000, and you do not seek injunctive or declaratory relief, then the arbitration will be conducted solely on the basis of documents you and Discord submit to the arbitrator, unless the arbitrator determines that a hearing is necessary or applicable law requires otherwise.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15132135152816772,
+   "top_pick_unfair": false,
+   "summary": "If the amount in the disagreement is less than $10,000, and you don't ask for injunctive or declaratory relief, the arbitrator will use only the documents you and Discord submit to him, unless a hearing is necessary or the law requires otherwise."
+  },
+  {
+   "clause": "If the amount in controversy exceeds $10,000 or seeks declaratory or injunctive relief, either Party may request (or the arbitrator may determine) to hold a hearing, which may be in-person, via videoconference, or via telephone conference.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.20039117336273193,
+   "top_pick_unfair": false,
+   "summary": "If there's a disagreement over money over $10,000, either you or the company can ask for a hearing (either in person, by videoconference, or by phone), and the arbitrator can decide."
+  },
+  {
+   "clause": "You and Discord agree that dispositive motions will be allowed in the arbitration.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.24282443523406982,
+   "top_pick_unfair": false,
+   "summary": "You and Discord agree that any arguments that can be made in arbitration will be allowed to be decided."
+  },
+  {
+   "clause": "If Discord is the Party initiating an arbitration against you, Discord will pay all costs associated with the arbitration, including the entire filing fee.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12449610233306885,
+   "top_pick_unfair": false,
+   "summary": "If the Party starts an arbitration against you, Discord will pay for all the costs of the arbitration, including the filing fee."
+  },
+  {
+   "clause": "If you initiate an arbitration against Discord, costs will be determined in accordance with the Rules for the applicable arbitration provider, to the extent allowed by law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.22269266843795776,
+   "top_pick_unfair": false,
+   "summary": "If you start an arbitration with Discord, the arbitrator will follow the rules of the arbitration provider, to the extent the law allows."
+  },
+  {
+   "clause": "In all arbitrations, unless otherwise required by law or the arbitration provider’s rules, you are responsible for all other additional arbitration costs incurred, including attorney’s fees and expert witness costs.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1263134479522705,
+   "top_pick_unfair": false,
+   "summary": "You are responsible for paying all other costs related to the arbitration, including attorney fees and expert witness costs, unless the law or the arbitration provider's rules say otherwise."
+  },
+  {
+   "clause": "The Parties agree that the arbitration provider has discretion to modify the amount or timing of any administrative or arbitration fees due under the applicable rules where it deems appropriate, provided that such modification does not increase the costs to you, and you waive any objection to such fee modification.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9940909137949347,
+   "top_pick_unfair": true,
+   "summary": "The arbitration provider can change the amount or timing of any administrative or arbitration fees you owe under the applicable rules whenever it decides to, as long as the change doesn't cost you more money and you agree to accept it."
+  },
+  {
+   "clause": "The Parties also agree that a good-faith challenge by either Party to the fees imposed by an arbitration provider does not constitute a default, waiver, or breach of this Section while such challenge remains pending before the arbitration provider, the arbitrator, and/or a court of competent jurisdiction and all due dates for those fees shall be tolled during the pendency of such challenge.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4293268918991089,
+   "top_pick_unfair": false,
+   "summary": "If one party sues the arbitration provider, the arbitrator, and/or a court of competent jurisdiction, all fees will be paid while the case is pending, but this does not mean the party has given up its right to enforce the terms."
+  },
+  {
+   "clause": "The decision of the arbitrator will be in writing and binding on you and Discord, and judgment to enforce the decision may be entered by any court of competent jurisdiction.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2696024775505066,
+   "top_pick_unfair": false,
+   "summary": "The arbitrator's decision will be in writing and can be enforced by you and Discord, and any court with the proper authority can also enforce it."
+  },
+  {
+   "clause": "Except as explicitly set forth in this Agreement to Arbitrate, the arbitrator, and not any federal, state or local court or agency, shall have exclusive authority to resolve all Disputes arising out of or relating to the interpretation, applicability, enforceability or formation of these terms, including any claim that all or any part of these terms are void or voidable, whether a claim is subject to arbitration, and any dispute regarding the payment of arbitration provider or arbitrator fees (including the timing of such payments and remedies for nonpayment).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9624012373387814,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator, and not any federal, state, or local court or agency, will decide all disputes about how these terms should be interpreted, applied, enforced, or created, including any claim that these terms are invalid or can't be enforced, whether a claim should be decided through arbitration, and any disagreement about how to pay the arbitrator's or provider's fees (including when to pay and what to do if you don't pay)."
+  },
+  {
+   "clause": "The arbitrator must follow these terms and can award the same damages and relief as a court.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6145479381084442,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator must follow these terms and can award the same damages and relief as a court."
+  },
+  {
+   "clause": "The arbitrator has the right to impose sanctions in accordance with the arbitration provider’s rules and procedures for any frivolous claims, improper claims, or submissions the arbitrator determines have not been filed in good faith, as well as for a Party's failure to comply with this Agreement to Arbitrate or claims filed on behalf of a claimant who is not party to this agreement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8349393904209137,
+   "top_pick_unfair": true,
+   "summary": "The arbitrator can decide to impose sanctions based on the arbitration provider's rules and procedures for frivolous claims, improper claims, or submissions that the arbitrator decides were not filed in good faith, as well as for a party that didn't follow this Agreement to Arbitrate or claims filed on behalf of someone who is not a party to this agreement."
+  },
+  {
+   "clause": "No arbitration award or decision will have any preclusive effect as to issues or claims in any dispute with anyone who is not a named party to the arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.21268796920776367,
+   "top_pick_unfair": false,
+   "summary": "An arbitrator's decision will not prevent you from having a dispute with anyone who is not a party to the arbitration."
+  },
+  {
+   "clause": "If Discord initiates arbitration, and for residents in Canada, arbitration shall be initiated in the County of New Castle, Delaware, United States of America, unless you and Discord otherwise agree or unless the designated arbitrator determines, based on a written objection, that such venue would be unreasonably burdensome to any Party, in which case the arbitrator shall have the discretion to select another venue despite either Party’s initial selection.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.38114118576049805,
+   "top_pick_unfair": false,
+   "summary": "If you live in Canada, arbitration will take place in the County of New Castle, Delaware, United States of America, unless you and Discord agree otherwise, or unless the designated arbitrator decides, based on a written objection, that such venue would be too burdensome for either of you, in which case the arbitrator can choose another venue."
+  },
+  {
+   "clause": "For any arbitration conducted, the Parties agree to submit to the personal jurisdiction of any federal or state court in New Castle County, Delaware, in order to compel arbitration, to stay proceedings pending arbitration, or to confirm, modify, vacate or enter judgment on the award entered by the arbitrator; and in connection with any such proceeding, the Parties hereby waive any and all jurisdictional and venue defenses otherwise available.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9753994178026915,
+   "top_pick_unfair": true,
+   "summary": "The court of law governing the terms is in New Castle County, Delaware, USA. The parties agree that any disputes will be handled in Delaware courts only, and they waive their right to a class action.. This service does not force users into binding arbitration. The service can delete your account without prior notice and without a reason."
+  },
+  {
+   "clause": "The Parties agree that arbitration may take place exclusively by video, where such arrangements are acceptable to the appointed arbitrator.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.36788272857666016,
+   "top_pick_unfair": false,
+   "summary": "The parties agree that any disputes will be decided by an arbitrator who has been appointed by the court of law."
+  },
+  {
+   "clause": "You agree to cooperate in good faith with Discord, the arbitrator, and the arbitration provider to implement such a “batch approach” or other similar approach to provide for an efficient resolution of claims, including the payment of combined reduced fees, set by NAM in its discretion, for each batch of claims.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10076135396957397,
+   "top_pick_unfair": false,
+   "summary": "You agree to work with Discord, the arbitrator, and the arbitration provider in good faith to use a \"batch approach\" or other similar method to resolve your claims, and you will be responsible for paying the combined reduced fees that NAM decides on its own."
+  },
+  {
+   "clause": "Any disagreement between the Parties as to whether this provision applies or as to the process or procedure for batching, or whether any demands are properly brought and may be included in a batch, shall be resolved by a procedural arbitrator appointed by NAM.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3581661581993103,
+   "top_pick_unfair": false,
+   "summary": "If there's a disagreement between you and the company about whether this provision applies or how to handle batching, or whether your demands are properly brought and should be included in a batch, the dispute will be decided by an arbitrator appointed by NAM."
+  },
+  {
+   "clause": "This \"Batch Arbitration\" provision shall in no way be interpreted as increasing the number of claims necessary to trigger the applicability of NAM’s Mass Filing Supplemental Dispute Resolution Rules and Procedures or authorizing class arbitration of any kind.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11664235591888428,
+   "top_pick_unfair": false,
+   "summary": "the number of claims needed to trigger the Mass Filing Supplemental Dispute Resolution Rules and Procedures. This does not mean that you are agreeing to a class action or class action."
+  },
+  {
+   "clause": "If the Parties are unable to resolve the outstanding demands during the Mediation Period and cannot agree on a methodology for resolving them through further arbitrations, either Discord or any remaining claimant may opt out of the arbitration process (“Mass Arbitration Opt Out”) and have the demand(s) proceed in a court of competent jurisdiction.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1904166340827942,
+   "top_pick_unfair": false,
+   "summary": "If the parties cannot resolve their differences through arbitration, either Discord or any remaining claimant can opt out of the arbitration process (“Mass Arbitration Opt Out’) and have the case handled in a court of competent jurisdiction."
+  },
+  {
+   "clause": "Except as set forth in this provision, the paragraphs in the “Mass Filings” provision shall not apply to arbitrations proceeding at ADR Services, which the Parties agree shall be governed by ADR Services Rules, including ADR Services’ rules applicable to “Mass Filings”.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10007882118225098,
+   "top_pick_unfair": false,
+   "summary": "Except as set out in this provision, the \"Mass Filings\" section does not apply to arbitrations at ADR Services, which the parties agree will be governed by ADR's rules, including the rules that apply to \"mass filings\""
+  },
+  {
+   "clause": "For Mass Filings at ADR Services, the Parties also agree that after 10% of the total number of cases that are subject to the Mass Filings have been resolved, Discord and the remaining claimants shall participate in a mediation, and at the conclusion of that process, if the Parties are unable to resolve the outstanding demands and cannot agree on a methodology for resolving them through further arbitrations, either Discord or any remaining claimant may opt out of the arbitration process.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18402105569839478,
+   "top_pick_unfair": false,
+   "summary": "After 10% of the cases have been resolved, Discord and the remaining claimants will participate in a mediation, and if the parties cannot agree on a solution, either Discord or the remaining claimant can opt out of the arbitration process."
+  },
+  {
+   "clause": "You can decline this Agreement to Arbitrate–and no other provision of these terms–by emailing an opt-out notice to arbitration-opt-out@discord.com within 30 days of September 29, 2025 or when you first register your Discord account, whichever is later; otherwise, you shall be bound to arbitrate Disputes in accordance with the terms of these paragraphs.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11282843351364136,
+   "top_pick_unfair": false,
+   "summary": "You can opt out of arbitration by emailing arbitration-opt-out@discord.com within 30 days of September 29, 2025 or when you first register your Discord account, whichever is later. If you choose to arbitrate, you must follow the terms of these paragraphs."
+  },
+  {
+   "clause": "If you opt out of the Agreement to Arbitrate, Discord also will not be bound by it and there shall be no arbitration agreement existing between you and Discord, whether under these or prior arbitration provisions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1179996132850647,
+   "top_pick_unfair": false,
+   "summary": "If you choose not to use arbitration, Discord will not be bound by this agreement, and there will be no arbitration agreement between you and Discord, whether under these or previous arbitration provisions."
+  },
+  {
+   "clause": "If you opt out of the Agreement to Arbitrate, you will not be opting out of any other provision of these terms and you agree to be bound by all other provisions of these terms, which shall remain in effect as allowable by law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2919079661369324,
+   "top_pick_unfair": false,
+   "summary": "If you choose not to use arbitration, you agree to follow all the other terms in this agreement, as written."
+  },
+  {
+   "clause": "You or Discord may still pursue claims, if they qualify, exclusively in a small claims court in the United States on an individual basis for Disputes and actions within the scope of such court’s jurisdiction, regardless of what forum the filing Party initially chose, and you and Discord both consent to venue and personal jurisdiction in that court.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.37979429960250854,
+   "top_pick_unfair": false,
+   "summary": "You and Discord can both file claims in a small claims court in the United States, and you both agree to let that court handle your case, no matter what court you choose."
+  },
+  {
+   "clause": "The small claims court, and not any arbitrator or arbitration provider, shall have the exclusive authority to resolve Disputes regarding whether a Dispute is properly within the jurisdiction of a small claims court.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2934548258781433,
+   "top_pick_unfair": false,
+   "summary": "The small claims court, not an arbitrator or arbitration provider, is the only one who can decide disagreements about whether a dispute should be handled by small claims courts."
+  },
+  {
+   "clause": "Additionally, Disputes concerning patents, copyrights, moral rights, trademarks, and trade secrets and claims of piracy or unauthorized use of our services will not be subject to arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8036409616470337,
+   "top_pick_unfair": true,
+   "summary": "disputes about patents, copyrights, moral rights, trademarks, and trade secrets will not be decided by an arbitrator; disputes about piracy or unauthorized use of our services will be handled by a court of law."
+  },
+  {
+   "clause": "Either Party may elect to have Disputes regarding whether a complaining Party has satisfied the Informal Dispute Resolution procedures set forth above resolved by a court as a precursor to arbitration; otherwise it shall be resolved in the arbitration.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.262201189994812,
+   "top_pick_unfair": false,
+   "summary": "Either you or the company can ask a court to resolve your disagreement about whether you've followed the informal dispute resolution procedures described above, but only if the court agrees to do so; otherwise, you must go through arbitration."
+  },
+  {
+   "clause": "IF YOU’RE A U.S. RESIDENT, EXCEPT AS PROVIDED HEREIN, UNLESS DISCORD AGREES OTHERWISE IN A SEPARATE WRITING, YOU AND DISCORD AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY IN OUR INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY PURPORTED CLASS OR REPRESENTATIVE PROCEEDING AND THE ARBITRATOR MAY AWARD RELIEF ONLY IN FAVOR OF THE INDIVIDUAL PARTY SEEKING RELIEF AND ONLY TO THE EXTENT NECESSARY TO RESOLVE AN INDIVIDUAL PARTY’S CLAIM.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.21459829807281494,
+   "top_pick_unfair": false,
+   "summary": "This service is only available for use individually and non-commercially.. You and the service agree not to use the service for illegal purposes. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no liability for any losses or damages resulting from any matter relating to the service. The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection (U.S., Canada, Australia, New Zealand, South Africa, and the Netherlands). The service can delete specific content without reason and may do it without prior notice and without a reason"
+  },
+  {
+   "clause": "In cases consolidated pursuant to this paragraph, the relief may cover the consolidated claims.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13486748933792114,
+   "top_pick_unfair": false,
+   "summary": "If you have multiple claims that are combined under this paragraph, the relief provided may cover all of your claims."
+  },
+  {
+   "clause": "If the paragraph titled “Class Arbitration and Collective Relief Waiver,” the paragraph titled “Mass Filings,” or ADR Service’s Mass Arbitration rules are found unenforceable, then the “Agreement to Arbitrate” section will be null and void.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13016211986541748,
+   "top_pick_unfair": false,
+   "summary": "If a court finds that the arbitration clause in this agreement cannot be enforced, then the agreement to arbitrate is not valid."
+  },
+  {
+   "clause": "If any other provision is found to be invalid, unenforceable or illegal, or otherwise conflicts with the rules of the applicable arbitration provider, then the balance of this Agreement to Arbitrate shall remain in effect and shall be construed in accordance with its terms as if the invalid, unenforceable, illegal or conflicting provision were not contained herein.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.46911144256591797,
+   "top_pick_unfair": false,
+   "summary": "If any part of this agreement is found to be invalid, unenforceable, illegal, or conflicts with the rules of the arbitration provider, that part will be removed, but the rest of the agreement will still apply."
+  },
+  {
+   "clause": "Changes to this Agreement to Arbitrate: Discord will provide 30 days’ notice of the date of any material changes to this Agreement to Arbitrate.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10185956954956055,
+   "top_pick_unfair": false,
+   "summary": "If there are important changes to this Agreement to Arbitrate, Discord will give you 30 days' notice."
+  },
+  {
+   "clause": "If Discord changes this Agreement to Arbitrate after the date you first accepted this agreement (or accepted any subsequent changes to this agreement), you agree that your continued use of the Discord product(s) or services 30 days after such change will be deemed acceptance of those changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7854828834533691,
+   "top_pick_unfair": true,
+   "summary": "If you keep using the service after we change this agreement, that means you agree to accept the changes we make to it."
+  },
+  {
+   "clause": "You have certain rights that, by law, can’t be limited by these terms, and we in no way intend to restrict those rights in these terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6809785962104797,
+   "top_pick_unfair": true,
+   "summary": "You have certain rights that the law doesn't allow us to limit, and we don't intend to limit those rights in these terms."
+  },
+  {
+   "clause": "The term “including” as used in these terms means “including without limitation.”",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9857955258339643,
+   "top_pick_unfair": true,
+   "summary": "When we say \"including,\" we mean \"including without limitation,\" and \"including\" does not include the following:"
+  },
+  {
+   "clause": "These terms cover the entire agreement between you and Discord for your use of our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8471183627843857,
+   "top_pick_unfair": true,
+   "summary": "These terms are the complete and final agreement between you and Discord for your use of our services."
+  },
+  {
+   "clause": "Where additional terms apply to our products or services, the additional terms will control with respect to your use of that product or service to the extent of any conflict with these terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10730493068695068,
+   "top_pick_unfair": false,
+   "summary": "If there are additional rules that apply to your use of our products or services, we will enforce those additional rules, but only to the extent that they conflict with these terms."
+  },
+  {
+   "clause": "Additional information about our services is provided for users in Austria here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10882282257080078,
+   "top_pick_unfair": false,
+   "summary": "We provide additional information about our services for users in Austria at this link: http://www.clearly-unfair.com/en/terms/terms.html#terms."
+  },
+  {
+   "clause": "We support the responsible reporting of security vulnerabilities.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4773130416870117,
+   "top_pick_unfair": false,
+   "summary": "We encourage you to report any security problems or problems that you find out about."
+  },
+  {
+   "clause": "You agree to comply with all applicable import, export, and re-export control laws and restrictions, including but not limited to those of the European Union and its member states, the U.S. Department of Commerce Export Administration Regulations (“EAR”) and economic sanctions maintained by the U.S. Office of Foreign Assets Control (“OFAC”), and the International Traffic in Arms Regulations (“ITAR”), and will not use the services to cause a violation of such laws or regulations.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9651864841580391,
+   "top_pick_unfair": true,
+   "summary": "You agree to follow all laws and regulations that apply to you, including those of the European Union and its member states, the U.S. Department of Commerce Export Administration Regulations (“EAR’s”), and economic sanctions maintained by the United States Office of Foreign Assets Control (‘OFAC’). You agree not to use the services in a way that breaks these laws or regulations."
+  },
+  {
+   "clause": "You agree to not use our services to store or distribute content that is subject to export controls, unless you have obtained all required government export authorizations.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3976061940193176,
+   "top_pick_unfair": false,
+   "summary": "You agree not to use our services to store or distribute content that is subject to export controls, unless you have all required government export authorizations."
+  },
+  {
+   "clause": "government embargo (including Cuba, Iran, North Korea, Syria, and the Crimea region) unless that use is authorized by the United States and other relevant authorities.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6008508503437042,
+   "top_pick_unfair": false,
+   "summary": "The U.S. government of Cuba, Iran, North Korea, Syria, and the Crimea region is under embargo, unless the United States and other relevant authorities have approved the use of this service."
+  },
+  {
+   "clause": "If you fail to follow these terms and we don’t immediately act, that doesn’t mean we’re giving up any of our legal rights (such as acting in the future).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5365920960903168,
+   "top_pick_unfair": true,
+   "summary": "If you don't follow these terms right away and we don't immediately act, that doesn't mean we're giving up any of our legal rights (like the right to act in the future)."
+  },
+  {
+   "clause": "If any part of these terms ends up being invalid or unenforceable based on a decision by any court or competent authority, the rest of these terms will not be affected.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.32782286405563354,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that any part of these terms is invalid or unenforceable, the rest of the terms will still apply."
+  },
+  {
+   "clause": "Any part of these terms that by their nature should survive after termination of these terms will survive.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18279534578323364,
+   "top_pick_unfair": false,
+   "summary": "Any part of these terms that should last after we end them will continue to apply."
+  },
+  {
+   "clause": "As permitted under applicable law, this includes but may not be limited to the following:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9715839046984911,
+   "top_pick_unfair": true,
+   "summary": "This includes but is not limited to the following situations that are allowed under the law:"
+  },
+  {
+   "clause": "- Our rights to retain and display certain data;",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3331683278083801,
+   "top_pick_unfair": false,
+   "summary": "We have the right to keep and display certain types of data, and we can share this information with you."
+  },
+  {
+   "clause": "- Any dispute resolution provisions, including the arbitration agreement, such as those under the “Settling disputes between you and Discord” section.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4134361743927002,
+   "top_pick_unfair": false,
+   "summary": "The service provides details about what kind of dispute resolution options are available. The service provides information about how they intend to handle disputes. This service is only available for use individually and non-commercially.."
+  },
+  {
+   "clause": "We may decide to update these terms: (1) to reflect changes to our services or our business, (2) for legal or regulatory reasons, (3) to prevent abuse on or of our services, or (4) to better protect or serve users of our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9917987212538719,
+   "top_pick_unfair": true,
+   "summary": "We may change these terms whenever we change our services or business, for example, for legal or regulatory reasons, to prevent abuse on or of our services, or to better protect or serve users."
+  },
+  {
+   "clause": "If you continue to use our services after the changes have taken effect, it means that you agree to the changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9545553028583527,
+   "top_pick_unfair": true,
+   "summary": "If you keep using our services after we make changes, that means you agree to those changes."
+  },
+  {
+   "clause": "If you don’t agree, you must stop using our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2868354916572571,
+   "top_pick_unfair": false,
+   "summary": "If you don't agree with these terms, you must stop using our services."
+  },
+  {
+   "clause": "Apple is not responsible for addressing any claims by you or any third party relating to the Discord app or your possession and use of it, including, but not limited to: (i) product liability claims; (ii) any claim that the Discord app fails to conform to any applicable legal or regulatory requirement; and (iii) claims arising under consumer protection or similar legislation.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6812106668949127,
+   "top_pick_unfair": true,
+   "summary": "Apple is not responsible for claims made by you or anyone else about the Discord app or your possession and use of it, including claims about product liability, claims that the app doesn't meet legal requirements, and claims under consumer protection laws."
+  },
+  {
+   "clause": "Apple is not responsible for the investigation, defense, settlement and discharge of any third-party claim that your possession and use of the Discord app infringe that third party’s intellectual property rights.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2845892906188965,
+   "top_pick_unfair": false,
+   "summary": "Apple is not responsible for investigating, defending, settling, or resolving any claims made by third parties that your use of the Discord app violates their intellectual property rights."
+  },
+  {
+   "clause": "Apple and its subsidiaries are third-party beneficiaries of these terms, and upon acceptance of the terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these terms against you as a third-party beneficiary thereof.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2351815104484558,
+   "top_pick_unfair": false,
+   "summary": "When you agree to these terms, Apple and its subsidiaries become the owners of the rights to your content. Apple can enforce these terms against you as a third-party beneficiary."
+  },
+  {
+   "clause": "Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA 94107, USA.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.27896183729171753,
+   "top_pick_unfair": false,
+   "summary": "Discord Inc. is located at 444 De Haro Street #200, San Francisco, CA 94107, USA."
+  },
+  {
+   "clause": "Discord Netherlands B.V. is located at Schiphol Boulevard 195, 1118 BG Schiphol, Netherlands.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4469239115715027,
+   "top_pick_unfair": false,
+   "summary": "Discrepancy Netherlands B.V. is located at Schiphol Boulevard 195, 1118 BG SchIPhol, Netherlands, and can be reached by phone at (phone number)."
+  }
+ ]
+}

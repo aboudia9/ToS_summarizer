@@ -76,8 +76,16 @@ over the baked-in copy so you can swap models without rebuilding.
 ```bash
 python -m training.train_bert --out bert_model_v2 --select-on f1
 python scripts/export_models.py --bert bert_model_v2
+python scripts/precompute_examples.py   # refresh the cached example results
 docker compose restart              # or rerun streamlit
 ```
+
+**Example documents:** the app has one-click buttons for real ToS documents (Facebook,
+TikTok, Spotify, Netflix, Discord, X), listed in `examples/manifest.json` with a short
+"what to look for" tip each. Their analysis is precomputed into `examples/cache/` by
+`scripts/precompute_examples.py`, so they show results instantly. The cache stores every
+clause that would be flagged at the slider's lowest setting, so the sensitivity slider
+still works on them. Rerun the script after changing either model.
 
 You can also point at any model folder directly with `BERT_MODEL_PATH=... BART_MODEL_PATH=...`.
 
@@ -147,6 +155,7 @@ ToS_summarizer/
 │   ├── classifier.py          # Legal-BERT dataset/loading/batched inference
 │   ├── summarizer.py          # BART dataset/loading/batched generation
 │   ├── pipeline.py            # process_tos_document — classify → filter → summarize
+│   ├── examples.py            # Bundled example docs + their cached results
 │   └── __main__.py            # CLI: python -m tos_summarizer file.txt
 ├── training/                  # The notebooks as runnable scripts
 │   ├── preprocess.py          # Stage 1 → df_{train,val,test}.csv
@@ -155,6 +164,7 @@ ToS_summarizer/
 ├── scripts/
 │   ├── export_models.py       # Compress trained models to fp16 → models/ (what the app loads)
 │   ├── tune_threshold.py      # Recall vs. false-flag table for the flagging threshold
+│   ├── precompute_examples.py # Cache the example documents' analysis → examples/cache/
 │   ├── staging.py             # Copies just the app files for hosted builds
 │   ├── deploy_pi.py           # Raspberry Pi deploy (Tailscale Funnel)
 │   ├── deploy_cloudrun.py     # Cloud Run deploy + $1 billing kill switch
@@ -164,6 +174,7 @@ ToS_summarizer/
 │   ├── pi/                    # Pi compose file + Funnel serve config
 │   ├── cloudrun/              # Billing kill-switch Cloud Function
 │   └── huggingface/           # Model card + Space README
+├── examples/                  # Example ToS texts, manifest (names/sources/tips), cached results
 ├── static/, .streamlit/       # Idle "paused" page + Streamlit config
 ├── notebooks/                 # Original Colab notebooks (unchanged)
 ├── app.py                     # Streamlit UI

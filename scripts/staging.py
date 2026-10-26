@@ -11,7 +11,7 @@ def stage_app(dest, model_repo=DEFAULT_MODEL_REPO):
     dest = Path(dest)
     shutil.copytree(ROOT / "tos_summarizer", dest / "tos_summarizer",
                     ignore=shutil.ignore_patterns("__pycache__"))
-    for d in [".streamlit", "static"]:
+    for d in [".streamlit", "static", "examples"]:
         shutil.copytree(ROOT / d, dest / d)
     for f in ["app.py", "fb_tos_testing.txt", "requirements-app.txt"]:
         shutil.copy(ROOT / f, dest / f)

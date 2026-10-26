@@ -1,0 +1,664 @@
+{
+ "text_sha256": "e8b1c905ddba3ba43681d5e427112a3fea1dfbead0f061724a6c4c6b83ae1bc9",
+ "min_threshold": 0.1,
+ "clauses": [
+  {
+   "clause": "Meta builds technologies and services that enable people to connect with each other, build communities, and grow businesses.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2738991975784302,
+   "top_pick_unfair": false,
+   "summary": "Meta creates tools and services that help people connect with each other, build communities, and grow their businesses."
+  },
+  {
+   "clause": "These Terms of Service (the \"Terms\") govern your access and use of Facebook, Messenger, and the other products, websites, features, apps, services, technologies, and software we offer (the Meta Products or Products), except where we expressly state that separate terms (and not these) apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4947834610939026,
+   "top_pick_unfair": false,
+   "summary": "Terms of Service govern how you can access and use Facebook, Messenger, and the other products, websites, features, apps, services, technologies, and software we offer (the Meta Products or Products), except where we say separate terms apply instead."
+  },
+  {
+   "clause": "(For example, your use of Instagram is subject to the Instagram Terms of Use).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1301894187927246,
+   "top_pick_unfair": false,
+   "summary": "When you use Instagram, Instagram has its own terms of use that apply to you."
+  },
+  {
+   "clause": "These Products are provided to you by Meta Platforms, Inc.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3115914463996887,
+   "top_pick_unfair": false,
+   "summary": "We are a subsidiary of Meta Platforms, Inc., which owns the rights to this service."
+  },
+  {
+   "clause": "These Terms therefore constitute an agreement between you and Meta Platforms, Inc.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9498851783573627,
+   "top_pick_unfair": true,
+   "summary": "These Terms are an agreement between you and Meta Platforms, Inc., and you agree to follow them."
+  },
+  {
+   "clause": "These Terms (formerly known as the Statement of Rights and Responsibilities) make up the entire agreement between you and Meta Platforms, Inc. regarding your use of our Products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7288064956665039,
+   "top_pick_unfair": true,
+   "summary": "These Terms are the complete and final agreement between you and Meta Platforms, Inc. about your use of their products."
+  },
+  {
+   "clause": "They supersede any prior agreements.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.20701700448989868,
+   "top_pick_unfair": false,
+   "summary": "These terms replace any earlier agreements you had with us, and you can no longer make new agreements."
+  },
+  {
+   "clause": "See Section 2 below to learn more about how personalized advertising under these terms works on the Meta Products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.592339277267456,
+   "top_pick_unfair": true,
+   "summary": "Details are provided about how personalized advertising works on the Meta Products. See Section 2 below to learn more."
+  },
+  {
+   "clause": "What Products do these Terms cover?",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6862641870975494,
+   "top_pick_unfair": true,
+   "summary": "What products do these Terms cover, and what types of products are covered by them?"
+  },
+  {
+   "clause": "Our mission is to give people the power to build community and bring the world closer together.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.39147257804870605,
+   "top_pick_unfair": false,
+   "summary": "We want to give people the power to build community and bring the world closer together."
+  },
+  {
+   "clause": "Stronger ties make for better communities, and we believe our services are most useful when people are connected to people, groups, and organizations they care about.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2701786756515503,
+   "top_pick_unfair": false,
+   "summary": "We think our services work best when you're connected to people, groups, and organizations that matter to you."
+  },
+  {
+   "clause": "We have also developed, and continue to explore, new ways for people to use technology, such as augmented reality and 360 video to create and share more expressive and engaging content on Meta Products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10124295949935913,
+   "top_pick_unfair": false,
+   "summary": "We've created new ways for people to use technology like augmented reality and 360 video to create and share more expressive and engaging content on Meta Products."
+  },
+  {
+   "clause": "People will only build community on Meta Products if they feel safe and secure.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13238197565078735,
+   "top_pick_unfair": false,
+   "summary": "People will only create communities on Meta Products if they feel safe and secure, and only if they can do so without being tracked."
+  },
+  {
+   "clause": "We work hard to maintain the security (including the availability, authenticity, integrity, and confidentiality) of our Products and services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5766362547874451,
+   "top_pick_unfair": true,
+   "summary": "We work hard to keep our products and services secure and up to date, including their availability, authenticity, and confidentiality."
+  },
+  {
+   "clause": "If we learn of content or conduct like this, we may take appropriate action based on our assessment that may include - notifying you, offering help, removing content, removing or restricting access to certain features, disabling an account, or contacting law enforcement.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8946820124983788,
+   "top_pick_unfair": true,
+   "summary": "If we find out about content or behavior like this, we may take appropriate action based on our assessment, which could include notifying you, offering help, removing content, removing or restricting access to certain features, disabling an account, or contacting law enforcement."
+  },
+  {
+   "clause": "For more information, please review our Privacy Policy.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5622550547122955,
+   "top_pick_unfair": false,
+   "summary": "To learn more, read our Privacy Policy. For more information, please see the terms of service."
+  },
+  {
+   "clause": "In some cases, the Oversight Board may review our decisions, subject to its terms and bylaws.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7908703237771988,
+   "top_pick_unfair": true,
+   "summary": "The Oversight Board can review our decisions, but only after following the board's terms and bylaws."
+  },
+  {
+   "clause": "We use and develop advanced technologies - such as artificial intelligence, machine learning systems, and augmented reality - so that people can use our Products safely regardless of physical ability or geographic location.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4184119701385498,
+   "top_pick_unfair": false,
+   "summary": "We use advanced technology like artificial intelligence, machine learning, and augmented reality to make sure you can use our products safely, no matter your ability or location."
+  },
+  {
+   "clause": "We also build sophisticated network and communication technology to help more people connect to the internet in areas with limited access.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.16326487064361572,
+   "top_pick_unfair": false,
+   "summary": "We build sophisticated network and communication technology to help more people connect to the internet in areas where there is limited internet access."
+  },
+  {
+   "clause": "And we develop automated systems to improve our ability to detect and remove abusive and dangerous activity that may harm our community and the integrity of our Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.29700547456741333,
+   "top_pick_unfair": false,
+   "summary": "We use automated tools to find and remove abusive and dangerous activity that could harm our community or damage our products."
+  },
+  {
+   "clause": "We engage in research to develop, test, and improve our Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.15083777904510498,
+   "top_pick_unfair": false,
+   "summary": "We do research to create, test, and improve our products. The service provides information about how they intend to use your personal data."
+  },
+  {
+   "clause": "This includes analyzing data we have about our users and understanding how people use our Products, for example by conducting surveys and testing and troubleshooting new features.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2089298963546753,
+   "top_pick_unfair": false,
+   "summary": "We collect information about you by collecting your personal data, and we can use that information to understand how you use our products by conducting surveys and testing and troubleshooting new features."
+  },
+  {
+   "clause": "Our Privacy Policy explains how we use data to support this research for the purposes of developing and improving our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13894879817962646,
+   "top_pick_unfair": false,
+   "summary": "We explain how we use your data to support this research and how we'll use it to develop and improve our services."
+  },
+  {
+   "clause": "1.8 Provide consistent and seamless experiences across the Meta Company Products:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5699319243431091,
+   "top_pick_unfair": true,
+   "summary": "Provides a consistent and seamless experience across all of the Meta Company Products. The terms for this service are easy to read."
+  },
+  {
+   "clause": "The use of this global infrastructure is necessary and essential to provide our services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.21652591228485107,
+   "top_pick_unfair": false,
+   "summary": "We use this global infrastructure because it's necessary and necessary to provide our services."
+  },
+  {
+   "clause": "This infrastructure may be owned, operated, or controlled by Meta Platforms, Inc., Meta Platforms Ireland Limited, or its affiliates.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.820623129606247,
+   "top_pick_unfair": true,
+   "summary": "The service is a subsidiary of Meta Platform, Inc., Meta Platforms Ireland Limited, or its affiliates."
+  },
+  {
+   "clause": "Protecting people's privacy is central to how we've designed our personalized ads system.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3552824854850769,
+   "top_pick_unfair": false,
+   "summary": "We're very careful about keeping your personal information private, and this is why we've created our personalized ads system."
+  },
+  {
+   "clause": "Learn more about how Meta ads work here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7443552911281586,
+   "top_pick_unfair": true,
+   "summary": "You can find out more information about how Meta ads work by reading this guide."
+  },
+  {
+   "clause": "In exchange, we need you to make the following commitments:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5405146479606628,
+   "top_pick_unfair": false,
+   "summary": "We ask you to do the following things in exchange for this agreement: [the clause appears to end mid-sentence and does not specify what follows]."
+  },
+  {
+   "clause": "When people stand behind their opinions and actions, our community is safer and more accountable.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8700520694255829,
+   "top_pick_unfair": true,
+   "summary": "When people stand by their opinions and actions, our community is safer and more accountable."
+  },
+  {
+   "clause": "You are a convicted sex offender.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.40761905908584595,
+   "top_pick_unfair": false,
+   "summary": "You are a convicted sex offender. You are not allowed to use this service for other purposes."
+  },
+  {
+   "clause": "We've previously disabled your account for violations of our Terms, the Community Standards, or other terms and policies that apply to your use of Facebook.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11946988105773926,
+   "top_pick_unfair": false,
+   "summary": "We've previously disabled your account if you break any of these terms, our Community Standards, or any other rules that apply to how you use Facebook."
+  },
+  {
+   "clause": "If we disable your account for a violation of our Terms, the Community Standards, or other terms and policies, you agree not to create another account without our permission.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18426835536956787,
+   "top_pick_unfair": false,
+   "summary": "If we disable your account because of a violation of our Terms, Community Standards, or other terms and policies, you agree not to create another account."
+  },
+  {
+   "clause": "Receiving permission to create a new account is provided at our sole discretion, and does not mean or imply that the disciplinary action was wrong or without cause.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.881835550069809,
+   "top_pick_unfair": true,
+   "summary": "We decide whether to let you create an account, and if we don't, that doesn't mean we think you did something wrong or that there was a reason for it."
+  },
+  {
+   "clause": "We want people to use Meta Products to express themselves and to share content that is important to them, but not at the expense of the safety and well-being of others or the integrity of our community.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2757265567779541,
+   "top_pick_unfair": false,
+   "summary": "We want you to use our products to express yourself and share content that matters to you, but not at the expense of other people's safety and well-being or the integrity of our community."
+  },
+  {
+   "clause": "You therefore agree not to engage in the conduct described below (or to facilitate or support others in doing so):",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2733250856399536,
+   "top_pick_unfair": false,
+   "summary": "You agree not to do or help others do what we describe below, and you're not allowed to help them do it."
+  },
+  {
+   "clause": "That violates these Terms, the Community Standards, or other terms and policies that apply to your use of our Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7988055199384689,
+   "top_pick_unfair": true,
+   "summary": "You cannot use the service in a way that breaks these Terms, the Community Standards, or any other terms and policies that apply to your use of our Products."
+  },
+  {
+   "clause": "That is unlawful, misleading, discriminatory or fraudulent (or assists someone else in using our Products in such a way).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.39415597915649414,
+   "top_pick_unfair": false,
+   "summary": "We won't allow anything that is illegal, misleading, discriminatory, or fraudulent (or helps someone else use our Products in that way), and we won't tolerate anything that violates these terms."
+  },
+  {
+   "clause": "That infringes or violates someone else's rights, including their intellectual property rights (such as by infringing another’s copyright or trademark, or distributing or selling counterfeit or pirated goods), unless an exception or limitation applies under applicable law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8399564027786255,
+   "top_pick_unfair": true,
+   "summary": "You can't do anything that violates someone else's rights, including their intellectual property rights (like by infringing on their copyright or trademark) or distributing or selling counterfeit or pirated goods, unless the law says you can."
+  },
+  {
+   "clause": "You may not misuse any reporting, flagging, dispute, or appeals channel, such as by making fraudulent, duplicative, or groundless reports or appeals.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1357448697090149,
+   "top_pick_unfair": false,
+   "summary": "You can't misuse any reporting, flagging, dispute, or appeals channel, including by making fraudulent, duplicative, or groundless reports or appeals."
+  },
+  {
+   "clause": "We can remove or restrict access to content that is in violation of these provisions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9938339646905661,
+   "top_pick_unfair": true,
+   "summary": "We can remove or restrict your access to content that breaks these terms of service."
+  },
+  {
+   "clause": "We can also suspend or disable your account for conduct that violates these provisions, as provided in Section 4.2.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.993457059841603,
+   "top_pick_unfair": true,
+   "summary": "We can suspend or disable your account if you do something that breaks these rules, as explained in Section 4.2."
+  },
+  {
+   "clause": "If we remove content that you have shared in violation of the Community Standards, we’ll let you know and explain any options you have to request another review, unless you seriously or repeatedly violate these Terms or if doing so may expose us or others to legal liability; harm our community of users; compromise or interfere with the integrity or operation of any of our services, systems or Products; where we are restricted due to technical limitations; or where we are prohibited from doing so for legal reasons.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.44462937116622925,
+   "top_pick_unfair": false,
+   "summary": "If we remove content you've shared that breaks the rules, we'll let you know and explain what options you have to request another review, unless you seriously or repeatedly break these Terms or if doing so could harm us or others, harm our community of users, compromise or interfere with our services, systems, or Products, where we are restricted due to technical limitations, or if we are prohibited from doing so for legal reasons."
+  },
+  {
+   "clause": "We work with independent fact-checkers in many jurisdictions to combat misinformation.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.35852497816085815,
+   "top_pick_unfair": false,
+   "summary": "We work with independent fact-checkers in many places to make sure we're not spreading misinformation."
+  },
+  {
+   "clause": "You can find more information about fact-checking here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6298644840717316,
+   "top_pick_unfair": true,
+   "summary": "You can find more information about how to check whether something is true or not by going to Wikipedia."
+  },
+  {
+   "clause": "To help support our community, we encourage you to report content or conduct that you believe violates your rights (including intellectual property rights) or our terms and policies, if this feature exists in your jurisdiction.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.229544997215271,
+   "top_pick_unfair": false,
+   "summary": "We encourage you to report content or conduct that you think violates your rights (including intellectual property rights) or our terms and policies, if this feature exists in your jurisdiction."
+  },
+  {
+   "clause": "We also can remove or restrict access to content, features, services, or information if we determine that doing so is reasonably necessary to avoid or mitigate misuse of our services or adverse legal or regulatory impacts to Meta.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9958767723292112,
+   "top_pick_unfair": true,
+   "summary": "We can remove or restrict your access to content, features, services, or information if we think it's reasonably necessary to prevent misuse of our services or legal problems for us."
+  },
+  {
+   "clause": "Nothing in these Terms takes away the rights you have to your own content.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.13412809371948242,
+   "top_pick_unfair": false,
+   "summary": "Nothing in these Terms takes away the rights you have to create and share your own content."
+  },
+  {
+   "clause": "Learn more about how to delete your account.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.10027438402175903,
+   "top_pick_unfair": false,
+   "summary": "You can delete your account by going to the following link: http://www.clearly_unfair.com/get-back-involved/delete-your-account."
+  },
+  {
+   "clause": "After the content is deleted, it may take us up to another 90 days to remove it from backups and disaster recovery systems.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5555090308189392,
+   "top_pick_unfair": false,
+   "summary": "After you delete the content, we may take up to 90 days to remove it from backup and disaster recovery systems."
+  },
+  {
+   "clause": "where immediate deletion would restrict our ability to:",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10501044988632202,
+   "top_pick_unfair": false,
+   "summary": "We can't delete this right away because doing so would stop us from doing what we need to do."
+  },
+  {
+   "clause": "investigate or identify illegal activity or violations of our terms and policies (for example, to identify or investigate misuse of our Products or systems);",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11165869235992432,
+   "top_pick_unfair": false,
+   "summary": "You can't investigate or find illegal activity or violations of our terms and policies (for example, to identify or investigate misuse of our products or systems);"
+  },
+  {
+   "clause": "protect the safety, integrity, and security of our Products, systems, services, our employees, and users, and to defend ourselves;",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12904250621795654,
+   "top_pick_unfair": false,
+   "summary": "We must keep our products, systems, services, employees, and users safe, and we must be able to defend ourselves;"
+  },
+  {
+   "clause": "in which case, the content will be retained for no longer than is necessary for the purposes for which it has been retained (the exact duration will vary on a case-by-case basis).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5329512357711792,
+   "top_pick_unfair": false,
+   "summary": "We'll keep the content for as long as it's needed for the specific purpose we need it for, but we may keep it for different reasons depending on the situation."
+  },
+  {
+   "clause": "In each of the above cases, this license will continue until the content has been fully deleted.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.975992601364851,
+   "top_pick_unfair": true,
+   "summary": "This license will continue to apply to the content you provide even after you delete it."
+  },
+  {
+   "clause": "Ads and content like this can be seen only by people who have your permission to see the actions you've taken on Meta Products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.21843373775482178,
+   "top_pick_unfair": false,
+   "summary": "You can only see ads and content like this if you give us permission to view it."
+  },
+  {
+   "clause": "3.4 Limits on using our intellectual property",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.30846959352493286,
+   "top_pick_unfair": false,
+   "summary": "You cannot use our intellectual property in any way that is not authorized by law."
+  },
+  {
+   "clause": "As a result, we may need to update these Terms from time to time to accurately reflect our services and practices, to promote a safe and secure experience on our Products and services, and/or to comply with applicable law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9899560352787375,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, to make the service more accurate, to keep it safe and secure, and to follow the law."
+  },
+  {
+   "clause": "Once any updated Terms are in effect, you will be bound by them if you continue to access or use our Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8569362908601761,
+   "top_pick_unfair": true,
+   "summary": "If you keep using our products after we change these terms, you will have to follow the new terms."
+  },
+  {
+   "clause": "We hope that you will continue using our Products, but if you do not agree to our updated Terms or wish to terminate your agreement to this contract, you can delete your account at any time and you must also stop accessing, or using Facebook and the other Meta Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.29147112369537354,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to you . You can delete your account, and you must stop using Facebook and the other Meta Products."
+  },
+  {
+   "clause": "We want Facebook to be a place where people feel welcome and safe to express themselves and share their thoughts and ideas.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2832890748977661,
+   "top_pick_unfair": false,
+   "summary": "We want to create a place where people feel welcome and safe to express themselves and share their thoughts and ideas."
+  },
+  {
+   "clause": "If we determine, in our discretion, that you have clearly, seriously or repeatedly breached our Terms or Policies, including in particular the Community Standards, we may suspend or permanently disable your access to Meta Company Products, and we may permanently disable or delete your account.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9939531558193266,
+   "top_pick_unfair": true,
+   "summary": "We can suspend or permanently disable your access to Meta Company Products, and we can permanently delete your account if we decide in our discretion that you've broken the rules."
+  },
+  {
+   "clause": "We may also disable or delete your account if you repeatedly infringe other people’s intellectual property rights or where we are required to do so for legal reasons.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9892014460638165,
+   "top_pick_unfair": true,
+   "summary": "We can turn off or delete your account if you repeatedly violate other people's intellectual property rights, or if the law requires us to do so."
+  },
+  {
+   "clause": "We may disable or delete your account if after registration your account is not confirmed, your account is unused and remains inactive for an extended period of time, or if we detect someone may have used it without your permission and we are unable to confirm your ownership of the account.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9852750767022371,
+   "top_pick_unfair": true,
+   "summary": "We can disable or delete your account if your account is not confirmed, if you don't use it for a long time, if someone else uses it without your permission, or if we can't confirm who owns your account."
+  },
+  {
+   "clause": "If you delete or we disable or delete your account, and you stop accessing, using, or visiting Facebook and the other Meta Products, or if this contract is otherwise terminated, then these Terms shall terminate as an agreement between you and us, except for the following provisions, which will remain in place: (3, 4.2-4.5).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.296134352684021,
+   "top_pick_unfair": false,
+   "summary": "If you delete your account, if you stop using the service, or if this agreement is terminated, these Terms will end, but the following sections will continue to apply: (3, 4.2-4.5)."
+  },
+  {
+   "clause": "We work hard to provide the best Products we can and to specify clear guidelines for everyone who uses them.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2566961646080017,
+   "top_pick_unfair": false,
+   "summary": "We work hard to give you the best products possible and to make sure you follow the rules that apply to you."
+  },
+  {
+   "clause": "Our Products, however, are provided \"as is,\" and we make no guarantees that they always will be safe, secure, or error-free, or that they will function without disruptions, delays, or imperfections.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.611461341381073,
+   "top_pick_unfair": true,
+   "summary": "This service is provided 'as is' and to be used at the users' sole risk. This service does not guarantee that it or the products obtained through it meet your expectations or requirements. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service."
+  },
+  {
+   "clause": "To the extent permitted by law, we also DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9751727972179651,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for any problems or damages resulting from any disagreement with the service. This service does not guarantee that it or the products obtained through it meet the users' expectations or requirements."
+  },
+  {
+   "clause": "We do not control or direct what people and others do or say, and we are not responsible for their actions or conduct (whether online or offline) or any content they share (including offensive, inappropriate, obscene, unlawful, and other objectionable content).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9704971183091402,
+   "top_pick_unfair": true,
+   "summary": "We don't control what people do or say, and we're not responsible for what they do or share online or offline, or for any content they share (including offensive, inappropriate, obscene, unlawful, and other objectionable content)."
+  },
+  {
+   "clause": "We cannot predict when issues might arise with our Products.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2244996428489685,
+   "top_pick_unfair": false,
+   "summary": "We can't predict when problems will happen with our products or how they might be handled."
+  },
+  {
+   "clause": "Accordingly, our liability shall be limited to the fullest extent permitted by applicable law, and under no circumstance will we be liable to you for any lost profits, revenues, information, or data, or consequential, special, indirect, exemplary, punitive, or incidental damages arising out of or related to these Terms or the Meta Products (however caused and on any theory of liability, including negligence), even if we have been advised of the possibility of such damages.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9914239123463631,
+   "top_pick_unfair": true,
+   "summary": "We are only responsible for damages caused by your actions, not your actions. This service assumes no liability for any losses or damages resulting from any matter relating to these Terms or the Meta Products (however caused) or on any theory of liability, including negligence, even if we knew this type of harm might happen. The service is provided 'as is' and to be used at the users' sole risk."
+  },
+  {
+   "clause": "Our aggregate liability arising out of or relating to these Terms or the Meta Products will not exceed the greater of $100 or the amount you have paid us in the past twelve months.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9781637359410524,
+   "top_pick_unfair": true,
+   "summary": "We won't be responsible for any problems that happen because of these Terms or the Meta Products, and we won't have to pay you more than $100 or the amount you've paid us in the past 12 months."
+  },
+  {
+   "clause": "We try to provide clear rules so that we can limit or hopefully avoid disputes between you and us.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8813120722770691,
+   "top_pick_unfair": true,
+   "summary": "We try to make clear rules so that you and us can work together without getting into disagreements."
+  },
+  {
+   "clause": "If a dispute does arise, however, it's useful to know up front where it can be resolved and what laws will apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1546580195426941,
+   "top_pick_unfair": false,
+   "summary": "If there's a dispute, it's good to know ahead of time where it can be resolved and what laws will apply."
+  },
+  {
+   "clause": "You and Meta each agree that any claim, cause of action, or dispute between us that arises out of or relates to these Terms or your access or use of the Meta Products shall be resolved exclusively in the U.S. District Court for the Northern District of California or a state court located in San Mateo County.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9910305198282003,
+   "top_pick_unfair": true,
+   "summary": "You and Meta both agree that any legal disputes between you and us must be handled in the U.S. District Court for the Northern District of California or a state court in San Mateo County, California."
+  },
+  {
+   "clause": "You also agree to submit to the personal jurisdiction of either of these courts for the purpose of litigating any such claim, and that the laws of the State of California will govern these Terms and any claim, cause of action, or dispute without regard to conflict of law provisions.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9932684861123562,
+   "top_pick_unfair": true,
+   "summary": "You agree that any legal disputes will be handled by the courts of the state of California, and that California law will apply to them."
+  },
+  {
+   "clause": "Without prejudice to the foregoing, you agree that, in its sole discretion, Meta may bring any claim, cause of action, or dispute we have against you in any competent court in the country in which you reside that has jurisdiction over the claim.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7604251950979233,
+   "top_pick_unfair": true,
+   "summary": "You agree that Meta can decide on its own to bring any claim, lawsuit, or dispute against you in any court in the country where you live that has the power to handle it."
+  },
+  {
+   "clause": "Supplemental Terms: Some of the Products we offer are also governed by supplemental terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.25197988748550415,
+   "top_pick_unfair": false,
+   "summary": "Some of the products we offer have their own separate rules that apply to them."
+  },
+  {
+   "clause": "For instance, if you access or use our Products for commercial or business purposes, such as buying ads, selling products, developing apps, managing a group or Page for your business, or using our measurement services, you must agree to our Commercial Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6019980311393738,
+   "top_pick_unfair": true,
+   "summary": "If you use our products for commercial or business purposes, such as buying ads, selling products, developing apps, managing a group or Page for your business, or using our measurement services, you must agree to our Commercial Terms."
+  },
+  {
+   "clause": "If you use Avatars, then the Avatar Terms also apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.35572052001953125,
+   "top_pick_unfair": false,
+   "summary": "If you use Avatars, the Avatar Terms also apply to those same terms."
+  },
+  {
+   "clause": "If you use our AI products and features, the Meta AI Terms also apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.47844451665878296,
+   "top_pick_unfair": false,
+   "summary": "If you use our AI products and features, the Meta AI Terms also apply to you."
+  },
+  {
+   "clause": "To the extent any supplemental terms conflict with these Terms, the supplemental terms shall govern to the extent of the conflict.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3207903504371643,
+   "top_pick_unfair": false,
+   "summary": "If any extra terms conflict with these Terms, the extra terms will be applied to that conflict."
+  },
+  {
+   "clause": "Severability: If any portion of these Terms is found to be unenforceable, the unenforceable portion will be deemed amended to the minimum extent necessary to make it enforceable, and if it can’t be made enforceable, then it will be severed and the remaining portion will remain in full force and effect.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4497271180152893,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that any part of these Terms cannot be enforced, that part will be removed, but the rest of the terms will still apply."
+  },
+  {
+   "clause": "If we fail to enforce any of these Terms, it will not be considered a waiver.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2259466052055359,
+   "top_pick_unfair": false,
+   "summary": "If we don't enforce any of these terms, that doesn't mean we're giving up our right to enforce them."
+  },
+  {
+   "clause": "Any amendment to or waiver of these Terms must be made in writing and signed by us.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9697487764060497,
+   "top_pick_unfair": true,
+   "summary": "Any changes to these Terms must be made in writing and signed by us first, and we can cancel them if we disagree with them."
+  },
+  {
+   "clause": "No Third-party Beneficiaries: These Terms do not confer any third-party beneficiary rights.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.972676845267415,
+   "top_pick_unfair": true,
+   "summary": "This service does not give rights to third-party users. There is no guarantee that users will receive refunds or credits."
+  },
+  {
+   "clause": "All of our rights and obligations under these Terms are freely assignable by us in connection with a merger, acquisition, or sale of assets, or by operation of law or otherwise.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.20198321342468262,
+   "top_pick_unfair": false,
+   "summary": "We can give your rights and responsibilities under these Terms to someone else, including through a merger, acquisition, or sale of assets, or through any other legal means."
+  },
+  {
+   "clause": "User Name Change: We may need to change the username for your account in certain circumstances (for example, if someone else claims the username and it appears unrelated to the name you use in everyday life).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.921455129981041,
+   "top_pick_unfair": true,
+   "summary": "We might need to change your username if someone else claims it and it doesn't match what you normally use in everyday life."
+  },
+  {
+   "clause": "Feedback: We always appreciate your feedback and other suggestions about our products and services.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13574236631393433,
+   "top_pick_unfair": false,
+   "summary": "We're happy to hear your feedback about our products and services, and we welcome suggestions about how to improve them."
+  },
+  {
+   "clause": "Community Payment Terms: These terms apply to payments made on or through Meta Products.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4687531590461731,
+   "top_pick_unfair": false,
+   "summary": "These terms apply to payments made on or through Meta Products. The terms for this service are translated into different languages."
+  },
+  {
+   "clause": "Meta Platform Policy: These terms apply to the use of the set of APIs, SDKs, tools, plugins, code, technology, content, and services that enables others to develop functionality, retrieve data from MetaProducts, or provide data to us.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.7558404505252838,
+   "top_pick_unfair": true,
+   "summary": "Terms for this service are easy to read. The service provides a complete list of all cookies set by its website. This service can share your personal data to third parties . The service can sell or otherwise transfer your data as part of a bankruptcy proceeding or other type of financial transaction.."
+  },
+  {
+   "clause": "Developer Payment Terms: These terms apply to developers of applications that use Facebook Payments.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10312849283218384,
+   "top_pick_unfair": false,
+   "summary": "These terms apply to developers of applications that use Facebook Payments, and you agree to follow them."
+  },
+  {
+   "clause": "Meta Brand Resources: These guidelines outline the policies that apply to use of Meta trademarks, logos, and screenshots.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.14689844846725464,
+   "top_pick_unfair": false,
+   "summary": "The terms for this service are easy to read. The service provides a complete list of all trademarks, logos, and screenshots that users can use."
+  },
+  {
+   "clause": "Meta AI Terms: These terms govern use of our Generative AI products and features.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.46127253770828247,
+   "top_pick_unfair": false,
+   "summary": "These are the rules for how you can use our Generative AI products and features."
+  }
+ ]
+}

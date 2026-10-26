@@ -1,0 +1,902 @@
+{
+ "text_sha256": "e98ed1ea8ce755c47acd342f5a694edc1d5c01dba9264a97394485fc61c24a05",
+ "min_threshold": 0.1,
+ "clauses": [
+  {
+   "clause": "These Terms of Service (“Terms”) are an agreement between you and TikTok USDS Joint Venture LLC (“TikTok USDS Joint Venture,” “we,” or “us”), the operator of the Platform in the United States, which governs your use of or access to the Platform defined below.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9780817832797766,
+   "top_pick_unfair": true,
+   "summary": "Terms of Service are between you and TikTok USDSJ Joint Venture LLC (“TikTok, USDS Joint Venture,” “we’ or “us”), the operator of the Platform in the United States, which controls how you can use or access the Platform as defined below."
+  },
+  {
+   "clause": "Please read these Terms carefully.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1909157633781433,
+   "top_pick_unfair": false,
+   "summary": "Please read these Terms carefully before you use them and don't take any legal action against us."
+  },
+  {
+   "clause": "You form a contract with us when you accept these Terms or when you otherwise use or access the Platform.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.11129438877105713,
+   "top_pick_unfair": false,
+   "summary": "When you agree to follow these Terms and use the Platform, you're making a legal agreement with us."
+  },
+  {
+   "clause": "If you agree to these Terms on behalf of a business or organization, you confirm that you have the right to enter into these Terms on its behalf.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8000321537256241,
+   "top_pick_unfair": true,
+   "summary": "If you agree to use this service for a business or organization, you confirm that you have the right to use the service for that organization."
+  },
+  {
+   "clause": "In short: This is a contract between you and TikTok USDS Joint Venture.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8529350310564041,
+   "top_pick_unfair": true,
+   "summary": "This agreement is a legal document between you and TikTokTokTok USDS Joint Venture."
+  },
+  {
+   "clause": "By using the Platform, you are agreeing with these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9970728538464755,
+   "top_pick_unfair": true,
+   "summary": "By using the Platform, you are agreeing to follow these terms. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "These Terms govern your use of our services, which include TikTok applications, websites, software (e.g.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4380612373352051,
+   "top_pick_unfair": false,
+   "summary": "Terms govern how you use our services, which include TikTok applications, websites, software (e.g."
+  },
+  {
+   "clause": "enabling third party search engines to surface public TikTok content), accessed or delivered via any platform or device (the “Platform”), except where we state that other terms apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8833282440900803,
+   "top_pick_unfair": true,
+   "summary": "You cannot use third-party search engines to find content on the service (the \"TikTok Platform\") or access it through any platform or device (the platform), except where this agreement says other terms apply."
+  },
+  {
+   "clause": "In short: These Terms apply to your use of the Platform, except where we state that other terms apply.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.97236617654562,
+   "top_pick_unfair": true,
+   "summary": "These Terms apply to how you use the Platform, except where we say other terms apply instead."
+  },
+  {
+   "clause": "Your use of the Platform is also governed by our Privacy Policy and Community Guidelines.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2915399670600891,
+   "top_pick_unfair": false,
+   "summary": "Your use of the platform is governed by our Privacy Policy and Community Guidelines, as well as our Terms of Service."
+  },
+  {
+   "clause": "And, depending on the specific services you use, the additional terms and policies listed below or that are otherwise made available to you may apply (“Additional Terms”).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.39818286895751953,
+   "top_pick_unfair": false,
+   "summary": "Depending on the specific services you use, the additional terms and policies listed below or that we give you (called \"Additional Terms\") may also apply to you."
+  },
+  {
+   "clause": "If you use such services, the Additional Terms become part of these Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15655767917633057,
+   "top_pick_unfair": false,
+   "summary": "If you use these services, you agree to follow the additional terms that come with them."
+  },
+  {
+   "clause": "If any specific provision of the Additional Terms conflicts with these Terms, the specific provision of the Additional Terms will prevail with respect to your use of the applicable services.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.38094836473464966,
+   "top_pick_unfair": false,
+   "summary": "If any part of these Terms conflicts with another part of the Additional Terms, that part will be the one that applies to you."
+  },
+  {
+   "clause": "- Music Terms: These terms apply when you post content on the Platform that includes music sourced from the music library or your personal device.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.12081104516983032,
+   "top_pick_unfair": false,
+   "summary": "Terms apply when you post content on the Platform that includes music from your music library or your personal device."
+  },
+  {
+   "clause": "- Intellectual Property Policy: This policy applies to all content on the Platform that is protected by intellectual property rights.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8623866736888885,
+   "top_pick_unfair": true,
+   "summary": "Content on the platform is protected by intellectual property laws. This policy applies to all content on the Platform that has intellectual property rights."
+  },
+  {
+   "clause": "- Virtual Items Policy: This policy governs the access and use of Virtual Items (such as virtual coins and diamonds) on the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5240874886512756,
+   "top_pick_unfair": false,
+   "summary": "The service provides details about what kinds of virtual items they allow you to use. The service provides information about how they intend to use your personal data. This service does not condone any ideas contained in its user-generated contents."
+  },
+  {
+   "clause": "- Subscription Terms: These terms govern certain subscription services available through the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8496790379285812,
+   "top_pick_unfair": true,
+   "summary": "These terms apply to certain subscription services that are available through the Platform. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "In short: These Terms cover your use of the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9699304942041636,
+   "top_pick_unfair": true,
+   "summary": "These Terms explain how you can use the platform and explain what kind of content you can expect."
+  },
+  {
+   "clause": "There may be some additional terms and policies that apply, depending on how you use the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9471426457166672,
+   "top_pick_unfair": true,
+   "summary": "There may be extra rules and policies that apply to you depending on how you use the Platform."
+  },
+  {
+   "clause": "We operate the Platform for you and others to create, view, interact with, and share content, and engage with others throughout the TikTok community.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.21281123161315918,
+   "top_pick_unfair": false,
+   "summary": "We run the platform where you and others can create, view, interact with, and share content, and interact with other people in the TikTok community."
+  },
+  {
+   "clause": "We work with our service providers and business partners, such as BD TikTok USA LLC (hereinafter referred to as \"TT Commerce & Global Services\") and its affiliates, and our affiliates, to provide certain important functions of the Platform so that you and other users can use it and enjoy a global experience, including in connection with e-commerce, marketing, advertising, and other commercial services and activities.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15065258741378784,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The service provides details about what kinds of personal information they collect. The service can sell or otherwise transfer your personal data as part of a bankruptcy proceeding or other type of financial transaction.. The service is a subsidiary of BD TikTok USA LLC (hereinafter referred to as \"TT Commerce & Global Services\") and its affiliates, and our affiliates."
+  },
+  {
+   "clause": "We customize what you see on the Platform based on, for example, the users you follow and engage with, your interests and activity on the Platform, popularity of videos, diversity among content, your device and account settings, and language preference.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.13675928115844727,
+   "top_pick_unfair": false,
+   "summary": "We can change what you see on the platform based on who you follow and interact with, your interests and activity on the Platform, popularity of videos, diversity among content, your device and account settings, and language preference."
+  },
+  {
+   "clause": "We want the platform to be a safe place, where people can be who they are and have fun.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3378990888595581,
+   "top_pick_unfair": false,
+   "summary": "We want the platform to be a safe place where people can be themselves and have fun."
+  },
+  {
+   "clause": "To help protect you and others in our community, we work with our affiliates, service providers, and business partners who may use a mix of technology (including through automated means), human moderation, and reports from our users and others to identify suspected violations of these Terms, our Community Guidelines, and other conditions or policies.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.18227916955947876,
+   "top_pick_unfair": false,
+   "summary": "We may use technology, automated tools, human moderation, and/or reports from our users and others to find and enforce violations of these Terms, our Community Guidelines, and other conditions or policies. To help protect you and others in our community, we work with our affiliates, service providers, and business partners who may use a mix of technology and human moderation."
+  },
+  {
+   "clause": "In short: We operate the Platform for you and others, and we may work with our affiliates, service providers, and business partners.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.14409643411636353,
+   "top_pick_unfair": false,
+   "summary": "We run the platform for you and others, and we may work with our affiliates, service providers, and business partners."
+  },
+  {
+   "clause": "We may take steps to identify and take action against content that may violate our Terms, Community Guidelines, and other conditions or policies, to protect you and others in our community.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.6690632700920105,
+   "top_pick_unfair": true,
+   "summary": "We may take action against content that breaks our Terms, Community Guidelines, and other conditions or policies to protect you and others in our community."
+  },
+  {
+   "clause": "If you use the Platform without an account, then these Terms still apply to you.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.299189031124115,
+   "top_pick_unfair": false,
+   "summary": "If you don't have an account, these Terms still apply to you, even if you have one."
+  },
+  {
+   "clause": "We may revoke, reclaim, and/or reassign the username of your account in certain circumstances, such as, when you have not logged into your account for 180 days, if we ban your account, or if we reasonably believe that your username violates our Terms, Community Guidelines, or other conditions or policies, and/or interferes with or infringes upon the rights of other users.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9795998707413673,
+   "top_pick_unfair": true,
+   "summary": "We can delete your account if you don't log in for 180 days, if we ban your account, or if we reasonably believe your username violates our Terms, Community Guidelines, or other conditions or policies, and/or interferes with or infringes on other users' rights."
+  },
+  {
+   "clause": "In short: Your account is important.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5277528166770935,
+   "top_pick_unfair": false,
+   "summary": "Your account is important. This service holds onto content that you've deleted. The service can delete your account without prior notice and without a reason."
+  },
+  {
+   "clause": "We may revoke, reclaim, or reassign the username of your account under certain circumstances.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7014577984809875,
+   "top_pick_unfair": true,
+   "summary": "We can take back, change, or give your username to someone else under certain circumstances."
+  },
+  {
+   "clause": "We want the Platform to provide a safe and positive experience.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.17795318365097046,
+   "top_pick_unfair": false,
+   "summary": "We want the platform to be safe and provide a positive experience for users of all ages."
+  },
+  {
+   "clause": "We monitor for underage use of the Platform and we will ban your account or remove your access to certain features if we believe that you do not meet the minimum age requirements.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.949562568217516,
+   "top_pick_unfair": true,
+   "summary": "We will ban your account or remove your access to certain features if we think you are under the minimum age of consent."
+  },
+  {
+   "clause": "If you are under 18 years of age, you must review these Terms (and our Privacy Policy) with your parent or guardian, and obtain their permission before you use the Platform.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.20006608963012695,
+   "top_pick_unfair": false,
+   "summary": "If you are under 18 years old, you must read these Terms and our Privacy Policy with your parent or guardian and get their permission before you use the platform."
+  },
+  {
+   "clause": "If you are the parent or guardian of such a user, you accept and agree to these Terms on their behalf and further agree that you are responsible for their use of the Platform.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9846253730356693,
+   "top_pick_unfair": true,
+   "summary": "If you are the parent or guardian of a user, you agree to follow these terms for that user and are responsible for how they use the platform."
+  },
+  {
+   "clause": "We will ban your account if we become aware that you are under 13 and not using the Under 13 Experience.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1685963273048401,
+   "top_pick_unfair": false,
+   "summary": "We can close your account if we find out you're under 13 and you're not using the Under 13 Experience."
+  },
+  {
+   "clause": "These Terms and our Community Guidelines, apply to everyone and to all content on the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8649530708789825,
+   "top_pick_unfair": true,
+   "summary": "These Terms and our Community Guidelines apply to everyone and to all content on the Platform."
+  },
+  {
+   "clause": "If you want to use the Platform, you can’t create, post, share, link to or otherwise interact with content in violation of them.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.128393292427063,
+   "top_pick_unfair": false,
+   "summary": "You cannot create, post, share, link to, or interact with content that breaks these terms."
+  },
+  {
+   "clause": "For example, you must not use, or help anyone else use, the Platform to:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.20167124271392822,
+   "top_pick_unfair": false,
+   "summary": "You can't use, or help anyone else use, the Platform in ways that include:"
+  },
+  {
+   "clause": "- do anything that we determine violates or risks violating applicable laws, regulations, or requirements where you live or where we operate, including anti-corruption, anti-money laundering, counter terrorist financing, import controls, export controls, and economic sanctions laws or regulations,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.21214473247528076,
+   "top_pick_unfair": false,
+   "summary": "We won't let you do anything that breaks or risks breaking any laws, regulations, or requirements that apply to where you live or where we operate, including anti-corruption, anti-money laundering, counter terrorist financing, import controls, export controls, and economic sanctions laws or regulations."
+  },
+  {
+   "clause": "- upload content in violation of applicable laws, including laws requiring the consent of individuals whose images appear in Your Content, or their legally authorized representatives,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.17495477199554443,
+   "top_pick_unfair": false,
+   "summary": "You can't upload content that breaks the law, including laws that require people whose images appear in Your Content to get permission from their legally authorized representatives."
+  },
+  {
+   "clause": "- upload viruses or malicious code, or do anything that could disable, overburden, interfere with, or undermine, the Platform’s operations or security,",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9530207701027393,
+   "top_pick_unfair": true,
+   "summary": "You can't upload viruses or malicious code, and you can't do anything that could disable, overburden, interfere with, or undermine the Platform's operations or security."
+  },
+  {
+   "clause": "- reverse engineer, disassemble, or decompile the Platform or any of its components, including its algorithms, code, or infrastructure, without explicit written authorization from TikTok USDS Joint Venture,",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9178853780031204,
+   "top_pick_unfair": true,
+   "summary": "You cannot reverse engineer, disassemble, or decompile the Platform or any of its components, including its algorithms, code, or infrastructure, unless TikTok USDS Joint Venture gives you written permission first."
+  },
+  {
+   "clause": "- use or attempt to use another user’s account without authorization,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.40440452098846436,
+   "top_pick_unfair": false,
+   "summary": "You can't use or try to use another user's account without getting their permission first."
+  },
+  {
+   "clause": "Embargoed Jurisdictions include, but are not limited to, Cuba, Iran, North Korea, and the following regions of Ukraine: the Crimea region, Donetsk People's Republic, and Luhansk People's Republic, occupied portions of Kherson, and occupied portions of Zaporizhzhia,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5970706343650818,
+   "top_pick_unfair": true,
+   "summary": "The following countries and territories are not covered by this agreement: Cuba, Iran, North Korea, and the following regions of Ukraine: the Crimea region, Donetsk People's Republic, and Luhansk people's republic, as well as parts of Kherson, and parts of Zaporizhzhia."
+  },
+  {
+   "clause": "- in support of the development or production of any firearm or military weapon, which includes any chemical, biological, or nuclear weapon or their means of delivery.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3246757388114929,
+   "top_pick_unfair": false,
+   "summary": "You cannot use this service to make, develop, or produce any firearm or military weapon, including any chemical, biological, or nuclear weapon or their means of delivery."
+  },
+  {
+   "clause": "We will own all rights in anything we develop based on your comments, ideas, or feedback.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1167479157447815,
+   "top_pick_unfair": false,
+   "summary": "We own all rights to anything we create based on your comments, ideas, or feedback."
+  },
+  {
+   "clause": "For the avoidance of doubt, this includes any music that you use which was not selected from the TikTok music library; learn more here.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15585994720458984,
+   "top_pick_unfair": false,
+   "summary": "This service does not condone any ideas contained in its user-generated contents. The service can delete specific content without reason and may do it without prior notice to the user. This service can license user content to third parties."
+  },
+  {
+   "clause": "Separately, we may make certain content available on the Platform for you to use in accordance with these Terms, including images, designs, videos, filters, text, music, or sounds (“TikTok Content”).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4858112931251526,
+   "top_pick_unfair": false,
+   "summary": "We may make certain content available on the Platform that you can use according to these Terms, including images, designs, videos, filters, text, music, or sounds (“TikTok Content”)."
+  },
+  {
+   "clause": "To provide the Platform, we need certain rights from you (called a license).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.24787622690200806,
+   "top_pick_unfair": false,
+   "summary": "To provide the Platform, we need certain rights from you (called a license), and to give you those rights, we give you a license."
+  },
+  {
+   "clause": "- worldwide (so we can show your content to a global audience).",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15193122625350952,
+   "top_pick_unfair": false,
+   "summary": "We can show your content to people around the world, so we can show it to a global audience."
+  },
+  {
+   "clause": "Depending on your Platform usage, including your sharing activities and settings, you also grant to each user of the Platform a non-exclusive, royalty-free, perpetual and irrevocable, worldwide license to use Your Content, including to access, reproduce (e.g.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8501309156417847,
+   "top_pick_unfair": true,
+   "summary": "Depending on how you use the service, you give each user a non-exclusive, royalty-free, perpetual and irrevocable, worldwide license to use your content, including to access, copy, and/or distribute it."
+  },
+  {
+   "clause": "to display it), in accordance with these Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2035565972328186,
+   "top_pick_unfair": false,
+   "summary": "You must use this service in a way that follows these Terms of Service (i.e., you must display it)."
+  },
+  {
+   "clause": "We retain all our respective rights, title, and interest, including intellectual property and other proprietary rights, in and to the Platform, including its generative AI-enabled features, and we reserve all rights not expressly granted in these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.42457371950149536,
+   "top_pick_unfair": false,
+   "summary": "We keep all the rights, ownership, and control over the platform and its features, including its AI-enabled features, and we keep any other rights that these Terms don't specifically give to you."
+  },
+  {
+   "clause": "We retain all our respective rights in and to the Platform and our technologies.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4171629548072815,
+   "top_pick_unfair": false,
+   "summary": "We keep all the rights to the platform and its technologies, including the right to use them however we want."
+  },
+  {
+   "clause": "It is important that you understand the following with respect to the content that you create, post or share on the Platform:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.412994384765625,
+   "top_pick_unfair": false,
+   "summary": "You need to understand the following rules when you create, post, or share content on the Platform:"
+  },
+  {
+   "clause": "- We may remove or restrict access to any content, including yours, whether publicly or privately posted, for any reason, including if (a) it violates these Terms, our Community Guidelines, or other conditions or policies, (b) it may cause harm to, or violate the rights of, our users, TikTok USDS Joint Venture, our affiliates, or other third parties, or (c) we are required to do so to comply with a legal requirement or court order, or are permitted to do so by law.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9956732420250773,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Users agree not to submit libelous, harassing or threatening content. The service can delete specific content without reason and may do it without prior notice. This service forces users into binding arbitration in the case of disputes. The court of law governing the terms is in a jurisdiction that is friendlier to user privacy protection.. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free"
+  },
+  {
+   "clause": "Our Community Guidelines further describe why content might be removed or restricted on the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.1837531328201294,
+   "top_pick_unfair": false,
+   "summary": "We explain in our Community Guidelines why content might be removed or restricted on the Platform."
+  },
+  {
+   "clause": "- You can delete specific videos from the Platform at any time, or all of Your Content by deleting your account as described in Section 5 “Suspending or ending our relationship.”",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4229298233985901,
+   "top_pick_unfair": false,
+   "summary": "You can delete specific videos from the platform at any time, or all of your content if you delete your account as described in Section 5 “Suspending or ending our relationship.”"
+  },
+  {
+   "clause": "In short: We may remove or restrict access to Your Content, and you can delete Your Content, in accordance with this Section and our Community Guidelines.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.86225326359272,
+   "top_pick_unfair": true,
+   "summary": "We may remove or restrict your access to your content, and you can delete it if you want. This service respects your content ownership rights."
+  },
+  {
+   "clause": "- If you post content on the Platform that promotes a third-party brand or its products or services in exchange for payment or any other incentive, you must comply with the Branded Content Policy and all applicable laws and guidelines (including with respect to disclosures), including the U.S. Federal Trade Commission’s Endorsement Guides.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.13733261823654175,
+   "top_pick_unfair": false,
+   "summary": "If you post content on the platform that promotes a third-party brand or its products or services, you must follow the Branded Content Policy and all applicable laws and guidelines, including the U.S. Federal Trade Commission’s Endorsement Guides."
+  },
+  {
+   "clause": "To help us provide the Platform, including to give our users a better experience, you agree that we can:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.4037865996360779,
+   "top_pick_unfair": false,
+   "summary": "To help us provide the Platform, including giving our users a better experience, you agree that we can:"
+  },
+  {
+   "clause": "You agree that we can use automated tools and human moderators to review Your Content (as defined in Section 3.5) and associated metadata on the Platform, to identify, detect, and enforce potential or actual violations of these Terms, our Community Guidelines, and other conditions or policies, and to keep our community safe and prevent harmful or illegal conduct on the Platform.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.36440563201904297,
+   "top_pick_unfair": false,
+   "summary": "We can use automated tools and human moderators to review Your Content (as defined in Section 3.5) and associated metadata, to identify, detect, and enforce potential or actual violations of these Terms, our Community Guidelines, and other conditions or policies, and to keep our community safe and prevent harmful or illegal conduct on the Platform."
+  },
+  {
+   "clause": "- Permission to update software.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.15006059408187866,
+   "top_pick_unfair": false,
+   "summary": "You have the right to update the software whenever the service decides to update it. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "In short: To help us provide the Platform, including to give our users a better experience, you agree that we can undertake the activities described in this Section.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.3266802430152893,
+   "top_pick_unfair": false,
+   "summary": "You agree that we can do the activities described in this Section. To help us provide the Platform, including giving our users a better experience, you agree to these terms."
+  },
+  {
+   "clause": "We respect copyright and other intellectual property rights and expect for you to do the same.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.3929218053817749,
+   "top_pick_unfair": false,
+   "summary": "We respect your ownership of your own content and other intellectual property, and we expect you to respect the same."
+  },
+  {
+   "clause": "You agree to the terms of our Intellectual Property Policy.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9840919692069292,
+   "top_pick_unfair": true,
+   "summary": "You agree to follow the rules and policies of our Intellectual Property Policy. There is a date of the last update of the agreements."
+  },
+  {
+   "clause": "In short: You should read our Intellectual Property Policy and must follow those additional rules.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.17786401510238647,
+   "top_pick_unfair": false,
+   "summary": "You should read our Intellectual Property Policy and follow the additional rules that come with it."
+  },
+  {
+   "clause": "Output is provided \"as is\" and is made available to you without any representations or warranties of any kind, whether express or implied.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6959162056446075,
+   "top_pick_unfair": true,
+   "summary": "We give you the service \"as is\" and to be used at your sole risk, and we make no promises or guarantees about it."
+  },
+  {
+   "clause": "You are responsible for your Input and your use of Output, and for all consequences resulting therefrom, and you agree that you will not use, attempt to use, or help anyone else use or attempt to use, the Platform, including its generative AI-enabled features, in violation of these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.33217328786849976,
+   "top_pick_unfair": false,
+   "summary": "You are responsible for maintaining the security of your account and for the activities on your account. You agree not to use the service for illegal purposes. The service can delete specific content without reason and may do it without prior notice. This service reserves the right to disclose your personal information without notifying you."
+  },
+  {
+   "clause": "You understand that no contract or enforceable promise between you and TikTok USDS Joint Venture can be created or modified by any Output, and you agree not to:",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2757115364074707,
+   "top_pick_unfair": false,
+   "summary": "You agree that no agreement or promise between you and TikTokTokTok USDS Joint Venture can be created or changed by any Output, and you agree not to:"
+  },
+  {
+   "clause": "- Provide, create, or otherwise use Input or Output in a way that violates these Terms, our Community Guidelines, or other conditions or policies or any applicable laws, or that infringes, violates or misappropriates the rights of TikTok USDS Joint Venture, our users, or any third party,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.4708681106567383,
+   "top_pick_unfair": false,
+   "summary": "We won't allow you to use our service in ways that break these Terms, our Community Guidelines, or any other conditions or policies, or that break the law or violate anyone else's rights, including those of TikTok USDS Joint Venture, our users, or anyone else."
+  },
+  {
+   "clause": "- Provide, create, or otherwise use Input or Output in a fraudulent manner or to deceive, mislead or impersonate others,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.12560498714447021,
+   "top_pick_unfair": false,
+   "summary": "You can't give, create, or use your input or output in a fraudulent way or try to trick, mislead, or pretend to be someone else."
+  },
+  {
+   "clause": "In short: You are responsible for your Input and your use of Output, and you agree not to provide, create, or otherwise use Input or Output in violation of these Terms, our Community Guidelines, or other conditions or policies or any applicable laws, or in a way that infringes rights.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5780385136604309,
+   "top_pick_unfair": true,
+   "summary": "You are responsible for maintaining the security of your account and for the activities on your account. You agree not to use the service for illegal purposes. The service can delete specific content without reason and may do it without prior notice. This service reserves the right to disclose your personal information without notifying you."
+  },
+  {
+   "clause": "The Platform is provided “as is.”",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9739273153245449,
+   "top_pick_unfair": true,
+   "summary": "The platform is provided 'as is' and to be used at the users' sole risk."
+  },
+  {
+   "clause": "We and our affiliates make no guarantees that the Platform, including its generative AI-enabled features, will be safe, secure, and free from errors, or that it will function without interruption, delay or defect.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5962918400764465,
+   "top_pick_unfair": false,
+   "summary": "We and our affiliates make no promises that the Platform, including its AI-enabled features, will be safe, secure, and free from errors, or that it will work without interruptions, delays, or problems."
+  },
+  {
+   "clause": "To the maximum extent permitted by law: We and TT COMMERCE & GLOBAL SERVICES, ALONG WITH EACH'S AFFILIATES, AND EACH OF THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AND ADVISORS, DISCLAIM ALL WARRANTIES, WHETHER EXPRESS OR IMPLIED, INCLUDING THE IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, VALIDITY, REGISTRABILITY, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR COURSE OF PERFORMANCE.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9782602544873953,
+   "top_pick_unfair": true,
+   "summary": "To the fullest extent allowed by law, We and TT COMMERCE & GLOBAL Services, along with their respective officers, directors, and agents, make no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no liability for any losses or damages resulting from any matter relating to the service. The service does not guarantee that it or the products obtained through it meet the users' expectations or requirements."
+  },
+  {
+   "clause": "Users and others are solely responsible for their content and use of the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9973487132228911,
+   "top_pick_unfair": true,
+   "summary": "You and others are completely responsible for what you post on the platform and how you use it."
+  },
+  {
+   "clause": "We are not responsible for users’ and others’ actions or conduct (whether on or off the Platform) and we do not guarantee the accuracy, integrity, appropriateness, or quality, of any content that users and others share on the Platform (including offensive, inappropriate, obscene, unlawful, and other objectionable content).",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9933107797987759,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for what you or other people do or say on or off the Platform, and we don't promise that the content you and others share on the Platform is accurate, complete, appropriate, or of good quality—including offensive, inappropriate, obscene, unlawful, and other objectionable content."
+  },
+  {
+   "clause": "You acknowledge that we have no obligation to pre-screen, monitor, review, or edit any content posted by you or other users on the Platform.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7314698100090027,
+   "top_pick_unfair": true,
+   "summary": "You agree that we don't have to screen, monitor, review, or edit anything you post on the platform."
+  },
+  {
+   "clause": "In addition to the limitation above, to the maximum extent permitted by law: WE AND TT COMMERCE & GLOBAL SERVICES, ALONG WITH EACH'S AFFILIATES, AND EACH OF THEIR RESPECTIVE OFFICERS, DIRECTORS, EMPLOYEES, AGENTS, AND ADVISORS, MAKE NO REPRESENTATIONS OR WARRANTIES, WHETHER EXPRESS OR IMPLIED, WITH RESPECT TO YOUR USE OF OUR GENERATIVE AI-ENABLED FEATURES AND OUTPUT.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9609292484819889,
+   "top_pick_unfair": true,
+   "summary": "This service does not guarantee that it or the products obtained through it meet the users' expectations or requirements. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no liability for any losses or damages resulting from any matter relating to the service."
+  },
+  {
+   "clause": "Your use of Output, and of our generative AI-enabled features, is at your own risk, and to the maximum extent permitted by law, you bear all consequences of your use of Output.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1530451774597168,
+   "top_pick_unfair": false,
+   "summary": "You use the service at your own risk, and you are responsible for any problems that happen because of your use of the service."
+  },
+  {
+   "clause": "Due to the inherent limitations of generative AI, Output you generate may be inaccurate, incomplete, misleading, objectionable, inappropriate, unlawful, and unfit for a particular purpose, and by using the Platform, including its generative AI-enabled features, you recognize and assume this risk.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.31157952547073364,
+   "top_pick_unfair": false,
+   "summary": "The service may use artificial intelligence (AI) to create content that is inaccurate, incomplete, misleading, objectionable, inappropriate, unlawful, and unfit for purpose, and by using the platform and its AI features, you accept this risk."
+  },
+  {
+   "clause": "EXCEPT AS REQUIRED BY APPLICABLE LAW, WE SHALL NOT BE LIABLE TO YOU FOR ANY LOSS OR DAMAGE WHICH MAY BE INCURRED BY YOU AS A RESULT OF:",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9773429855704308,
+   "top_pick_unfair": true,
+   "summary": "We are not responsible for any losses or damages that you experience as a result of using our service, except as required by law."
+  },
+  {
+   "clause": "Our liability and that of our affiliates and business partners shall be limited to the fullest extent permitted by applicable law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.983783608302474,
+   "top_pick_unfair": true,
+   "summary": "We are only responsible for claims made against us and our affiliates and business partners to the fullest extent that the law allows."
+  },
+  {
+   "clause": "Under no circumstance will TikTok USDS Joint Venture or our affiliates, service providers, or business partners, including TT Commerce & Global Services, and its affiliates, and each of their respective officers, directors, employees, agents, and advisors, be liable under these Terms, whether in an action in tort (including negligence) or contract or otherwise for any punitive, consequential, incidental, exemplary or special damages, or any damages that were not reasonably foreseeable at the time that these Terms were entered into by the parties, or any damages based on lost profits (whether incurred directly or indirectly), loss of reputation or diminution in value, loss of goodwill, loss of opportunity, loss of anticipated savings, loss or corruption of data suffered by you, or indirect or consequential losses which may be incurred by you, even if TikTok USDS Joint Venture has been advised of the possibility of such damages.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9895804664120078,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. This service assumes no liability for any losses or damages resulting from any matter relating to the service. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. Users agree not to use the service for illegal purposes. This service prohibits users sending chain letters, junk mail, spam or any unsolicited messages. You authorise the service to charge a credit"
+  },
+  {
+   "clause": "To the extent permitted by applicable law, the maximum aggregate liability of TikTok USDS Joint Venture and our affiliates, service providers and business partners, including TT Commerce & Global Services, and its affiliates, and each of our respective officers, directors, employees, agents, and advisors, arising out of or relating to these Terms or your use of the Platform shall, under no circumstance, exceed the greater of $100 or the amount you have paid us in the past 12 months.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9954608087427914,
+   "top_pick_unfair": true,
+   "summary": "TikTok USDS Joint Venture, its affiliates, service providers, and business partners (including TT Commerce & Global Services, and its affiliates) are all responsible for any problems related to these Terms or your use of the Platform, but they cannot be held responsible for more than $100 or the amount you've paid them in the past 12 months."
+  },
+  {
+   "clause": "The Platform may also integrate third-party services, including software and products, to provide generative AI-enabled features.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.6350019574165344,
+   "top_pick_unfair": true,
+   "summary": "We may use third-party tools and products to create and manage AI features on our platform."
+  },
+  {
+   "clause": "Your use of these third-party applications and services is governed by their terms and privacy policies, not ours.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5903794765472412,
+   "top_pick_unfair": true,
+   "summary": "Your use of these third-party applications and services is governed by their terms and privacy policies, not ours."
+  },
+  {
+   "clause": "In short: We will always seek to provide you with a great and safe user experience, but you take the Platform as it is and understand that we cannot guarantee that everything that is on the Platform, including Output, or that integrates with it, is safe and complies with our policies.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.45516669750213623,
+   "top_pick_unfair": false,
+   "summary": "We try to provide a safe and enjoyable experience for you, but we can't guarantee that everything on the platform, including Output, or that works with it, is safe and follows our policies."
+  },
+  {
+   "clause": "The Platform is provided “as is\" and by using the Platform, you agree that our liability is limited to the fullest extent permitted by applicable law.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9965824538376182,
+   "top_pick_unfair": true,
+   "summary": "The service is provided 'as is' and to be used at the users' sole risk. The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no responsibility and liability for the contents of links to other websites."
+  },
+  {
+   "clause": "If you delete your account, these Terms (as may be amended) will terminate as an agreement between you and us, except for obligations that remain in place which by their nature should survive the termination of these Terms, including the obligations set out in: Section 3.5 “Ownership of content and grant of licenses,” Section 4 “Limitation of liability,” Section 5 \"Suspending or ending our relationship,\" Section 7 “Indemnity,” Section 8 “Resolving disputes,” and Section 9 “Other.”",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.483547568321228,
+   "top_pick_unfair": false,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . Instead of asking directly, this Service will assume your consent merely from your usage.. The service has non-exclusive use of your content. The service can delete your account without prior notice and without a reason. This service reserves the right to disclose your personal information without notifying you. You agree to defend, indemnify, and hold the service harmless in case of a claim related to your use of the service."
+  },
+  {
+   "clause": "We reserve the right, at any time and without prior notice, to ban or suspend your account, or restrict your access to features of the Platform, at our sole discretion, including if:",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9976452083792537,
+   "top_pick_unfair": true,
+   "summary": "We can ban or suspend your account, or restrict your access to features of the Platform, whenever we want, and we don't have to tell you first. For example, we can do this if:"
+  },
+  {
+   "clause": "- we have reason to believe in our sole discretion that you have violated these Terms, our Community Guidelines, or other conditions or policies,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.621027797460556,
+   "top_pick_unfair": true,
+   "summary": "We can decide on our own whether you've broken these Terms, our Community Guidelines, or any other conditions or policies."
+  },
+  {
+   "clause": "- we are legally required to do so,",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.36590635776519775,
+   "top_pick_unfair": false,
+   "summary": "We have to do this because we are legally required to do so by law."
+  },
+  {
+   "clause": "- we suspect fraud, money laundering, terrorist financing, activities that violate anti-corruption, economic sanctions or export control laws, or other illegal activity by the user,",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9872299497947097,
+   "top_pick_unfair": true,
+   "summary": "We suspect fraud, money laundering, terrorist financing, activities that break anti-corruption, economic sanctions, export control laws, or other illegal activity by the user,"
+  },
+  {
+   "clause": "- you or any of your shareholders is designated on any Sanctioned Party Lists or blocked by virtue of being directly or indirectly, 50% or more, owned or controlled by any party designated on any Sanctioned Party Lists, or",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1043776273727417,
+   "top_pick_unfair": false,
+   "summary": "If you or any of your shareholders is on any Sanctioned Party Lists or blocked by virtue of being directly or indirectly, 50% or more, owned or controlled by any party that is on those lists, or"
+  },
+  {
+   "clause": "- we determine that we cannot perform our obligations under this Agreement due to prohibitions, or exposure to risk of sanctions.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8884273767471313,
+   "top_pick_unfair": true,
+   "summary": "We cannot perform our duties under this Agreement because of rules that prohibit us from doing so or because of the risk of being sanctioned."
+  },
+  {
+   "clause": "If we have previously banned or suspended your account, but you use our Platform again (for example, by opening another account), we are entitled to ban or suspend any such accounts.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.10197263956069946,
+   "top_pick_unfair": false,
+   "summary": "If we have previously banned or suspended your account, and you use our platform again (for example, by opening another account), we can ban or suspend that account."
+  },
+  {
+   "clause": "If we permanently ban your accounts, these Terms (as may be amended) will terminate as an agreement between you and us, except those obligations will remain in place which by their nature should survive the termination of these Terms, including the obligations set out in: Section 3.5 “Ownership of content and grant of licenses,” Section 4 “Limitation of liability,” Section 5 \"Suspending or ending our relationship,\" Section 7 “Indemnity,” Section 8 “Resolving disputes,” and Section 9 “Other.”",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5991639494895935,
+   "top_pick_unfair": true,
+   "summary": "Terms may be changed any time at their discretion, without notice to the user . The service can suspend your account for several reasons. The service has non-exclusive use of your content. This service reserves the right to disclose your personal information without notifying you. You maintain ownership of your data. You agree to defend, indemnify, and hold the service harmless in case of a claim related to"
+  },
+  {
+   "clause": "We may make changes to these Terms from time to time.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9967910153791308,
+   "top_pick_unfair": true,
+   "summary": "We may change these Terms at any time, but you will receive notification of the changes."
+  },
+  {
+   "clause": "Where we need to make urgent changes, for example, for security, safety, legal or regulatory reasons, we may not be able to provide you with advance notice, but we will let you know as soon as we are reasonably able to do so.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.19623804092407227,
+   "top_pick_unfair": false,
+   "summary": "We may not be able to give you advance notice of important changes, but we will let you know as soon as we reasonably can."
+  },
+  {
+   "clause": "You agree to regularly review the Terms to stay informed of the latest changes, and to review the Terms whenever you receive a notice from us that the Terms have been updated.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8591290712356567,
+   "top_pick_unfair": true,
+   "summary": "You must read the Terms regularly to stay up to date on changes to them, and you must read them whenever we tell you we've updated them."
+  },
+  {
+   "clause": "The “Last Updated” date will reflect the effective date of the Terms.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.5999439358711243,
+   "top_pick_unfair": true,
+   "summary": "The date of the last update of the terms is the date the terms were last updated."
+  },
+  {
+   "clause": "If you continue to use the Platform after any updated Terms are in effect, you agree to be bound by the updated Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9974872644525021,
+   "top_pick_unfair": true,
+   "summary": "If you keep using the platform after we change these terms, you agree to follow the new terms."
+  },
+  {
+   "clause": "Such Terms supersede all prior versions of the Terms unless a particular provision of the updated Terms states otherwise.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9561195448040962,
+   "top_pick_unfair": true,
+   "summary": "These Terms replace any earlier versions of the Terms, unless a specific part of the updated Terms says otherwise."
+  },
+  {
+   "clause": "In short: Should these Terms change, if you want to keep using the Platform, you will need to agree to the changes.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.89279355853796,
+   "top_pick_unfair": true,
+   "summary": "If these Terms change, you must agree to the new terms. The service can delete specific content without reason and may do it without prior notice."
+  },
+  {
+   "clause": "You agree to defend, indemnify, and hold harmless TikTok USDS Joint Venture and our affiliates, service providers, and business partners, including TT Commerce & Global Services and its affiliates, and each of their respective officers, directors, employees, agents and advisors from any and all claims, demands, damages, injunctions, orders, awards, settlements, losses, liabilities, liens, encumbrances, causes of action, of every kind and character, costs (including attorneys’ fees and other costs of arbitration, litigation, defense, or settlement), and expenses arising out of or relating to your use of the Platform under these Terms, including a breach of your obligations, representations and warranties under these Terms, and any violation of export controls or economic sanctions laws of the United States, United Kingdom, European Union, Singapore, or any other applicable jurisdiction.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9493577778339386,
+   "top_pick_unfair": true,
+   "summary": "You agree to defend, indemnify, and hold harmless TikTok USDS Joint Venture, our affiliates, service providers, and business partners, including TT Commerce & Global Services and its affiliates, and each of their officers, directors, employees, agents, and advisors from any and all claims, demands, damages, injunctions, orders, awards, settlements, losses, liabilities, liens, encumbrances, causes of action, of every kind and character, costs (including attorneys’ fees and other costs of arbitration, litigation, defense, or settlement), and expenses related to your use of the Platform, including"
+  },
+  {
+   "clause": "This provision and your indemnification obligations will survive any termination of your relationship with TikTok USDS Joint Venture and the expiration or termination of these Terms, by either party.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.25672799348831177,
+   "top_pick_unfair": false,
+   "summary": "If you end your relationship with TikTok USDS Joint Venture or if either you or the company ends its agreement with you, this provision and your indemnification obligations will still apply."
+  },
+  {
+   "clause": "In short: You agree to defend, indemnify, and hold harmless certain entities and individuals in accordance with the above.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.37550365924835205,
+   "top_pick_unfair": false,
+   "summary": "You agree to defend, indemnify, and hold harmless certain entities and individuals as described above."
+  },
+  {
+   "clause": "If we have a dispute with you relating to or arising out of these Terms or the Platform, regardless of when the dispute may have arisen or accrued, we will first try and resolve it with you amicably.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8446864783763885,
+   "top_pick_unfair": true,
+   "summary": "If you have a disagreement with us about these Terms or the Platform, we will try to resolve it with you amicably."
+  },
+  {
+   "clause": "In this section, (Section 8.1) the terms “TikTok USDS Joint Venture,” “we,” or “us” include TikTok USDS Joint Venture, TT Commerce & Global Services, each of their parents, subsidiaries, and affiliates, and each of their respective officers, directors, employees, agents and advisors.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.1831275224685669,
+   "top_pick_unfair": false,
+   "summary": "This service is a subsidiary of TikTok USDS Joint Venture. Terms may be changed any time at their discretion, without notice to the user . The service provider makes no warranty regarding uninterrupted, timely, secure or error-free service. This service assumes no liability for any losses or damages resulting from any matter relating to the service."
+  },
+  {
+   "clause": "If the dispute has not been resolved after the response time has expired, or within 30 days after a response has been issued, whichever is earlier, either party may file legal action against the other.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.2077730894088745,
+   "top_pick_unfair": false,
+   "summary": "If the dispute hasn't been resolved by the end of the response time or within 30 days after a response is issued, whichever is earlier, either you or the company can take legal action against the other party."
+  },
+  {
+   "clause": "Engaging in this informal dispute resolution process is a requirement that must be completed before filing any legal action.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.2507985234260559,
+   "top_pick_unfair": false,
+   "summary": "You must complete this informal dispute resolution process before you can take legal action against us."
+  },
+  {
+   "clause": "You, TikTok USDS Joint Venture, and TT Commerce & Global Services agree that you will make a good faith effort to resolve the dispute amicably before either you, TikTok USDS Joint Venture, or TT Commerce & Global Services, along with each's affiliates, and each of their respective officers, directors, employees, agents, and advisors, files any legal action against the other, and that the statute of limitations and any filing fee deadlines shall be tolled while the parties engage in the informal dispute resolution process.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.7190779447555542,
+   "top_pick_unfair": true,
+   "summary": "You, TikTok USDS Joint Venture, and TT Commerce & Global Services agree to try to resolve the dispute in good faith before either of them, along with their affiliates, and each of their officers, directors, employees, agents, and advisors, files legal action against the other, and the statute of limitations and filing fee deadlines will be waived while you and the other party work through informal dispute resolution."
+  },
+  {
+   "clause": "These Terms and any claims, causes of action, of any kind or character, or demand arising out of or relating to the Terms will be governed by the laws of the State of California, without regard to conflict of law principles.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9837858006358147,
+   "top_pick_unfair": true,
+   "summary": "The laws of California will apply to these Terms and any claims, lawsuits, or complaints that result from them."
+  },
+  {
+   "clause": "Any claim, cause of action or dispute, arising out of or relating to these Terms or the Platform shall also be resolved exclusively in the U.S. District Court for the Central District of California or the Superior Court of the State of California, County of Los Angeles, regardless of whether the claim, cause of action, or dispute arose prior to your agreement to these Terms.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.9881081096827984,
+   "top_pick_unfair": true,
+   "summary": "Content is published under a free license instead of a bilateral one. The court of law governing the terms is in the United States District Court for the Central District of California or the Superior Court of California, County of Los Angeles. This service forces users into binding arbitration in the case of disputes. You waive your right to a class action.. This service is only available for use individually and non-commercially.. The service can delete your account without prior notice and without a reason."
+  },
+  {
+   "clause": "You also agree to submit to the personal jurisdiction of either of these courts for the purpose of litigating any such claim.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.981290141120553,
+   "top_pick_unfair": true,
+   "summary": "You agree that any claim can be handled by either of these courts, and you give them the power to handle it."
+  },
+  {
+   "clause": "YOU AND TIKTOK USDS JOINT VENTURE AGREE THAT YOU MUST INITIATE ANY PROCEEDING OR ACTION WITHIN ONE (1) YEAR OF THE DATE OF THE OCCURRENCE OF THE EVENT OR FACTS GIVING RISE TO A DISPUTE THAT IS ARISING OUT OF OR RELATED TO THESE TERMS OR THE PLATFORM.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9447063393890858,
+   "top_pick_unfair": true,
+   "summary": "a.com is a subsidiary of TIKTOK USDS. You must start using the service within one year of the date of the last update of the terms. You waive your right to a class action.. This service forces users into binding arbitration in the case of disputes. You maintain ownership of your data."
+  },
+  {
+   "clause": "OTHERWISE, YOU FOREVER WAIVE THE RIGHT TO PURSUE ANY CLAIM OR CAUSE OF ACTION, OF ANY KIND OR CHARACTER, BASED ON SUCH EVENTS OR FACTS, AND SUCH CLAIM(S) OR CAUSE(S) OF ACTION ARE PERMANENTLY BARRED.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.8509915918111801,
+   "top_pick_unfair": true,
+   "summary": "You give up the right to sue us for any losses or damages related to your use of the service, and you agree not to do so."
+  },
+  {
+   "clause": "In short: We hope we do not get into a dispute but, if we do, there are a couple of ways we can try to resolve it.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.5483938753604889,
+   "top_pick_unfair": false,
+   "summary": "We hope we don't get into a dispute, but if we do, there are a couple of ways we can try to resolve it."
+  },
+  {
+   "clause": "These Terms and any applicable Additional Terms described above are the whole legal agreement between you and TikTok USDS Joint Venture, govern your use of the Platform and completely replace any prior terms of service between you and TikTok Inc. related to the Platform.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8850719407200813,
+   "top_pick_unfair": true,
+   "summary": "Terms and any additional terms described above are the complete and final agreement between you and TikTok USDS Joint Venture, and they replace any earlier agreements you had with TikTok Inc. about the Platform."
+  },
+  {
+   "clause": "Our rights and obligations under these Terms are freely assignable by us without any requirement to notify you or any third party, in connection with a merger, acquisition, sale or disposition of assets, sale or transfer of equity (whether by direct or indirect ownership) or by operation of law or otherwise.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.22467994689941406,
+   "top_pick_unfair": false,
+   "summary": "We can give your rights and responsibilities under these Terms to someone else without having to tell you first, and we don't have to notify you if we make a merger, acquisition, sale, or transfer of assets, sale or transfer equity (whether by direct or indirect ownership), or any other way, whether by law or otherwise."
+  },
+  {
+   "clause": "If any portion of these Terms is found to be invalid or unenforceable, then the removal of that provision will be done to the minimum extent required to make it enforceable under applicable law and the remaining provisions will continue to have full force and effect.",
+   "label": "potentially_unfair",
+   "unfair_prob": 0.30408620834350586,
+   "top_pick_unfair": false,
+   "summary": "If a court decides that any part of these Terms is invalid or unenforceable, that part will be removed, but the rest of the terms will still apply."
+  },
+  {
+   "clause": "In these Terms, “include” or “including” means “including but not limited to.”",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8484074622392654,
+   "top_pick_unfair": true,
+   "summary": "When we say \"include,\" \"including,\" or \"including\" in these Terms, we mean \"including but not limited to.\""
+  },
+  {
+   "clause": "The Platform contains certain open source software.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9886039271950722,
+   "top_pick_unfair": true,
+   "summary": "The platform contains some open source software that is open-source. The platform can share your content with third parties."
+  },
+  {
+   "clause": "Each item of open source software is subject to its own applicable license terms, which can be found at Open Source Policy.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8918881118297577,
+   "top_pick_unfair": true,
+   "summary": "Each piece of open source software has its own separate license terms, which can be found at Open Source Policy."
+  },
+  {
+   "clause": "In short: These Terms are assignable by us.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.9306973740458488,
+   "top_pick_unfair": true,
+   "summary": "We can give these Terms to someone else, and this service can sell or otherwise transfer them to you."
+  },
+  {
+   "clause": "Even if there is a dispute about one part of the Terms, this does not change that we both agree that the rest of these Terms, as written, are the agreement between us.",
+   "label": "clearly_unfair",
+   "unfair_prob": 0.8455566018819809,
+   "top_pick_unfair": true,
+   "summary": "Even if there's a disagreement about one part of the Terms, both you and the service agree that the rest of the terms are the same."
+  }
+ ]
+}
