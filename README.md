@@ -11,6 +11,7 @@ This project was built as a capstone for CS561. It consists of three main stages
 - [Project Overview](#project-overview)
 - [Running the App](#running-the-app)
 - [Deploying (Raspberry Pi + Tailscale Funnel)](#deploying-self-hosted-raspberry-pi--tailscale-funnel)
+- [Optional GPU worker (desktop)](#optional-gpu-worker-desktop)
 - [Deploying (Google Cloud Run)](#deploying-google-cloud-run)
 - [Repository Structure](#repository-structure)
 - [Dataset](#dataset)
@@ -127,6 +128,35 @@ Cloud Run (below) stays deployed as a fallback.
 
 ---
 
+## Optional GPU worker (desktop)
+
+BART is the slow step on the Pi (~6s per flagged clause on CPU). A worker on a machine
+with an NVIDIA GPU can take it over: the full Facebook ToS drops from ~4.5 minutes to
+~35 seconds, most of which is now the Pi's BERT step.
+
+- **The worker connects out, never in.** It long-polls the Pi's worker port for a batch of
+  clauses and posts the summaries back (`gpu_worker/worker.py`, `webapp/offload.py`).
+  Port 8601 is tailnet-only (not on Funnel) and needs a shared token. The policy lets the
+  worker's node (`tag:clause-gpu`) reach that one port and nothing else, and the Pi's app
+  container still never opens a connection.
+- **The GPU is only held while there's work.** BART loads in a child process on the first
+  batch and that process exits after 5 idle minutes, freeing all its VRAM. While BART
+  isn't loaded, the worker stays away if less than ~2.8GB of VRAM is free (a game or
+  editor is running).
+- **The Pi always has the last word.** If no worker has checked in, or one doesn't
+  answer within 60s, the batch runs on the Pi's CPU. Output is identical either way.
+
+On the desktop (Docker Desktop with the NVIDIA driver), with a `.env` next to the compose
+file holding `TS_AUTHKEY` (a `tag:clause-gpu` key) and `WORKER_TOKEN` (same value as the Pi's):
+
+```bash
+cd deploy/desktop
+docker compose up -d --build
+docker compose logs -f worker
+```
+
+---
+
 ## Deploying (Google Cloud Run)
 
 A fallback copy runs on Cloud Run, scaled to zero when idle, with a hard **$1/month spending cap**.
@@ -167,7 +197,7 @@ ToS_summarizer/
 │   ├── config.py              # Model paths, label maps, device, thresholds (env-var overridable)
 │   ├── preprocessing.py       # clean_df, load_tos_document, has_verb, sentence splitting
 │   ├── classifier.py          # Legal-BERT dataset/loading/batched inference
-│   ├── summarizer.py          # BART dataset/loading/batched generation
+│   ├── summarizer.py          # BART dataset/loading/batched generation (+ offload hook)
 │   ├── pipeline.py            # process_tos_document — classify → filter → summarize
 │   ├── examples.py            # Bundled example docs + their cached results
 │   └── __main__.py            # CLI: python -m tos_summarizer file.txt
@@ -186,11 +216,14 @@ ToS_summarizer/
 ├── deploy/
 │   ├── Dockerfile.hosted      # Image for hosted deploys (pulls models from HF)
 │   ├── pi/                    # Pi compose file + Funnel serve config
+│   ├── desktop/               # GPU worker image + compose (Docker Desktop, NVIDIA)
 │   ├── cloudrun/              # Billing kill-switch Cloud Function
 │   └── huggingface/           # Model card + Space README
 ├── examples/                  # Example ToS texts, manifest (names/sources/tips), cached results
 ├── notebooks/                 # Original Colab notebooks (unchanged)
-├── webapp/                    # FastAPI server (main.py), background jobs (jobs.py), static/ front end
+├── webapp/                    # FastAPI server (main.py), background jobs (jobs.py), GPU offload
+│                              # (offload.py), static/ front end
+├── gpu_worker/                # Optional desktop GPU worker for the BART step
 ├── Dockerfile / docker-compose.yml
 ├── requirements.txt           # Full training stack
 └── requirements-app.txt       # Inference-only deps (used by Docker)

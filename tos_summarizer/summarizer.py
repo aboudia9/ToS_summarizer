@@ -54,52 +54,62 @@ def load_bart(model_path, device):
     return bart_model, bart_tokenizer
 
 
+def generate_summaries(batch, model, tokenizer, device):
+    # One batch of (clause, label) tuples -> their plain-English summaries, same order.
+    # Shared with the GPU worker (gpu_worker/), so both produce identical output
+    # Match the input format BART was trained on: "{label}: {clause}"
+    input_texts = [f"{label}: {clause}" for clause, label in batch]
+
+    inputs = tokenizer(
+        input_texts,
+        max_length=BART_MAX_INPUT_LENGTH,
+        padding=True,
+        truncation=True,
+        return_tensors='pt'
+    ).to(device)
+
+    with torch.no_grad():
+        # Generate summary
+        summary_ids = model.generate(
+            inputs['input_ids'],
+            attention_mask=inputs['attention_mask'],
+            max_length=BART_MAX_TARGET_LENGTH,
+            min_length=20,
+            num_beams=4,        # beam search for better quality output
+            length_penalty=2.0, # encourages longer summaries
+            early_stopping=True
+        )
+
+    summaries = []
+    for ids in summary_ids:
+        summary = tokenizer.decode(ids, skip_special_tokens=True)
+
+        # Strip any label prefixes that leaked from placeholder training data
+        for prefix in ['clearly_fair: ', 'clearly_unfair: ', 'potentially_unfair: ']:
+            summary = summary.replace(prefix, '')
+
+        summaries.append(summary.strip())
+    return summaries
+
+
 def summarize_clauses(flagged_clauses, model, tokenizer, device, batch_size=8, progress_callback=None,
-                      batch_callback=None):
+                      batch_callback=None, offload=None):
     # flagged_clauses is a list of (clause, label) tuples. Batched so BART generates
     # several summaries per forward pass instead of one at a time. Batches are built
     # from clauses of similar length so little time goes into padding (same output,
     # ~30% faster); summaries are put back in the original order at the end.
     # batch_callback(indices, summaries) gets each batch as it finishes (used to stream
-    # results to the web UI), with indices into flagged_clauses
+    # results to the web UI), with indices into flagged_clauses.
+    # offload(batch) can return a batch's summaries from somewhere else (the web app's
+    # GPU worker); when it returns None, the batch runs here
     model.eval()
     order = sorted(range(len(flagged_clauses)), key=lambda i: len(flagged_clauses[i][0]))
     summaries = []
 
     for i in range(0, len(order), batch_size):
         batch = [flagged_clauses[j] for j in order[i:i + batch_size]]
-
-        # Match the input format BART was trained on: "{label}: {clause}"
-        input_texts = [f"{label}: {clause}" for clause, label in batch]
-
-        inputs = tokenizer(
-            input_texts,
-            max_length=BART_MAX_INPUT_LENGTH,
-            padding=True,
-            truncation=True,
-            return_tensors='pt'
-        ).to(device)
-
-        with torch.no_grad():
-            # Generate summary
-            summary_ids = model.generate(
-                inputs['input_ids'],
-                attention_mask=inputs['attention_mask'],
-                max_length=BART_MAX_TARGET_LENGTH,
-                min_length=20,
-                num_beams=4,        # beam search for better quality output
-                length_penalty=2.0, # encourages longer summaries
-                early_stopping=True
-            )
-
-        for ids in summary_ids:
-            summary = tokenizer.decode(ids, skip_special_tokens=True)
-
-            # Strip any label prefixes that leaked from placeholder training data
-            for prefix in ['clearly_fair: ', 'clearly_unfair: ', 'potentially_unfair: ']:
-                summary = summary.replace(prefix, '')
-
-            summaries.append(summary.strip())
+        summaries.extend((offload and offload(batch))
+                         or generate_summaries(batch, model, tokenizer, device))
 
         if batch_callback:
             batch_callback(order[i:i + batch_size], summaries[i:i + batch_size])

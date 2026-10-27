@@ -8,6 +8,7 @@ in-process (see jobs.py).
 import asyncio
 import json
 import logging
+import os
 import time
 from contextlib import asynccontextmanager
 from pathlib import Path
@@ -20,6 +21,7 @@ from pydantic import BaseModel, Field
 from tos_summarizer.config import DEFAULT_UNFAIR_THRESHOLD, MAX_INPUT_CHARS
 from tos_summarizer.examples import MIN_THRESHOLD, load_examples
 from .jobs import JobManager, QueueFull
+from .offload import Offload
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name)s: %(message)s")
 
@@ -41,12 +43,17 @@ SECURITY_HEADERS = {
 }
 
 jobs = JobManager()
+# Shared secret for the optional GPU worker (see offload.py); without it the Pi does everything
+if os.environ.get("WORKER_TOKEN"):
+    jobs.offload = Offload(os.environ["WORKER_TOKEN"])
 examples = {ex.slug: ex for ex in load_examples()}
 
 
 @asynccontextmanager
 async def lifespan(app):
     jobs.start()
+    if jobs.offload:
+        jobs.offload.serve()
     yield
 
 

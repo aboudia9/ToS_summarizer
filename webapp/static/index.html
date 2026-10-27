@@ -107,8 +107,9 @@
           </li>
         </ol>
         <p class="small">
-          Everything runs on a Raspberry Pi 5 with no GPU. Sorting sentences is quick; rewriting
-          takes about 6 seconds per flagged clause, which is why the summaries trickle in.
+          This runs on a Raspberry Pi 5. Sorting sentences is quick; rewriting is the slow part.
+          When my desktop's GPU is free, the Pi hands the rewriting to it and summaries arrive
+          in seconds. Otherwise the Pi does it on its own CPU at about 6 seconds per clause.
         </p>
         <p class="small"><a id="github-link" target="_blank" rel="noopener noreferrer">Source code on GitHub ↗</a></p>
       </details>

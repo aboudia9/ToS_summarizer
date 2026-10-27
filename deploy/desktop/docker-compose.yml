@@ -1,0 +1,72 @@
+# GPU worker on the desktop: does the BART step for the Pi whenever the GPU is free.
+#
+#   [worker] --internal network--> [tailscale] --tailnet--> Pi's worker port (8601)
+#
+# Nothing connects in: the worker only polls out to the Pi. Its only network is internal,
+# so it reaches the Pi through the tailscale container's outbound proxy, and the Tailscale
+# policy lets this node (tag:clause-gpu) reach that one port and nothing else on the tailnet.
+#
+#   docker compose up -d --build      (from this folder; .env holds TS_AUTHKEY and WORKER_TOKEN)
+
+services:
+  worker:
+    build:
+      context: ../..
+      dockerfile: deploy/desktop/Dockerfile
+    image: clause-gpu-worker:latest
+    restart: unless-stopped
+    networks: [internal]
+    environment:
+      - PI_URL=https://clause-and-effect.tail3172b0.ts.net:8601
+      - WORKER_TOKEN=${WORKER_TOKEN}
+      - HTTPS_PROXY=http://tailscale:1055
+      # Free the GPU after 5 idle minutes; stay off it unless ~2.8GB of VRAM is free
+      - IDLE_SECONDS=300
+      - MIN_FREE_VRAM_MB=2800
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+    mem_limit: 6g
+    memswap_limit: 6g
+    pids_limit: 256
+    read_only: true
+    tmpfs:
+      - /tmp:mode=1777
+      - /home/appuser:uid=1000,gid=1000,mode=0700
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+    depends_on: [tailscale]
+
+  tailscale:
+    image: tailscale/tailscale:stable
+    restart: unless-stopped
+    hostname: clause-gpu
+    networks: [internal, egress]
+    environment:
+      - TS_AUTHKEY=${TS_AUTHKEY}
+      - TS_HOSTNAME=clause-gpu
+      - TS_EXTRA_ARGS=--advertise-tags=tag:clause-gpu
+      - TS_STATE_DIR=/var/lib/tailscale
+      # Userspace networking: no /dev/net/tun or NET_ADMIN needed
+      - TS_USERSPACE=true
+      - TS_OUTBOUND_HTTP_PROXY_LISTEN=:1055
+    volumes:
+      - ts-state:/var/lib/tailscale
+    mem_limit: 256m
+    pids_limit: 128
+    cap_drop: [ALL]
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  internal:
+    internal: true
+  egress: {}
+
+volumes:
+  ts-state: {}

@@ -1,10 +1,12 @@
 # Self-hosted demo on the Raspberry Pi, published with Tailscale Funnel.
 #
 #   internet -> Tailscale Funnel -> [tailscale] --internal network--> [app]
+#   GPU worker (desktop, tailnet only) -> [tailscale]:8601 -----------> [app]:8502
 #
 # The app container is only on an *internal* network: no route to the internet, the
 # home network, or the tailnet. The tailscale container is the only one with egress.
-# Deployed by scripts/deploy_pi.py; TS_AUTHKEY comes from .env on the Pi (never committed).
+# Deployed by scripts/deploy_pi.py; TS_AUTHKEY and WORKER_TOKEN come from .env on the Pi
+# (never committed). Port 8601 isn't on Funnel: only the GPU worker's node may reach it.
 
 services:
   app:
@@ -15,6 +17,8 @@ services:
     environment:
       # Match torch's thread count to the CPU limit below so it isn't throttled
       - OMP_NUM_THREADS=3
+      # Lets the desktop's GPU worker take the BART step (webapp/offload.py); unset = Pi only
+      - WORKER_TOKEN=${WORKER_TOKEN:-}
     # Leave a core and plenty of RAM for the Pi's own jobs
     cpus: 3
     mem_limit: 5g

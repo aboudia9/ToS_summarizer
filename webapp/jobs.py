@@ -77,6 +77,7 @@ class JobManager:
         self.models = None
         self.models_ready = threading.Event()
         self.example_cache = load_cache_index()
+        self.offload = None         # set to an offload.Offload to use a GPU worker when present
 
     def start(self):
         threading.Thread(target=self._load_models, daemon=True, name="model-loader").start()
@@ -192,5 +193,6 @@ class JobManager:
                                              for j, summary in zip(indices, summaries)])
 
             summarize_clauses([(flagged[i].clause, flagged[i].label) for i in ids],
-                              bart_model, bart_tokenizer, device, batch_callback=on_batch)
+                              bart_model, bart_tokenizer, device, batch_callback=on_batch,
+                              offload=self.offload)
         job.emit("done", cached=False)
