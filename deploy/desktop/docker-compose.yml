@@ -20,9 +20,10 @@ services:
       - PI_URL=https://clause-and-effect.tail3172b0.ts.net:8601
       - WORKER_TOKEN=${WORKER_TOKEN}
       - HTTPS_PROXY=http://tailscale:1055
-      # Free the GPU after 5 idle minutes; stay off it unless ~2.8GB of VRAM is free
-      - IDLE_SECONDS=300
-      - MIN_FREE_VRAM_MB=2800
+      # Free the GPU after 5 idle minutes; stay off it unless this much VRAM is free.
+      # Override either one by adding a line to .env, e.g. MIN_FREE_VRAM_MB=2100
+      - IDLE_SECONDS=${IDLE_SECONDS:-300}
+      - MIN_FREE_VRAM_MB=${MIN_FREE_VRAM_MB:-2300}
     deploy:
       resources:
         reservations:

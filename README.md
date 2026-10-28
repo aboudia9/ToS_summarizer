@@ -141,7 +141,7 @@ with an NVIDIA GPU can take it over: the full Facebook ToS drops from ~4.5 minut
   container still never opens a connection.
 - **The GPU is only held while there's work.** BART loads in a child process on the first
   batch and that process exits after 5 idle minutes, freeing all its VRAM. While BART
-  isn't loaded, the worker stays away if less than ~2.8GB of VRAM is free (a game or
+  isn't loaded, the worker stays away if less than ~2.3GB of VRAM is free (a game or
   editor is running).
 - **The Pi always has the last word.** If no worker has checked in, or one doesn't
   answer within 60s, the batch runs on the Pi's CPU. Output is identical either way.

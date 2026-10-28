@@ -16,7 +16,7 @@ Settings (environment variables):
     WORKER_TOKEN      shared secret, same value as on the Pi
     DEVICE            cuda (default); cpu or mps for testing on a machine without one
     IDLE_SECONDS      unload BART after this long without work (default 300)
-    MIN_FREE_VRAM_MB  only load BART when at least this much VRAM is free (default 2800)
+    MIN_FREE_VRAM_MB  only load BART when at least this much VRAM is free (default 2300)
 """
 import json
 import logging
@@ -33,7 +33,7 @@ PI_URL = os.environ.get("PI_URL", "").rstrip("/")
 TOKEN = os.environ.get("WORKER_TOKEN", "")
 DEVICE = os.environ.get("DEVICE", "cuda")
 IDLE_SECONDS = int(os.environ.get("IDLE_SECONDS", 300))
-MIN_FREE_VRAM_MB = int(os.environ.get("MIN_FREE_VRAM_MB", 2800))
+MIN_FREE_VRAM_MB = int(os.environ.get("MIN_FREE_VRAM_MB", 2300))
 
 POLL_TIMEOUT = 40          # the Pi holds a poll open for 25s
 LOAD_TIMEOUT = 180
@@ -57,9 +57,12 @@ def _serve_model(conn, device_name):
         if batch is None:
             return
         try:
-            conn.send(("ok", generate_summaries(batch, model, tokenizer, device)))
+            summaries = generate_summaries(batch, model, tokenizer, device)
+            # Peak GPU memory this process has held (PyTorch's share; CUDA adds ~300MB)
+            peak_mb = torch.cuda.max_memory_reserved() / 2**20 if device.type == "cuda" else None
+            conn.send(("ok", summaries, peak_mb))
         except Exception as e:  # e.g. CUDA out of memory: report it, the Pi runs the batch
-            conn.send(("error", repr(e)))
+            conn.send(("error", repr(e), None))
             if device.type == "cuda":
                 torch.cuda.empty_cache()
 
@@ -80,10 +83,10 @@ class ModelProcess:
         self.conn.send(batch)
         if not self.conn.poll(BATCH_TIMEOUT):
             raise RuntimeError("batch timed out")
-        status, value = self.conn.recv()
+        status, value, peak_mb = self.conn.recv()
         if status != "ok":
             raise RuntimeError(value)
-        return value
+        return value, peak_mb
 
     def stop(self):
         try:
@@ -166,8 +169,9 @@ def main():
             if not model:
                 model = ModelProcess()
             started = time.monotonic()
-            summaries = model.summarize([tuple(item) for item in task["items"]])
-            log.info("Summarized %d clauses in %.1fs", len(summaries), time.monotonic() - started)
+            summaries, peak_mb = model.summarize([tuple(item) for item in task["items"]])
+            log.info("Summarized %d clauses in %.1fs%s", len(summaries), time.monotonic() - started,
+                     f" (GPU peak {peak_mb:.0f} MB)" if peak_mb else "")
         except Exception as e:
             log.warning("Batch failed (%s); the Pi will run it", e)
             if model:
