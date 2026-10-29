@@ -20,6 +20,8 @@ from pydantic import BaseModel, Field
 
 from tos_summarizer.config import DEFAULT_UNFAIR_THRESHOLD, MAX_INPUT_CHARS
 from tos_summarizer.examples import MIN_THRESHOLD, load_examples
+from tos_summarizer.extract import SUPPORTED_TYPES, ExtractionError
+from .extract_runner import Busy, extract_in_sandbox
 from .jobs import JobManager, QueueFull
 from .offload import Offload
 
@@ -28,6 +30,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(name
 STATIC_DIR = Path(__file__).parent / "static"
 GITHUB_URL = "https://github.com/aboudia9/ToS_summarizer"
 MAX_BODY_BYTES = 1_000_000
+MAX_UPLOAD_BYTES = 10_000_000    # PDFs run bigger than the text they hold
 HEARTBEAT_SECONDS = 15
 
 # Pages allowed to embed the app in an iframe (the portfolio, its Vercel previews, local dev)
@@ -63,9 +66,15 @@ app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 @app.middleware("http")
 async def limits_and_headers(request: Request, call_next):
-    # Refuse oversized bodies up front instead of reading them into memory
-    if int(request.headers.get("content-length") or 0) > MAX_BODY_BYTES:
-        return JSONResponse({"detail": "Request too large."}, status_code=413)
+    # Refuse oversized bodies up front instead of reading them into memory. Bodies
+    # without a declared length (chunked) are refused too, so they can't sneak past
+    if request.method == "POST":
+        length = request.headers.get("content-length")
+        if not (length and length.isdigit()):
+            return JSONResponse({"detail": "Length required."}, status_code=411)
+        limit = MAX_UPLOAD_BYTES if request.url.path == "/api/extract" else MAX_BODY_BYTES
+        if int(length) > limit:
+            return JSONResponse({"detail": "That file is too large."}, status_code=413)
     response = await call_next(request)
     response.headers.update(SECURITY_HEADERS)
     return response
@@ -89,6 +98,8 @@ def config():
         "default_threshold": DEFAULT_UNFAIR_THRESHOLD,
         "min_threshold": MIN_THRESHOLD,
         "max_chars": MAX_INPUT_CHARS,
+        "upload_types": SUPPORTED_TYPES,
+        "max_upload_bytes": MAX_UPLOAD_BYTES,
         "github": GITHUB_URL,
         "models_ready": jobs.models_ready.is_set(),
     }
@@ -100,6 +111,23 @@ def example_text(slug: str):
     if not ex:
         raise HTTPException(404, "No such example.")
     return {"slug": ex.slug, "text": ex.read_text()}
+
+
+@app.post("/api/extract")
+async def extract(request: Request, filename: str):
+    # The raw file is the request body; the name is only used for its extension
+    if Path(filename).suffix.lower() not in SUPPORTED_TYPES:
+        raise HTTPException(422, "Can't read that type of file. Try .txt, .pdf, .docx or .html.")
+    data = await request.body()
+    if len(data) > MAX_UPLOAD_BYTES:
+        raise HTTPException(413, "That file is too large.")
+    try:
+        text = await asyncio.to_thread(extract_in_sandbox, data, filename)
+    except Busy:
+        raise HTTPException(429, "Busy reading other files. Try again in a moment.")
+    except ExtractionError as e:
+        raise HTTPException(422, str(e))
+    return {"text": text}
 
 
 class JobRequest(BaseModel):

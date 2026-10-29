@@ -40,7 +40,7 @@ The pipeline works in three sequential stages:
 
 ## Running the App
 
-The app takes a pasted ToS or an uploaded `.txt`, splits it into clauses, flags the risky
+The app takes a pasted ToS or an uploaded `.txt`, `.pdf`, `.docx` or `.html` file, splits it into clauses, flags the risky
 ones with BERT, and rewrites those in plain English with BART. No training or downloads
 happen at runtime — the fine-tuned models are loaded once from `models/`.
 
@@ -56,6 +56,14 @@ It's a FastAPI backend (`webapp/main.py`) with a plain HTML/JS front end (`webap
   models are still loading.
 - Only one document runs at a time, at most 3 can wait in the queue, and inputs are capped at
   100k characters (`MAX_INPUT_CHARS`).
+- **Uploaded PDFs, Word files and web pages** are turned back into one paragraph per line
+  (`tos_summarizer/extract.py`): PDF line wraps are rejoined, running headers/footers and
+  page numbers dropped, and HTML menus, scripts and hidden elements removed. On the example
+  ToS documents, 97–100% of the clauses come out the same as from the copied text. The text
+  lands in the box for the user to check before analyzing.
+- Uploads are parsed in a fresh, sandboxed process (`webapp/extract_runner.py`) with a 15s
+  CPU limit and 1.5GB memory cap, at most 2 at a time, and files are capped at 10MB, so a
+  malformed or malicious file can't hang the server or touch the models.
 
 **Step 1 — Compress the trained models** (needs `bert_model/` and `bart_model_v2/` in the repo root):
 
@@ -196,11 +204,12 @@ ToS_summarizer/
 ├── tos_summarizer/            # The inference package (used by the app + training scripts)
 │   ├── config.py              # Model paths, label maps, device, thresholds (env-var overridable)
 │   ├── preprocessing.py       # clean_df, load_tos_document, has_verb, sentence splitting
+│   ├── extract.py             # Text from uploaded .pdf / .docx / .html files
 │   ├── classifier.py          # Legal-BERT dataset/loading/batched inference
 │   ├── summarizer.py          # BART dataset/loading/batched generation (+ offload hook)
 │   ├── pipeline.py            # process_tos_document — classify → filter → summarize
 │   ├── examples.py            # Bundled example docs + their cached results
-│   └── __main__.py            # CLI: python -m tos_summarizer file.txt
+│   └── __main__.py            # CLI: python -m tos_summarizer file.{txt,pdf,docx,html}
 ├── training/                  # The notebooks as runnable scripts
 │   ├── preprocess.py          # Stage 1 → df_{train,val,test}.csv
 │   ├── train_bert.py          # Stage 2 → bert_model*/ (prints a test-set report)
@@ -222,7 +231,7 @@ ToS_summarizer/
 ├── examples/                  # Example ToS texts, manifest (names/sources/tips), cached results
 ├── notebooks/                 # Original Colab notebooks (unchanged)
 ├── webapp/                    # FastAPI server (main.py), background jobs (jobs.py), GPU offload
-│                              # (offload.py), static/ front end
+│                              # (offload.py), upload sandbox (extract_runner.py), static/ front end
 ├── gpu_worker/                # Optional desktop GPU worker for the BART step
 ├── Dockerfile / docker-compose.yml
 ├── requirements.txt           # Full training stack

@@ -1,4 +1,4 @@
-"""Command-line version of the pipeline: python -m tos_summarizer path/to/tos.txt"""
+"""Command-line version of the pipeline: python -m tos_summarizer path/to/tos.{txt,pdf,docx,html}"""
 import argparse
 
 from .config import BERT_MODEL_PATH, BART_MODEL_PATH, DEFAULT_UNFAIR_THRESHOLD, get_device
@@ -10,7 +10,7 @@ from .pipeline import process_tos_document, print_results
 
 def main():
     parser = argparse.ArgumentParser(description="Summarize the risky clauses in a ToS document")
-    parser.add_argument("file", help="Path to a .txt ToS document")
+    parser.add_argument("file", help="Path to a ToS document (.txt, .pdf, .docx or .html)")
     parser.add_argument("--threshold", type=float, default=DEFAULT_UNFAIR_THRESHOLD,
                         help="Flag clauses whose combined unfair probability is at least this")
     args = parser.parse_args()

@@ -47,13 +47,15 @@ def clean_tos_text(text):
 
 
 def load_tos_document(file_path):
-    # Handles .txt files for now
-    # Can be extended to handle .pdf or .docx later
-    if str(file_path).endswith('.txt'):
+    # .txt as is (same as pasting it into the app); .pdf, .docx and .html go through
+    # extract.py, which turns them back into one paragraph per line
+    if str(file_path).lower().endswith('.txt'):
         with open(file_path, 'r', encoding='utf-8') as f:
             text = f.read()
     else:
-        raise ValueError("Currently only .txt files are supported!")
+        from .extract import extract_text
+        with open(file_path, 'rb') as f:
+            text = extract_text(f.read(), str(file_path))
 
     return clean_tos_text(text)
 

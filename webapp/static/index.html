@@ -29,13 +29,16 @@
           <p class="small"><a id="tip-source" target="_blank" rel="noopener noreferrer">Source</a><span id="tip-date" class="dim"></span></p>
         </div>
 
-        <label for="tos-text" class="label">…or paste your own</label>
+        <label for="tos-text" class="label">…or paste or upload your own</label>
         <textarea id="tos-text" placeholder="Paste Terms of Service text…" spellcheck="false"></textarea>
         <div class="input-row">
-          <button type="button" id="upload-btn" class="btn ghost">Upload .txt</button>
-          <input type="file" id="file-input" accept=".txt,text/plain" hidden>
+          <button type="button" id="upload-btn" class="btn ghost">Upload a file</button>
+          <input type="file" id="file-input" hidden
+                 accept=".txt,.pdf,.docx,.html,.htm,text/plain,text/html,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+          <span class="dim small">.pdf, .docx, .html or .txt</span>
           <span id="char-count" class="dim small"></span>
         </div>
+        <p id="upload-note" class="note small" hidden></p>
 
         <div class="controls">
           <label class="slider" for="threshold">

@@ -91,10 +91,11 @@ function showThreshold() {
 
 // ---------------- Input ----------------
 
-let actionSeq = 0;  // bumped by every example click / submit, so a slow one can't clobber a newer one
+let actionSeq = 0;  // bumped by every example click / upload / submit, so a slow one can't clobber a newer one
 
 async function runExample(ex) {
   setError(null);
+  setUploadNote(null);
   const seq = ++actionSeq;
   const res = await fetch(`/api/examples/${ex.slug}`);
   if (!res.ok) return setError('Could not load that example.');
@@ -128,18 +129,56 @@ function showTip() {
   $('tip-date').textContent = `, retrieved ${ex.retrieved}`;
 }
 
-function onUpload(e) {
+async function onUpload(e) {
   const file = e.target.files[0];
   e.target.value = '';
   if (!file) return;
-  if (file.size > 1_000_000) return setError('That file is over 1MB. Try pasting just the terms.');
-  const reader = new FileReader();
-  reader.onload = () => {
-    $('tos-text').value = reader.result;
-    onTextInput();
-    setError(null);
-  };
-  reader.readAsText(file);
+  setError(null);
+  setUploadNote(null);
+  const ext = file.name.includes('.') ? file.name.slice(file.name.lastIndexOf('.')).toLowerCase() : '';
+  const { upload_types, max_upload_bytes } = state.config;
+  if (!upload_types.includes(ext)) {
+    return setError("Can't read that type of file. Try .pdf, .docx, .html or .txt.");
+  }
+  if (file.size > max_upload_bytes) {
+    return setError(`That file is over ${max_upload_bytes / 1_000_000}MB. Try just the terms.`);
+  }
+
+  const seq = ++actionSeq;
+  let text;
+  if (ext === '.txt') {
+    text = await file.text();
+  } else {
+    // PDFs, Word files and web pages are read on the server, in a sandboxed process
+    setUploadNote(`Reading ${file.name}…`);
+    $('upload-btn').disabled = true;
+    try {
+      const res = await fetch(`/api/extract?filename=${encodeURIComponent(file.name)}`,
+                              { method: 'POST', body: file });
+      const body = await res.json().catch(() => ({}));
+      if (!res.ok) {
+        throw new Error(typeof body.detail === 'string' ? body.detail : "That file couldn't be read.");
+      }
+      text = body.text;
+    } catch (err) {
+      if (seq === actionSeq) { setUploadNote(null); setError(err.message); }
+      return;
+    } finally {
+      $('upload-btn').disabled = false;
+    }
+  }
+  if (seq !== actionSeq) return;
+  $('tos-text').value = text;
+  onTextInput();
+  if (ext !== '.txt') {
+    setUploadNote(`Pulled ${text.length.toLocaleString()} characters of text out of ${file.name}. ` +
+                  'Skim it to make sure it looks right, then press Analyze.');
+  }
+}
+
+function setUploadNote(msg) {
+  $('upload-note').textContent = msg || '';
+  $('upload-note').hidden = !msg;
 }
 
 function updateCharCount() {

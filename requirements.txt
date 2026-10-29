@@ -19,3 +19,5 @@ anthropic # for summaries of the clause dataset
 # App / UI
 fastapi
 uvicorn
+pypdf
+beautifulsoup4
